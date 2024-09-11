@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day/Night Canvas</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+		<style>
+			body {
+				min-height: 100vh;
+				background: linear-gradient(135deg, #6e8efb, #a777e3);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.container {
+				display: flex;
+				flex-wrap: nowrap;
+				background: rgba(255, 255, 255, 0.2);
+				backdrop-filter: blur(10px);
+				border-radius: 20px;
+				padding: 30px;
+				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			}
+			.control-panel {
+				width: 300px;
+				margin-left: 20px;
+				padding: 15px;
+				background: rgba(255, 255, 255, 0.5);
+				border-radius: 10px;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			}
+			.control-panel h4 {
+				margin-top: 0;
+			}
+			#combinedImage {
+				max-width: 100%;
+				height: auto;
+				border: 2px solid rgba(255, 255, 255, 0.5);
+				border-radius: 10px;
+			}
+			.btn-file {
+				position: relative;
+				overflow: hidden;
+				display: inline-block;
+				width: 100%;
+			}
+			.btn-file input[type='file'] {
+				position: absolute;
+				top: 0;
+				right: 0;
+				min-width: 100%;
+				min-height: 100%;
+				font-size: 100px;
+				text-align: right;
+				filter: alpha(opacity=0);
+				opacity: 0;
+				outline: none;
+				background: white;
+				cursor: inherit;
+				display: block;
+			}
+			.shape-preview {
+				width: 50px;
+				height: 50px;
+				margin: 5px;
+				cursor: pointer;
+				border: 2px solid transparent;
+			}
+			.shape-preview.active {
+				border-color: #fff;
+			}
+			.form-range {
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-md-8">
+				<canvas id="combinedImage" class="mb-3"></canvas>
+				<div class="row mb-3">
+					<div class="col-md-6">
+						<span class="btn btn-primary btn-file">
+							Upload Light Mode Image
+							<input type="file" id="image1" accept="image/*" />
+						</span>
+					</div>
+					<div class="col-md-6">
+						<span class="btn btn-secondary btn-file">
+							Upload Dark Mode Image
+							<input type="file" id="image2" accept="image/*" />
+						</span>
+					</div>
+				</div>
+				<button id="saveButton" class="btn btn-success w-100">Save Image</button>
+			</div>
+			<div class="control-panel">
+				<h4>Shape Options</h4>
+				<div id="shapeOptions" class="d-flex flex-wrap">
+					<!-- Shape previews will be added here dynamically -->
+				</div>
+				<h4 class="mt-4">Divider Position</h4>
+				<label for="dividerX">X:</label>
+				<input type="range" id="dividerX" class="form-range" min="0" max="100" value="50" />
+				<label for="dividerY">Y:</label>
+				<input type="range" id="dividerY" class="form-range" min="0" max="100" value="50" />
+				<h4 class="mt-4">Image Size</h4>
+				<label for="width">Width:</label>
+				<input type="number" id="width" class="form-control" min="0" />
+				<label for="height">Height:</label>
+				<input type="number" id="height" class="form-control" min="0" />
+				<h4 class="mt-4">Custom Clip Path</h4>
+				<label for="customPath">Path Data:</label>
+				<textarea id="customPath" class="form-control" rows="4"></textarea>
+				<button id="importPathButton" class="btn btn-primary mt-2 w-100">Import Path</button>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			const canvas = document.getElementById('combinedImage');
+			const ctx = canvas.getContext('2d');
+			const image1Input = document.getElementById('image1');
+			const image2Input = document.getElementById('image2');
+			const saveButton = document.getElementById('saveButton');
+			const shapeOptions = document.getElementById('shapeOptions');
+			const dividerXInput = document.getElementById('dividerX');
+			const dividerYInput = document.getElementById('dividerY');
+			const widthInput = document.getElementById('width');
+			const heightInput = document.getElementById('height');
+			const customPathInput = document.getElementById('customPath');
+			const importPathButton = document.getElementById('importPathButton');
+
+			let image1, image2;
+			let currentShape = 'diagonal';
+			let dividerPosition = { x: canvas.width / 2, y: canvas.height / 2 };
+
+			const shapes = [
+				{ name: 'diagonal', preview: 'M0,0 L50,50 L0,50 Z' },
+				{ name: 'vertical', preview: 'M25,0 L25,50 L0,50 L0,0 Z' },
+				{ name: 'horizontal', preview: 'M0,25 L50,25 L50,50 L0,50 Z' },
+				{ name: 'circle', preview: 'M25,25 m-25,0 a25,25 0 1,0 50,0 a25,25 0 1,0 -50,0' },
+				{ name: 'wave', preview: 'M0,25 Q12.5,0 25,25 T50,25 L50,50 L0,50 Z' },
+				{ name: 'triangle', preview: 'M25,0 L50,50 L0,50 Z' },
+			];
+
+			function createShapePreview(shape) {
+				const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+				svg.setAttribute('width', '50');
+				svg.setAttribute('height', '50');
+				svg.setAttribute('viewBox', '0 0 50 50');
+				svg.classList.add('shape-preview');
+				svg.dataset.shape = shape.name;
+
+				const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+				path.setAttribute('d', shape.preview);
+				path.setAttribute('fill', '#000');
+
+				svg.appendChild(path);
+				shapeOptions.appendChild(svg);
+
+				svg.addEventListener('click', () => {
+					currentShape = shape.name;
+					document.querySelectorAll('.shape-preview').forEach((el) => el.classList.remove('active'));
+					svg.classList.add('active');
+					combineImages();
+				});
+			}
+
+			shapes.forEach(createShapePreview);
+
+			function loadImage(input) {
+				return new Promise((resolve) => {
+					const reader = new FileReader();
+					reader.onload = (e) => {
+						const img = new Image();
+						img.onload = () => resolve(img);
+						img.src = e.target.result;
+					};
+					reader.readAsDataURL(input.files[0]);
+				});
+			}
+
+			function setCanvasDimensions(img1, img2) {
+				const aspectRatio = 16 / 9; // YouTube thumbnail ratio
+				let width, height;
+
+				if (img1 && img2) {
+					width = Math.max(img1.width, img2.width);
+					height = Math.max(img1.height, img2.height);
+				} else if (img1) {
+					width = img1.width;
+					height = img1.height;
+				} else if (img2) {
+					width = img2.width;
+					height = img2.height;
+				} else {
+					width = 1280;
+					height = 720;
+				}
+				if (width / height > aspectRatio) {
+					height = width / aspectRatio;
+				} else {
+					width = height * aspectRatio;
+				}
+
+				canvas.width = width;
+				canvas.height = height;
+
+				// Reset divider position when canvas dimensions change
+				dividerPosition.x = width / 2;
+				dividerPosition.y = height / 2;
+
+				dividerXInput.max = width;
+				dividerYInput.max = height;
+				widthInput.value = width;
+				heightInput.value = height;
+			}
+
+			image1Input.addEventListener('change', async (e) => {
+				image1 = await loadImage(e.target);
+				setCanvasDimensions(image1, image2);
+				combineImages();
+			});
+
+			image2Input.addEventListener('change', async (e) => {
+				image2 = await loadImage(e.target);
+				setCanvasDimensions(image1, image2);
+				combineImages();
+			});
+
+			dividerXInput.addEventListener('input', (e) => {
+				dividerPosition.x = e.target.value;
+				combineImages();
+			});
+
+			dividerYInput.addEventListener('input', (e) => {
+				dividerPosition.y = e.target.value;
+				combineImages();
+			});
+
+			widthInput.addEventListener('input', (e) => {
+				canvas.width = e.target.value;
+				setCanvasDimensions(image1, image2);
+				combineImages();
+			});
+
+			heightInput.addEventListener('input', (e) => {
+				canvas.height = e.target.value;
+				setCanvasDimensions(image1, image2);
+				combineImages();
+			});
+
+			importPathButton.addEventListener('click', () => {
+				const customPath = customPathInput.value.trim();
+				if (customPath) {
+					shapes.push({ name: 'custom', preview: customPath });
+					createShapePreview({ name: 'custom', preview: customPath });
+					currentShape = 'custom';
+					combineImages();
+				}
+			});
+
+			function combineImages() {
+				if (!image1 && !image2) {
+					alert('Please upload at least one image before combining.');
+					return;
+				}
+
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+				if (image1) {
+					ctx.drawImage(image1, 0, 0, canvas.width, canvas.height);
+				}
+
+				if (image2) {
+					ctx.save();
+					createClippingPath();
+					ctx.clip();
+					ctx.drawImage(image2, 0, 0, canvas.width, canvas.height);
+					ctx.restore();
+				}
+
+				drawSeparator();
+			}
+
+			function createClippingPath() {
+				const { width, height } = canvas;
+				ctx.beginPath();
+
+				switch (currentShape) {
+					case 'vertical':
+						ctx.rect(dividerPosition.x, 0, width - dividerPosition.x, height);
+						break;
+					case 'horizontal':
+						ctx.rect(0, dividerPosition.y, width, height - dividerPosition.y);
+						break;
+					case 'circle':
+						ctx.arc(dividerPosition.x, dividerPosition.y, Math.min(width, height) / 4, 0, Math.PI * 2);
+						break;
+					case 'wave':
+						ctx.moveTo(0, dividerPosition.y);
+						for (let x = 0; x < width; x += 50) {
+							ctx.quadraticCurveTo(x + 25, height / 4, x + 50, dividerPosition.y);
+						}
+						ctx.lineTo(width, height);
+						ctx.lineTo(0, height);
+						break;
+					case 'triangle':
+						ctx.moveTo(dividerPosition.x, 0);
+						ctx.lineTo(width, height);
+						ctx.lineTo(0, height);
+						break;
+					case 'custom':
+						const path = new Path2D(customPathInput.value);
+						ctx.addPath(path);
+						break;
+					case 'diagonal':
+					default:
+						ctx.moveTo(0, 0);
+						ctx.lineTo(dividerPosition.x, dividerPosition.y);
+						ctx.lineTo(width, height);
+						ctx.lineTo(width, 0);
+						ctx.closePath();
+				}
+
+				ctx.clip();
+			}
+
+			function drawSeparator() {
+				const { width, height } = canvas;
+				ctx.beginPath();
+
+				switch (currentShape) {
+					case 'vertical':
+						ctx.moveTo(dividerPosition.x, 0);
+						ctx.lineTo(dividerPosition.x, height);
+						break;
+					case 'horizontal':
+						ctx.moveTo(0, dividerPosition.y);
+						ctx.lineTo(width, dividerPosition.y);
+						break;
+					case 'circle':
+						ctx.arc(dividerPosition.x, dividerPosition.y, Math.min(width, height) / 4, 0, Math.PI * 2);
+						break;
+					case 'wave':
+						ctx.moveTo(0, dividerPosition.y);
+						for (let x = 0; x < width; x += 50) {
+							ctx.quadraticCurveTo(x + 25, height / 4, x + 50, dividerPosition.y);
+						}
+						break;
+					case 'triangle':
+						ctx.moveTo(dividerPosition.x, 0);
+						ctx.lineTo(width, height);
+						ctx.lineTo(0, height);
+						break;
+					case 'custom':
+						const path = new Path2D(customPathInput.value);
+						ctx.addPath(path);
+						break;
+					case 'diagonal':
+					default:
+						ctx.moveTo(0, 0);
+						ctx.lineTo(dividerPosition.x, dividerPosition.y);
+						ctx.lineTo(width, height);
+						ctx.lineTo(width, 0);
+						ctx.closePath();
+				}
+
+				ctx.strokeStyle = '#fff';
+				ctx.lineWidth = 2;
+				ctx.stroke();
+			}
+
+			function saveImage() {
+				combineImages();
+
+				const link = document.createElement('a');
+				link.href = canvas.toDataURL('image/png');
+
+				// Prompt for filename
+				let filename = prompt('Enter filename:', 'combined-image');
+				if (!filename) filename = 'combined-image';
+
+				// Add file extension
+				if (!filename.endsWith('.png')) filename += '.png';
+
+				link.download = filename;
+				link.click();
+			}
+
+			saveButton.addEventListener('click', saveImage);
+
+			// Initial setup
+			setCanvasDimensions();
+			document.querySelector('.shape-preview').classList.add('active');
+		</script>
+	</body>
+</html>

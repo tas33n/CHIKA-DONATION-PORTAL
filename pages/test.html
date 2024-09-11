@@ -1,0 +1,26 @@
+<div class="centered-form">
+    <!-- User Input Step -->
+    <div id="user-input-step" class="text-center">
+        <input id="uid-input" type="text" class="form-control mb-3" placeholder="Enter user ID"
+            style="max-width: 300px; margin: 0 auto;">
+        <button id="uid-submit" class="btn btn-primary">Submit</button>
+        <div id="user-error" class="text-danger mt-2" style="display: none;">User not found or invalid UID.</div>
+    </div>
+
+    <!-- Group Input Step -->
+    <div id="group-input-step" class="text-center" style="display: none;">
+        <input id="tid-input" type="text" class="form-control mb-3" placeholder="Enter group ID"
+            style="max-width: 300px; margin: 0 auto;">
+        <button id="tid-submit" class="btn btn-primary">Submit</button>
+        <div id="group-error" class="text-danger mt-2" style="display: none;">Group not found or invalid TID.</div>
+    </div>
+
+    <!-- Display User and Group Data -->
+    <div id="fetched-data" style="display: none;"></div>
+
+    <!-- Proceed with Donation -->
+    <button id="proceed-donation" class="btn btn-success mt-4" style="display: none;">Proceed with Donation</button>
+
+    <!-- Loader -->
+    <div class="loader"></div>
+</div>

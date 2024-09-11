@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "data": {
+    "userID": "100023553541678",
+    "name": "Farhan Isteak Taseen",
+    "gender": 2,
+    "vanity": "Tasu.Legend",
+    "exp": 42,
+    "money": 0,
+    "banned": {},
+    "settings": {
+      "token_time": 1724832294449,
+      "last_active_gc": "6519454968089625"
+    },
+    "data": {},
+    "createdAt": "2024-08-28T06:10:21Z",
+    "updatedAt": "2024-08-29T05:10:57Z",
+    "avatar": "https://scontent.fcgp30-1.fna.fbcdn.net/v/t39.30808-1/454300967_1659766768151759_1745075441449798361_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-7&_nc_sid=50d2ac&_nc_ohc=QsIqm1TIELQQ7kNvgG7Scq4&_nc_ht=scontent.fcgp30-1.fna&oh=00_AYAnyBS_5ZXrVhwZsKG5NL2Uf54bIUKK4UBOsXDqYcpKyA&oe=66D602CB"
+  }
+}
