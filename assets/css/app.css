@@ -1231,3 +1231,54 @@ body.light-mode .video-bg:before {
 .about .card:hover {
   transform: translateY(-5px);
 }
+
+/* commad page */
+
+.command-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.command-name {
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.command-description {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.command-aliases {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.command-guide {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+#searchInput {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+}
+
+#searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}

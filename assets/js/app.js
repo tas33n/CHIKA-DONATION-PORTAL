@@ -265,7 +265,7 @@ const donate = `
 `;
 
 const supporter = `
-<div class="container py-5">
+<div class="container py-2">
    <h2 class="text-center mb-4">Our Awesome Supporters</h2>
    <p class="text-center mb-4">
 	 A heartfelt thank you from the admin team to all our amazing supporters. Your contributions and support keep this project alive and thriving. We couldn't do it without you!
@@ -273,6 +273,18 @@ const supporter = `
    <div id="supporters-container" class="row">
 	   <!-- Supporter cards will be dynamically inserted here -->
    </div>
+</div>
+ `;
+
+const commands = `
+<div class="container py-1">
+  <h1 class="text-center mb-4">Chika Bot Commands</h1>
+			<div class="row mb-4">
+				<div class="col-md-6 mx-auto">
+					<input type="text" id="searchInput" class="form-control" placeholder="Search commands..." />
+				</div>
+			</div>
+	<div id="commands-container"></div>
 </div>
  `;
 
@@ -438,9 +450,12 @@ const loadPage = (page) => {
 			$('#main-content').html(supporter);
 			renderSupporters();
 			break;
+		case 'commands':
+			$('#main-content').html(commands);
+			initializeCommandsPage();
+			break;
 		case 'privacy':
 			$('#main-content').html(privacy);
-			renderSupporters();
 			break;
 		case 'test':
 			content = '<p>test.</p>';
@@ -791,6 +806,126 @@ async function renderSupporters() {
 	} catch (error) {
 		console.error('Error fetching admin data:', error);
 		$('#supporters-container').html('<p class="text-danger">Failed to load supporters data. Please try again later.</p>');
+	}
+}
+
+let commandsData = {};
+
+async function fetchCommands() {
+	try {
+		const response = await fetch(`${CDN_BASE}/data/commands.json`);
+		if (!response.ok) {
+			throw new Error('Failed to fetch commands data');
+		}
+		commandsData = await response.json();
+		renderCommands();
+	} catch (error) {
+		console.error('Error fetching commands:', error);
+		$('#commands-container').html('<p class="text-danger">Failed to load commands. Please try again later.</p>');
+	}
+}
+
+function groupCommandsByCategory(commands) {
+	const categories = {};
+	for (const [cmdName, cmdData] of Object.entries(commands)) {
+		const category = cmdData.category || 'Uncategorized';
+		if (!categories[category]) {
+			categories[category] = [];
+		}
+		categories[category].push({ name: cmdName, ...cmdData });
+	}
+	return categories;
+}
+
+function replacePlaceholders(guide, commandName) {
+	if (typeof guide !== 'string') return 'No guide available.';
+	return guide
+		.replace(/\{pn\}/g, `/${commandName}`)
+		.replace(/\{p\}n/g, `/${commandName}`)
+		.replace(/\{p\}/g, '/')
+		.replace(/\{n\}/g, commandName);
+}
+
+function renderCommands() {
+	const container = document.getElementById('commands-container');
+	if (!container) {
+		console.error('Commands container not found');
+		return;
+	}
+	container.innerHTML = ''; // Clear existing content
+
+	const groupedCommands = groupCommandsByCategory(commandsData);
+
+	for (const [category, commands] of Object.entries(groupedCommands)) {
+		const categoryCard = document.createElement('div');
+		categoryCard.className = 'card mb-3';
+		categoryCard.innerHTML = `
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">${category}</h5>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="card-body" style="display: none;">
+                ${commands
+									.map(
+										(cmd) => `
+                    <div class="command-item mb-3">
+                        <div class="command-name">/${cmd.name}</div>
+                        <div class="command-description">${
+													cmd.shortDescription?.en || cmd.description?.en || 'No description available.'
+												}</div>
+                        <div class="command-aliases">Aliases: ${
+													cmd.aliases ? cmd.aliases.map((alias) => `/${alias}`).join(', ') : 'None'
+												}</div>
+                        <div class="command-guide">${replacePlaceholders(cmd.guide?.en, cmd.name)}</div>
+                    </div>
+                `
+									)
+									.join('')}
+            </div>
+        `;
+		container.appendChild(categoryCard);
+	}
+
+	// Add click event listeners to category headers
+	document.querySelectorAll('.card-header').forEach((header) => {
+		header.addEventListener('click', function () {
+			const body = this.nextElementSibling;
+			const icon = this.querySelector('.fa-chevron-down');
+			body.style.display = body.style.display === 'none' ? 'block' : 'none';
+			icon.classList.toggle('rotate');
+		});
+	});
+}
+
+function filterCommands() {
+	const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+	document.querySelectorAll('.command-item').forEach((item) => {
+		const commandName = item.querySelector('.command-name').textContent.toLowerCase();
+		const commandDescription = item.querySelector('.command-description').textContent.toLowerCase();
+		if (commandName.includes(searchTerm) || commandDescription.includes(searchTerm)) {
+			item.style.display = 'block';
+			item.closest('.card').style.display = 'block';
+		} else {
+			item.style.display = 'none';
+		}
+	});
+
+	document.querySelectorAll('.card').forEach((card) => {
+		const visibleItems = card.querySelectorAll('.command-item[style="display: block;"]');
+		if (visibleItems.length === 0) {
+			card.style.display = 'none';
+		} else {
+			card.style.display = 'block';
+		}
+	});
+}
+
+// Call this function when the commands page is loaded
+function initializeCommandsPage() {
+	fetchCommands();
+	const searchInput = document.getElementById('searchInput');
+	if (searchInput) {
+		searchInput.addEventListener('input', filterCommands);
 	}
 }
 

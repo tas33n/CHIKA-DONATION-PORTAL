@@ -1,26 +1,201 @@
-<div class="centered-form">
-    <!-- User Input Step -->
-    <div id="user-input-step" class="text-center">
-        <input id="uid-input" type="text" class="form-control mb-3" placeholder="Enter user ID"
-            style="max-width: 300px; margin: 0 auto;">
-        <button id="uid-submit" class="btn btn-primary">Submit</button>
-        <div id="user-error" class="text-danger mt-2" style="display: none;">User not found or invalid UID.</div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chika Bot Commands</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+		<style>
+			body {
+				background: linear-gradient(135deg, #f472b6, #8b5cf6);
+				min-height: 100vh;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				color: #fff;
+			}
+			.container {
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
+			.card {
+				background-color: rgba(255, 255, 255, 0.1);
+				backdrop-filter: blur(10px);
+				border: none;
+				border-radius: 15px;
+				margin-bottom: 1rem;
+				transition: all 0.3s ease;
+			}
+			.card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+			}
+			.card-header {
+				background-color: rgba(255, 255, 255, 0.2);
+				border-bottom: none;
+				cursor: pointer;
+			}
+			.card-body {
+				display: none;
+			}
+			.command-item {
+				background-color: rgba(255, 255, 255, 0.05);
+				border-radius: 10px;
+				padding: 1rem;
+				margin-bottom: 1rem;
+			}
+			.command-name {
+				font-weight: bold;
+				color: #fbbf24;
+			}
+			.command-description {
+				font-style: italic;
+				margin-bottom: 0.5rem;
+			}
+			.command-aliases {
+				font-size: 0.9rem;
+				color: #e5e7eb;
+			}
+			.command-guide {
+				background-color: rgba(0, 0, 0, 0.2);
+				border-radius: 5px;
+				padding: 0.5rem;
+				margin-top: 0.5rem;
+				font-family: monospace;
+				white-space: pre-wrap;
+			}
+			.fa-chevron-down {
+				transition: transform 0.3s ease;
+			}
+			.rotate {
+				transform: rotate(180deg);
+			}
+			#searchInput {
+				background-color: rgba(255, 255, 255, 0.1);
+				border: none;
+				color: #fff;
+			}
+			#searchInput::placeholder {
+				color: rgba(255, 255, 255, 0.5);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center mb-4">Chika Bot Commands</h1>
+			<div class="row mb-4">
+				<div class="col-md-6 mx-auto">
+					<input type="text" id="searchInput" class="form-control" placeholder="Search commands..." />
+				</div>
+			</div>
+			<div id="commands-container"></div>
+		</div>
 
-    <!-- Group Input Step -->
-    <div id="group-input-step" class="text-center" style="display: none;">
-        <input id="tid-input" type="text" class="form-control mb-3" placeholder="Enter group ID"
-            style="max-width: 300px; margin: 0 auto;">
-        <button id="tid-submit" class="btn btn-primary">Submit</button>
-        <div id="group-error" class="text-danger mt-2" style="display: none;">Group not found or invalid TID.</div>
-    </div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			let commandsData = {};
 
-    <!-- Display User and Group Data -->
-    <div id="fetched-data" style="display: none;"></div>
+			async function fetchCommands() {
+				try {
+					const response = await fetch('http://127.0.0.1:5500/data/commands.json');
+					commandsData = await response.json();
+					renderCommands();
+				} catch (error) {
+					console.error('Error fetching commands:', error);
+				}
+			}
 
-    <!-- Proceed with Donation -->
-    <button id="proceed-donation" class="btn btn-success mt-4" style="display: none;">Proceed with Donation</button>
+			function groupCommandsByCategory(commands) {
+				const categories = {};
+				for (const [cmdName, cmdData] of Object.entries(commands)) {
+					const category = cmdData.category || 'Uncategorized';
+					if (!categories[category]) {
+						categories[category] = [];
+					}
+					categories[category].push({ name: cmdName, ...cmdData });
+				}
+				return categories;
+			}
 
-    <!-- Loader -->
-    <div class="loader"></div>
-</div>
+			function replacePlaceholders(guide, commandName) {
+				if (typeof guide !== 'string') return 'No guide available.';
+				return guide
+					.replace(/\{pn\}/g, `/${commandName}`)
+					.replace(/\{p\}n/g, `/${commandName}`)
+					.replace(/\{p\}/g, '/')
+					.replace(/\{n\}/g, commandName);
+			}
+
+			function renderCommands() {
+				const container = document.getElementById('commands-container');
+				const groupedCommands = groupCommandsByCategory(commandsData);
+
+				for (const [category, commands] of Object.entries(groupedCommands)) {
+					const categoryCard = document.createElement('div');
+					categoryCard.className = 'card';
+					categoryCard.innerHTML = `
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">${category}</h5>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="card-body">
+                        ${commands
+													.map(
+														(cmd) => `
+                            <div class="command-item">
+                                <div class="command-name">/${cmd.name}</div>
+                                <div class="command-description">${
+																	cmd.shortDescription?.en || cmd.description?.en || 'No description available.'
+																}</div>
+                                <div class="command-aliases">Aliases: ${
+																	cmd.aliases ? cmd.aliases.map((alias) => `/${alias}`).join(', ') : 'None'
+																}</div>
+                                <div class="command-guide">${replacePlaceholders(cmd.guide?.en, cmd.name)}</div>
+                            </div>
+                        `
+													)
+													.join('')}
+                    </div>
+                `;
+					container.appendChild(categoryCard);
+				}
+
+				// Add click event listeners to category headers
+				document.querySelectorAll('.card-header').forEach((header) => {
+					header.addEventListener('click', function () {
+						const body = this.nextElementSibling;
+						const icon = this.querySelector('.fa-chevron-down');
+						body.style.display = body.style.display === 'block' ? 'none' : 'block';
+						icon.classList.toggle('rotate');
+					});
+				});
+			}
+
+			function filterCommands() {
+				const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+				document.querySelectorAll('.command-item').forEach((item) => {
+					const commandName = item.querySelector('.command-name').textContent.toLowerCase();
+					const commandDescription = item.querySelector('.command-description').textContent.toLowerCase();
+					if (commandName.includes(searchTerm) || commandDescription.includes(searchTerm)) {
+						item.style.display = 'block';
+						item.closest('.card').style.display = 'block';
+					} else {
+						item.style.display = 'none';
+					}
+				});
+
+				document.querySelectorAll('.card').forEach((card) => {
+					const visibleItems = card.querySelectorAll('.command-item[style="display: block;"]');
+					if (visibleItems.length === 0) {
+						card.style.display = 'none';
+					} else {
+						card.style.display = 'block';
+					}
+				});
+			}
+
+			document.addEventListener('DOMContentLoaded', fetchCommands);
+			document.getElementById('searchInput').addEventListener('input', filterCommands);
+		</script>
+	</body>
+</html>

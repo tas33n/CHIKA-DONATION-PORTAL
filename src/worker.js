@@ -22,7 +22,7 @@
  *
  *****************************************************************************/
 
-const environment = 'production'; // This Variable Decides the environment of the app. 'production' or 'development' or 'local'
+const environment = 'local'; // This Variable Decides the environment of the app. 'production' or 'development' or 'local'
 const APP_NAME = 'CHIKA DONATION PANEL';
 const CDN_SRC = 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
 const BKS_URL = 'https://tokenized.pay.bka.sh/v1.2.0-beta/tokenized';
