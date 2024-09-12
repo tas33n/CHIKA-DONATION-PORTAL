@@ -432,7 +432,7 @@ const app = `
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
-		<script src="/assets/js/app.js"></script>
+		<script src="/assets/js/app.min.js"></script>
 	</body>
 </html>
 `;

@@ -1,7 +1,7 @@
 {
-	"name": "@tas33n/chika_donation_portal",
+	"name": "@tas33n/CHIKA-DONATION-PORTAL",
 	"version": "1.0.0",
-	"private": true,
+	"private": false,
 	"scripts": {
 		"deploy": "wrangler publish",
 		"start": "wrangler dev"
