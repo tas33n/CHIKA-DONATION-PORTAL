@@ -30,7 +30,7 @@ const home = `
 <div class="card mb-5">
   <div
 	class="card-header hover-actions-trigger d-flex justify-content-center align-items-end position-relative mb-7"
-	style="min-height: 250px; background-image: url(/assets/imgs/chika-c.jpg)"
+	style="min-height: 250px; background-image: url('${CDN_BASE}/assets/imgs/chika-c.jpg')"
   >
 	<input class="d-none" id="upload-cover-image" type="file" />
 	<div class="hover-actions end-0 bottom-0 pe-1 pb-2 text-white"></div>
@@ -46,7 +46,7 @@ const home = `
 		<div class="avatar avatar-5xl">
 		  <img
 			class="rounded-circle bg-white img-thumbnail shadow-sm"
-			src="/assets/imgs/chika.jpg"
+			src="${CDN_BASE}/assets/imgs/chika.jpg"
 			alt="Chika Avatar"
 		  />
 		</div>
@@ -57,7 +57,7 @@ const home = `
 	<div class="row justify-content-center">
 	  <div class="col-lg-8 col-auto" style="z-index: 11">
 		<div class="text-center">
-		  <h2 class="me-2">Chika Fujiwara</h2>
+		  <h2 class="me-2">Chika Shirogane</h2>
 		  <span class="m-2">Your favorite Waifu bot</span>
 		</div>
 		<hr />
@@ -66,7 +66,7 @@ const home = `
 		  ✨ Konichiwa, Masters of the Digital Manor! ✨
 		</p>
 		<p class="text-center">
-		  🌸 I am Chika Fujiwara, your delightful waifu maid at your service!
+		  🌸 I am Chika Shirogane, your delightful waifu maid at your service!
 		  💖 Whether it's managing your groups, finding the perfect media, or
 		  adding a sprinkle of mischief to your day, I'm here to serve with a
 		  smile! Inspired by the whimsical and energetic Chika from
@@ -235,7 +235,6 @@ const about = `
 
 const donate = `
 <div class="container-fluid">
-	<div class="loader"></div>
 	<div class="row">
 		<div class="col-lg-8 col-md-7">
 			<!-- <h1 class="text-center  mb-4">Donation Packages and Benefits</h1> -->
@@ -448,7 +447,15 @@ const loadPage = (page) => {
 			$('#main-content').html(content);
 			break;
 		default:
-			content = '<p>Page not found.</p>';
+			content = `<div class="text-center" style="
+    width: 100%;
+    text-align: center;
+    margin: auto;
+">
+<div class="loader"></div>
+<br> <p>Page not found.</p>
+</div>
+`;
 			$('#main-content').html(content);
 	}
 
@@ -489,6 +496,23 @@ const attachEventListeners = () => {
 
 // Main Execution
 $(document).ready(() => {
+
+	const savedTheme = localStorage.getItem('theme');
+	if (savedTheme === 'light') {
+		$('body').addClass('light-mode');
+	}
+
+	$('.dark-light').click(() => {
+		$('body').toggleClass('light-mode');
+
+		// Save the current theme to localStorage
+		if ($('body').hasClass('light-mode')) {
+			localStorage.setItem('theme', 'light');
+		} else {
+			localStorage.setItem('theme', 'dark');
+		}
+	});
+
 	setupPageLoader();
 	loadInitialPage();
 
@@ -509,10 +533,6 @@ $(document).ready(() => {
 			$('body').removeClass('menu-shown');
 			$('.left-side').removeClass('shown');
 		}
-	});
-
-	$('.dark-light').click(() => {
-		$('body').toggleClass('light-mode');
 	});
 
 	$(document).on('click', '.select-package', function () {
@@ -649,8 +669,8 @@ function renderPackages() {
 				<p class="card-text">${pkg.description}</p>
 				<ul class="list-unstyled">
 					${pkg.benefits
-						.map(
-							(benefit) => `
+				.map(
+					(benefit) => `
 						<li class=" mb-2">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
 								<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
@@ -658,8 +678,8 @@ function renderPackages() {
 							${benefit}
 						</li>
 					`
-						)
-						.join('')}
+				)
+				.join('')}
 				</ul>
 			</div>
 			<div class="card-footer">
@@ -696,26 +716,22 @@ async function renderAdmins() {
                         <div>
                             ${member.bio ? `<p class="member-bio mb-3">${member.bio}</p>` : ''}
                             <div class="social-links text-center mb-3">
-                                ${
-																	member.socialLinks.facebook
-																		? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
-																		: ''
-																}
-                                ${
-																	member.socialLinks.github
-																		? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
-																		: ''
-																}
-                                ${
-																	member.socialLinks.email
-																		? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
-																		: ''
-																}
-                                ${
-																	member.socialLinks.telegram
-																		? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
-																		: ''
-																}
+                                ${member.socialLinks.facebook
+					? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
+					: ''
+				}
+                                ${member.socialLinks.github
+					? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
+					: ''
+				}
+                                ${member.socialLinks.email
+					? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
+					: ''
+				}
+                                ${member.socialLinks.telegram
+					? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
+					: ''
+				}
                             </div>
                         </div>
                     </div>
@@ -1012,7 +1028,7 @@ const renderThankYouMessage = (userData, threadData, paymentInfo) => {
         <div class="col-12">
             <div class="card mb-4 border-0 shadow-lg">
                 <div class="card-body text-center">
-                    <img src="/assets/images/chika-thank-you.png" alt="Chika Thank You" class="img-fluid mb-4" style="max-width: 200px;">
+                    <img src="${CDN_BASE}/assets/images/chika-thank-you.png" alt="Chika Thank You" class="img-fluid mb-4" style="max-width: 200px;">
                     <h2 class="card-title mb-4 text-primary">Thank You for Your Support!</h2>
                     <p class="card-text lead mb-4">Your subscription has been successfully processed. Chika is excited to join your group!</p>
                     <div class="alert alert-success" role="alert">

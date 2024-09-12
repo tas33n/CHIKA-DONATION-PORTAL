@@ -244,8 +244,20 @@ const app = `
 					<span></span>
 				</div>
 				<div class="header-profile">
-					<div class="notification">
-						<span class="notification-number">3</span>
+				<svg
+						class="dark-light"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="1.5"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+					</svg>
+
+					<div class="notification ml-3">
+						<span class="notification-number">0</span>
 						<svg
 							viewBox="0 0 24 24"
 							fill="currentColor"
@@ -259,23 +271,11 @@ const app = `
 						</svg>
 					</div>
 
-					<svg
-						class="dark-light"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-						stroke-width="1.5"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-					</svg>
-
-					<img
+					<!--img
 						class="profile-img"
 						src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
 						alt=""
-					/>
+					/-->
 				</div>
 			</div>
 
@@ -415,6 +415,13 @@ const app = `
 
 				<div class="main-container">
 					<div id="main-content" class="content-wrapper">
+					<div class="text-center" style="
+    width: 100%;
+    text-align: center;
+    margin: auto;
+">
+<div class="loader"></div>
+</div>
 						<!-- content area -->
 					</div>
 				</div>
@@ -432,7 +439,7 @@ const app = `
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
-		<script src="/assets/js/app.min.js"></script>
+		<script src="/assets/js/app.js"></script>
 	</body>
 </html>
 `;

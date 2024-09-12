@@ -3,8 +3,6 @@ const CACHE_NAME = "chika_web_app_v1";
 // URLs to be cached initially
 const URLsToCache = [
   "/",
-  "/assets/css/app.css",
-  "/assets/js/app.min.js",
   "/assets/imgs/icon-192x192.png",
   "/assets/imgs/icon-512x512.png",
   "/assets/imgs/7btrrd.mp4",
