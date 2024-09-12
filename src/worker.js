@@ -25,16 +25,15 @@
 const environment = 'production'; // This Variable Decides the environment of the app. 'production' or 'development' or 'local'
 const APP_NAME = 'CHIKA DONATION PANEL';
 const CDN_SRC = 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
-const BKS_URL = 'https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized';
-const BKS_USER = 'sandboxTokenizedUser02';
-const BKS_PASS = 'sandboxTokenizedUser02@12345';
-const BKS_KEY = '4f6o0cjiki2rfm34kfdadl1eqq';
-const BKS_SEC = '2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b';
+const BKS_URL = 'https://tokenized.pay.bka.sh/v1.2.0-beta/tokenized';
+const BKS_USER = '01927341627';
+const BKS_PASS = '7nxB}xN|y{$';
+const BKS_KEY = '6OwYagK6hJkCfvDAjCqga2obtc';
+const BKS_SEC = 'ogFHIAiPbtm3AKTHju0bzcJ83AiqempRzNPxyWT1HLmsQkbZm9M6';
 const APP_URL = 'https://chika.misfits.workers.dev'; //needed for callbacks of bks
 
 const BOT_API = 'https://touka0x11-a0fc068a4b01.herokuapp.com';
-const BOT_APIKEY = '8d8e8ca0d542ce666e816dbb0659dd067f72f213474ebfde73aea3b241e39f5a';
-// https://touka0x11-a0fc068a4b01.herokuapp.com
+const BOT_APIKEY = '8d8e8ca0d542ce666e816dbb0659dd067f72f213474ebfde73aea3b241e39f5';
 
 // 01619777283 12345 12121
 
