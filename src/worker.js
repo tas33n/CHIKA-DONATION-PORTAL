@@ -32,6 +32,7 @@ const BKS_SEC = '2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b';
 const APP_URL = 'http://127.0.0.1:8787'; //needed for callbacks of bks
 
 const BOT_API = 'http://localhost:3001';
+const BOT_APIKEY = '123456789';
 // https://touka0x11-a0fc068a4b01.herokuapp.com
 
 // 01619777283 12345 12121
@@ -105,59 +106,6 @@ async function handleRequest(request) {
 	}
 }
 
-async function handlePageRequest(path) {
-	let args = path.split('/').filter(Boolean);
-	let page = args.length > 0 ? args[1] : null;
-	switch (true) {
-		case page === 'home':
-			return new Response(home, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-		case page === 'about':
-			return new Response(about, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-		case page === 'donate':
-			return new Response(donate, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-		case page === 'supporter':
-			return new Response(supporter, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-		case page === 'admins':
-			return new Response(admins, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-		case page === 'privacy':
-			return new Response(privacy, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-
-		case page === 'test':
-			return new Response(test, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-		case page === 'contact':
-			return new Response('<h1>Contact Us</h1><p>Contact details will go here.</p>', {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-		default:
-			return new Response(not_found, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
-	}
-}
-
 async function handleApiRequest(path) {
 	let args2 = path.split('/').filter(Boolean);
 
@@ -188,7 +136,13 @@ async function handleApiRequest(path) {
 				});
 		}
 
-		const response = await fetch(apiUrl, { timeout: 60000 });
+		const response = await fetch(apiUrl, {
+			method: 'GET',
+			headers: {
+				'Authorization': `Bearer ${BOT_APIKEY}`
+			},
+			timeout: 60000
+		});
 
 		if (!response.ok) {
 			return new Response(JSON.stringify({ error: 'Failed to fetch data' }), {
@@ -597,6 +551,7 @@ async function handleExecutePayment(request) {
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json',
+							'Authorization': `Bearer ${BOT_APIKEY}`
 						},
 						body: JSON.stringify(postData),
 					});
