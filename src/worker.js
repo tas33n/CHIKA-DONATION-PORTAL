@@ -176,29 +176,81 @@ async function handleApiRequest(path) {
 const app = `
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Chika Donation Portals</title>
+	<title>CHIKA - Your Favorite Waifu bot</title>
+	<meta name="description"
+		content="Meet CHIKA BOT, your charming messenger waifu assistant. Manage groups, find media, and add fun to your chats with our AI-powered companion!">
 
-		<link rel="icon" href="/assets/imgs/icon-192x192.png" type="image/png" />
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/imgs/icon-192x192.png">
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="/assets/css/app.css" />
-	</head>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://chika.misfits.workers.dev/">
+	<meta property="og:title" content="CHIKA BOT - Your Favorite Messenger Waifu Assistant">
+	<meta property="og:description"
+		content="Discover the charm of CHIKA BOT, your AI waifu companion for Messenger. Enhance your chats with fun, media management, and group moderation!">
+	<meta property="og:image" content="${app_base}/assets/imgs/thumb.webp">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://chika.misfits.workers.dev/">
+	<meta property="twitter:title" content="CHIKA BOT - Your Favorite Messenger Waifu Assistant">
+	<meta property="twitter:description"
+		content="Meet CHIKA BOT, your AI waifu companion for Messenger. Add fun, manage media, and moderate groups with our charming assistant!">
+	<meta property="twitter:image" content="${app_base}/assets/imgs/thumb.webp">
+
+	<!-- Additional SEO tags -->
+	<meta name="keywords"
+		content="CHIKA BOT, messenger bot, waifu assistant, AI companion, group management, media finder, chat fun">
+	<meta name="author" content="Tas33n">
+	<meta name="robots" content="index, follow">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://chika.misfits.workers.dev/">
+
+	<!-- Additional meta tags -->
+	<meta name="theme-color" content="#f472b6">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="CHIKA BOT">
+
+	<!-- css cdns -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="${app_base}/assets/css/app.min.css" />
+
+	<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "WebApplication",
+			  "name": "CHIKA BOT",
+			  "description": "An AI-powered waifu assistant for Messenger, offering group management, media finding, and fun interactions.",
+			  "url": "https://chika.misfits.workers.dev/",
+			  "applicationCategory": "ChatBot",
+			  "operatingSystem": "Web",
+			  "offers": {
+				"@type": "Offer",
+				"price": "0",
+				"priceCurrency": "BDT"
+			  },
+			  "author": {
+				"@type": "Person",
+				"name": "Tas33n"
+			  }
+			}
+			</script>
+</head>
 
 	<body>
 		<div class="video-bg">
 			<video width="320" height="240" autoplay loop muted>
-				<source src="./assets/imgs/7btrrd.mp4" type="video/mp4" />
+				<source src="${app_base}/assets/imgs/7btrrd.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 		</div>
@@ -270,12 +322,6 @@ const app = `
 							<path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
 						</svg>
 					</div>
-
-					<!--img
-						class="profile-img"
-						src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-						alt=""
-					/-->
 				</div>
 			</div>
 
@@ -439,7 +485,7 @@ const app = `
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
-		<script src="/assets/js/app.js"></script>
+		<script src="${app_base}/assets/js/app.min.js"></script>
 	</body>
 </html>
 `;
