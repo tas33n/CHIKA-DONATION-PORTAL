@@ -30,7 +30,7 @@ const home = `
 <div class="card mb-5">
   <div
 	class="card-header hover-actions-trigger d-flex justify-content-center align-items-end position-relative mb-7"
-	style="min-height: 250px; background-image: url('${CDN_BASE}/assets/imgs/chika-c.jpg')"
+	style="min-height: 250px; background-image: url('${CDN_BASE}/assets/imgs/chika-c.webp')"
   >
 	<input class="d-none" id="upload-cover-image" type="file" />
 	<div class="hover-actions end-0 bottom-0 pe-1 pb-2 text-white"></div>
@@ -46,7 +46,7 @@ const home = `
 		<div class="avatar avatar-5xl">
 		  <img
 			class="rounded-circle bg-white img-thumbnail shadow-sm"
-			src="${CDN_BASE}/assets/imgs/chika.jpg"
+			src="${CDN_BASE}/assets/imgs/chika.webp"
 			alt="Chika Avatar"
 		  />
 		</div>
