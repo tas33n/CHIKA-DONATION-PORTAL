@@ -1,3 +1,8 @@
+// This script was previously used to fully deploy the application from the backend. 
+// However, it significantly impacted performance and increased server load. 
+// To optimize speed and reduce server overhead, we transitioned to deploying the HTML page directly within the App JS, 
+// allowing it to render swiftly on the frontend and enhance overall performance.
+
 export const app = `
 <!DOCTYPE html>
 <html lang="en">

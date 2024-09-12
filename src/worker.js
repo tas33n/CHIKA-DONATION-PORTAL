@@ -80,7 +80,7 @@ async function handleRequest(request) {
 			try {
 				const response = await fetch(fetchUrl);
 				if (!response.ok) {
-					return new Response(not_found, { status: 404, headers: { 'Content-Type': 'text/html' } });
+					return not_found
 				}
 				const contentType = response.headers.get('Content-Type');
 				const body = await response.arrayBuffer();
@@ -99,10 +99,7 @@ async function handleRequest(request) {
 				return new Response(JSON.stringify({ error: 'Not Found' }), { status: 404, headers: { 'Content-Type': 'application/json' } });
 			}
 		default:
-			return new Response(not_found, {
-				status: 200,
-				headers: { 'Content-Type': 'text/html' },
-			});
+			return await not_found();
 	}
 }
 
@@ -489,6 +486,21 @@ const app = `
 	</body>
 </html>
 `;
+
+async function not_found() {
+	try {
+		const notFoundResponse = await fetch(`${CDN_SRC}/src/404.html`);
+		const notFoundBody = await notFoundResponse.text();
+		return new Response(notFoundBody, {
+			status: 404,
+			headers: { 'Content-Type': 'text/html' },
+		});
+	} catch (err) {
+		return new Response('Error loading the not found page: ' + err.message, {
+			status: 500,
+		});
+	}
+}
 
 addEventListener('fetch', (event) => {
 	event.respondWith(
