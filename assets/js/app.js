@@ -239,7 +239,7 @@ const donate = `
 		<div class="col-lg-8 col-md-7">
 			<!-- <h1 class="text-center  mb-4">Donation Packages and Benefits</h1> -->
 			<!-- <p class="text-center mb-4">Please choose the package you prefer.</p> -->
-			<div id="packageContainer" class="row row-cols-1 row-cols-sm-2 g-3 pe-3">
+			<div id="packageContainer" class="row g-3 pe-3">
 				<!-- Packages will be dynamically inserted here -->
 			</div>
 		</div>
@@ -496,7 +496,6 @@ const attachEventListeners = () => {
 
 // Main Execution
 $(document).ready(() => {
-
 	const savedTheme = localStorage.getItem('theme');
 	if (savedTheme === 'light') {
 		$('body').addClass('light-mode');
@@ -669,8 +668,8 @@ function renderPackages() {
 				<p class="card-text">${pkg.description}</p>
 				<ul class="list-unstyled">
 					${pkg.benefits
-				.map(
-					(benefit) => `
+						.map(
+							(benefit) => `
 						<li class=" mb-2">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
 								<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
@@ -678,8 +677,8 @@ function renderPackages() {
 							${benefit}
 						</li>
 					`
-				)
-				.join('')}
+						)
+						.join('')}
 				</ul>
 			</div>
 			<div class="card-footer">
@@ -716,22 +715,26 @@ async function renderAdmins() {
                         <div>
                             ${member.bio ? `<p class="member-bio mb-3">${member.bio}</p>` : ''}
                             <div class="social-links text-center mb-3">
-                                ${member.socialLinks.facebook
-					? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
-					: ''
-				}
-                                ${member.socialLinks.github
-					? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
-					: ''
-				}
-                                ${member.socialLinks.email
-					? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
-					: ''
-				}
-                                ${member.socialLinks.telegram
-					? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
-					: ''
-				}
+                                ${
+																	member.socialLinks.facebook
+																		? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
+																		: ''
+																}
+                                ${
+																	member.socialLinks.github
+																		? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
+																		: ''
+																}
+                                ${
+																	member.socialLinks.email
+																		? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
+																		: ''
+																}
+                                ${
+																	member.socialLinks.telegram
+																		? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
+																		: ''
+																}
                             </div>
                         </div>
                     </div>
@@ -1012,7 +1015,7 @@ const handlePaymentResponse = (paymentStatus) => {
 		Swal.fire({
 			icon: 'error',
 			title: 'Payment Failed',
-			text: 'Something went wrong during the payment process.',
+			text: paymentStatus?.message,
 		});
 	}
 };
@@ -1028,7 +1031,7 @@ const renderThankYouMessage = (userData, threadData, paymentInfo) => {
         <div class="col-12">
             <div class="card mb-4 border-0 shadow-lg">
                 <div class="card-body text-center">
-                    <img src="${CDN_BASE}/assets/images/chika-thank-you.png" alt="Chika Thank You" class="img-fluid mb-4" style="max-width: 200px;">
+                    <img src="https://64.media.tumblr.com/f112992d6f5fdfc598619d78b701c105/e0e5408e2bd0e970-12/s540x810/73addda07b419e86e22ef92cfc155a12d16a5ccd.gifv" alt="Chika Thank You" class="img-fluid mb-4" style="max-width: 200px;">
                     <h2 class="card-title mb-4 text-primary">Thank You for Your Support!</h2>
                     <p class="card-text lead mb-4">Your subscription has been successfully processed. Chika is excited to join your group!</p>
                     <div class="alert alert-success" role="alert">
@@ -1076,7 +1079,7 @@ const renderThankYouMessage = (userData, threadData, paymentInfo) => {
                             <h5 class="mb-0">Payment Information</h5>
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title">Transaction ID: ${paymentInfo.transactionId}</h6>
+                            <h6 class="card-title">Transaction ID: ${paymentInfo.trxID}</h6>
                             <p class="card-text">Amount: ৳${paymentInfo.amount}</p>
                             <p class="card-text">Package: ${paymentInfo.packageName}</p>
                             <p class="card-text">Date: ${paymentInfo.date.toLocaleString()}</p>

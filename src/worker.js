@@ -29,10 +29,10 @@ const BKS_USER = 'sandboxTokenizedUser02';
 const BKS_PASS = 'sandboxTokenizedUser02@12345';
 const BKS_KEY = '4f6o0cjiki2rfm34kfdadl1eqq';
 const BKS_SEC = '2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b';
-const APP_URL = 'http://127.0.0.1:8787'; //needed for callbacks of bks
+const APP_URL = 'https://chika.misfits.workers.dev'; //needed for callbacks of bks
 
 const BOT_API = 'http://localhost:3001';
-const BOT_APIKEY = '123456789';
+const BOT_APIKEY = '';
 // https://touka0x11-a0fc068a4b01.herokuapp.com
 
 // 01619777283 12345 12121
@@ -80,7 +80,7 @@ async function handleRequest(request) {
 			try {
 				const response = await fetch(fetchUrl);
 				if (!response.ok) {
-					return not_found
+					return not_found;
 				}
 				const contentType = response.headers.get('Content-Type');
 				const body = await response.arrayBuffer();
@@ -136,9 +136,9 @@ async function handleApiRequest(path) {
 		const response = await fetch(apiUrl, {
 			method: 'GET',
 			headers: {
-				'Authorization': `Bearer ${BOT_APIKEY}`
+				Authorization: `Bearer ${BOT_APIKEY}`,
 			},
-			timeout: 60000
+			timeout: 60000,
 		});
 
 		if (!response.ok) {
@@ -220,7 +220,7 @@ const app = `
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="${app_base}/assets/css/app.min.css" />
+	<link rel="stylesheet" href="${app_base}/assets/css/app.css" />
 
 	<script type="application/ld+json">
 			{
@@ -482,7 +482,7 @@ const app = `
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
-		<script src="${app_base}/assets/js/app.min.js"></script>
+		<script src="${app_base}/assets/js/app.js"></script>
 	</body>
 </html>
 `;
@@ -596,19 +596,11 @@ async function handleExecutePayment(request) {
 			});
 
 			const data = await response.json();
-			console.log(data);
-			if (data.statusCode === '0000') {
-				let chekPayment = await verifyPayment(paymentID);
-				console.log(chekPayment);
-				if (!chekPayment.statusCode === '0000') {
-					return (responsePayload = { status: 'error', error: 'Failed to verify payment' });
-				}
-
-				const { payerReference, trxID, transactionStatus, amount, merchantInvoiceNumber } = chekPayment;
-
+			console.log('1', data);
+			if (data.statusCode === '0000' && data.transactionStatus == 'Completed') {
 				const postData = {
-					trxid: trxID,
-					amount: amount,
+					trxid: data.trxID,
+					amount: data.amount,
 				};
 
 				try {
@@ -616,20 +608,23 @@ async function handleExecutePayment(request) {
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json',
-							'Authorization': `Bearer ${BOT_APIKEY}`
+							Authorization: `Bearer ${BOT_APIKEY}`,
 						},
 						body: JSON.stringify(postData),
 					});
 
 					const apiResult = await apiResponse.json();
 					console.log('API Result:', apiResult);
-
-					responsePayload = {
-						status: 'success',
-						trxID: trxID,
-						paymentID: data.paymentID,
-						message: apiResult?.message,
-					};
+					if (apiResponse.status == 'success') {
+						responsePayload = {
+							status: 'success',
+							trxID: data.trxID,
+							paymentID: data.paymentID,
+							message: apiResult?.message,
+						};
+					} else {
+						responsePayload = { status: 'error', error: apiResponse.message };
+					}
 				} catch (error) {
 					console.error('Error making API request:', error);
 					responsePayload = { status: 'error', error: 'Failed to make API request' };
@@ -654,24 +649,4 @@ async function handleExecutePayment(request) {
 			headers: { 'Content-Type': 'text/html' },
 		}
 	);
-}
-
-async function verifyPayment(paymentID) {
-	const authToken = await getAuthToken();
-	if (!authToken) {
-		responsePayload = { status: 'error', error: 'Failed to get auth token' };
-	} else {
-		const response = await fetch(`${BKS_URL}/checkout/payment/status`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				Authorization: authToken,
-				'X-APP-Key': BKS_KEY,
-			},
-			body: JSON.stringify({ paymentID: paymentID }),
-		});
-
-		const data = await response.json();
-		return data;
-	}
 }
