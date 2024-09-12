@@ -8,7 +8,7 @@
   <img src="./assets/previews/preview-3.png" alt="CHIKA DONATION PORTAL Preview" width="200"/>
 </p>
 
-CHIKA DONATION PORTAL is a single-page web application designed to facilitate donations for the CHIKA Discord bot project. This portal provides an easy-to-use interface for supporters to contribute to the bot's development and maintenance.
+CHIKA DONATION PORTAL is a single-page web application designed to facilitate donations for the CHIKA messenger bot project. This portal provides an easy-to-use interface for supporters to contribute to the bot's development and maintenance.
 
 ## Features
 
