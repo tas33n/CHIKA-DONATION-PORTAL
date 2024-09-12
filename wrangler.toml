@@ -1,16 +1,3 @@
 name = "chika"
 main = "src/worker.js"
 compatibility_date = "2023-07-06"
-
-[vars]
-NODE_ENV = ""
-APP_NAME = ""
-CDN_SRC = ""
-BKS_URL = ""
-BKS_USER = ""
-BKS_PASS = ""
-BKS_KEY = ""
-BKS_SEC = ""
-APP_URL = ""
-BOT_API = ""
-BOT_APIKEY = ""

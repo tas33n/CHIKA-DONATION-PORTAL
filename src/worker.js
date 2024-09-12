@@ -22,21 +22,21 @@
  *
  *****************************************************************************/
 
-// NB: set the env veriables in wrangler.tml file or in your cloudflare dashboard.
+const environment = 'production'; // This Variable Decides the environment of the app. 'production' or 'development' or 'local'
+const APP_NAME = 'CHIKA DONATION PANEL';
+const CDN_SRC = 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
+const BKS_URL = 'https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized';
+const BKS_USER = 'sandboxTokenizedUser02';
+const BKS_PASS = 'sandboxTokenizedUser02@12345';
+const BKS_KEY = '4f6o0cjiki2rfm34kfdadl1eqq';
+const BKS_SEC = '2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b';
+const APP_URL = 'https://chika.misfits.workers.dev'; //needed for callbacks of bks
 
-const environment = process.env.NODE_ENV || 'local'; // 'production', 'development', or 'local'
-const APP_NAME = process.env.APP_NAME || 'CHIKA DONATION PANEL';
-const CDN_SRC = process.env.CDN_SRC || 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
-const BKS_URL = process.env.BKS_URL || 'https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized'; // bkash test api
-const BKS_USER = process.env.BKS_USER || 'sandboxTokenizedUser02';
-const BKS_PASS = process.env.BKS_PASS || 'sandboxTokenizedUser02@12345';
-const BKS_KEY = process.env.BKS_KEY || '4f6o0cjiki2rfm34kfdadl1eqq';
-const BKS_SEC = process.env.BKS_SEC || '2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b';
-const APP_URL = process.env.APP_URL || 'https://chika.misfits.workers.dev'; // Needed for callbacks of BKS
-const BOT_API = process.env.BOT_API || 'http://localhost:3001';
-const BOT_APIKEY = process.env.BOT_APIKEY || '';
+const BOT_API = 'https://touka0x11-a0fc068a4b01.herokuapp.com';
+const BOT_APIKEY = '8d8e8ca0d542ce666e816dbb0659dd067f72f213474ebfde73aea3b241e39f5a';
+// https://touka0x11-a0fc068a4b01.herokuapp.com
 
-//bkash test account: 01619777283 12345 12121
+// 01619777283 12345 12121
 
 /*****************************************************************************
  *
