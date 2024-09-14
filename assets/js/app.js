@@ -516,6 +516,10 @@ $(document).ready(() => {
 		$('body').addClass('light-mode');
 	}
 
+	// chek bot status
+	checkBotStatus();
+	setInterval(checkBotStatus, 60000);
+
 	$('.dark-light').click(() => {
 		$('body').toggleClass('light-mode');
 
@@ -1016,6 +1020,11 @@ const handleDonationSubmit = async (e) => {
 			saveToLocalStorage('userData', userData);
 			saveToLocalStorage('threadData', threadData);
 			renderUserThreadInfo(userData, threadData);
+
+			// hide the form if its mobile screen
+			if ($(window).width() < 768) {
+				$('#subscriptionForm').hide();
+			}
 		} else {
 			throw new Error('User or Thread not found');
 		}
@@ -1297,5 +1306,32 @@ const showToast = (message) => {
 	setTimeout(() => {
 		toast.css('opacity', 0);
 		setTimeout(() => toast.remove(), 500);
-	}, 3000);
+	}, 5000);
 };
+
+function checkBotStatus() {
+	$.ajax({
+		url: '/api/me/1',
+		type: 'GET',
+		timeout: 30000,
+		success: function (response) {
+			if (response.status === 'success') {
+				const botID = Object.keys(response.data)[0];
+				const botData = response.data[botID];
+
+				// Log the bot status, name, and uid in the console
+				console.log(`Bot Status: ${response.status}`);
+				console.log(`Bot Name: ${botData.name}`);
+				console.log(`Bot UID: ${botID}`);
+
+				// Update the image with the avatar
+				$('#botdp').attr('src', response.data.avatar);
+			} else {
+				showToast('The bot API is dead.');
+			}
+		},
+		error: function () {
+			showToast('The bot API is dead.');
+		},
+	});
+}

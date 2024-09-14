@@ -360,6 +360,7 @@ body.light-mode .video-bg:before {
   object-fit: cover;
   border: 2px solid var(--theme-color);
   margin-left: 22px;
+  background: white;
 }
 
 .wide .header-menu,
