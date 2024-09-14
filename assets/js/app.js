@@ -244,7 +244,7 @@ const donate = `
 			</div>
 		</div>
 		<div class="col-lg-4 col-md-5">
-			<div id="subscriptionForm" class="p-4 mt-3">
+			<div id="subscriptionForm" class="app-card p-4 mt-3">
 				<h4 class="mb-3">Subscribe to <span id="selectedPackageName"></span></h4>
 				<p class="mb-4">Complete your subscription for ৳<span id="selectedPackagePrice"></span></p>
 				<form id="donationForm">
@@ -936,12 +936,30 @@ function updateSelectedPackage() {
 		console.error('Selected package elements not found');
 		return;
 	}
+
+	// Update package details
 	nameElement.textContent = selectedPackage.name;
 	priceElement.textContent = selectedPackage.price;
+
 	document.querySelectorAll('.card').forEach((card) => card.classList.remove('selected'));
+
 	const selectedCard = document.querySelector(`.card[data-tier="${selectedPackage.tier}"]`);
 	if (selectedCard) {
 		selectedCard.classList.add('selected');
+	}
+
+	// Scroll to the subscription form on mobile devices (screen width < 768px)
+	const isMobile = window.innerWidth < 768;
+	if (isMobile) {
+		const formElement = $('#subscriptionForm');
+		if (formElement.length) {
+			$('#main-content').animate(
+				{
+					scrollTop: formElement.offset().top,
+				},
+				1000
+			);
+		}
 	}
 }
 
