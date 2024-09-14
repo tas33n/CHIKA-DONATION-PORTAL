@@ -106,5 +106,5 @@ worker/script.js
 worker/wrangler.toml
 **/node_modules/
 
-src/worker.js
+# src/worker.js
 src/worker.dev.js
