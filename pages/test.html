@@ -1,201 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Chika Bot Commands</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-		<style>
-			body {
-				background: linear-gradient(135deg, #f472b6, #8b5cf6);
-				min-height: 100vh;
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-				color: #fff;
-			}
-			.container {
-				padding-top: 2rem;
-				padding-bottom: 2rem;
-			}
-			.card {
-				background-color: rgba(255, 255, 255, 0.1);
-				backdrop-filter: blur(10px);
-				border: none;
-				border-radius: 15px;
-				margin-bottom: 1rem;
-				transition: all 0.3s ease;
-			}
-			.card:hover {
-				transform: translateY(-5px);
-				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-			}
-			.card-header {
-				background-color: rgba(255, 255, 255, 0.2);
-				border-bottom: none;
-				cursor: pointer;
-			}
-			.card-body {
-				display: none;
-			}
-			.command-item {
-				background-color: rgba(255, 255, 255, 0.05);
-				border-radius: 10px;
-				padding: 1rem;
-				margin-bottom: 1rem;
-			}
-			.command-name {
-				font-weight: bold;
-				color: #fbbf24;
-			}
-			.command-description {
-				font-style: italic;
-				margin-bottom: 0.5rem;
-			}
-			.command-aliases {
-				font-size: 0.9rem;
-				color: #e5e7eb;
-			}
-			.command-guide {
-				background-color: rgba(0, 0, 0, 0.2);
-				border-radius: 5px;
-				padding: 0.5rem;
-				margin-top: 0.5rem;
-				font-family: monospace;
-				white-space: pre-wrap;
-			}
-			.fa-chevron-down {
-				transition: transform 0.3s ease;
-			}
-			.rotate {
-				transform: rotate(180deg);
-			}
-			#searchInput {
-				background-color: rgba(255, 255, 255, 0.1);
-				border: none;
-				color: #fff;
-			}
-			#searchInput::placeholder {
-				color: rgba(255, 255, 255, 0.5);
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<h1 class="text-center mb-4">Chika Bot Commands</h1>
-			<div class="row mb-4">
-				<div class="col-md-6 mx-auto">
-					<input type="text" id="searchInput" class="form-control" placeholder="Search commands..." />
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Support Bot Group</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<style>
+		body {
+			background-color: #f0f2f5;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		.group-card {
+			background-color: #ffffff;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+
+		.group-image {
+			width: 100%;
+			max-width: 300px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 15px;
+		}
+
+		.stat-card {
+			background-color: #f8f9fa;
+			border-radius: 8px;
+			padding: 15px;
+			margin-bottom: 15px;
+			transition: all 0.3s ease;
+		}
+
+		.stat-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+		}
+
+		.user-list {
+			max-height: 500px;
+			overflow-y: auto;
+		}
+
+		.user-item {
+			background-color: #ffffff;
+			border-radius: 8px;
+			padding: 10px;
+			margin-bottom: 10px;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+
+		.user-item:hover {
+			transform: translateX(5px);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.user-avatar {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		.male-user {
+			border-left: 4px solid #4267B2;
+		}
+
+		.female-user {
+			border-left: 4px solid #FF69B4;
+		}
+
+		.admin-badge {
+			background-color: #FFD700;
+			color: #000;
+			font-size: 0.8rem;
+			padding: 2px 5px;
+			border-radius: 3px;
+			margin-left: 5px;
+		}
+
+		.member-section {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container py-5">
+		<div id="groupInfo" class="group-card">
+			<!-- Group info will be inserted here -->
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="group-card">
+					<h3>Group Statistics</h3>
+					<div id="groupStats">
+						<!-- Group stats will be inserted here -->
+					</div>
 				</div>
 			</div>
-			<div id="commands-container"></div>
+			<div class="col-md-6">
+				<div class="group-card">
+					<h3>Members</h3>
+					<div id="userList" class="user-list">
+						<!-- User list will be inserted here -->
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
 
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-		<script>
-			let commandsData = {};
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		// Simulating API call
+		const fetchGroupData = async (groupId) => {
+			const response = await fetch('/44.json');
+			const data = await response.json();
+			return data.data;
+		};
 
-			async function fetchCommands() {
-				try {
-					const response = await fetch('http://127.0.0.1:5500/data/commands.json');
-					commandsData = await response.json();
-					renderCommands();
-				} catch (error) {
-					console.error('Error fetching commands:', error);
-				}
-			}
+		const renderGroupInfo = (groupData) => {
+			const groupInfoHtml = `
+                <div class="text-center">
+                    <img src="${groupData.imageSrc}" alt="${groupData.threadName}" class="group-image">
+                    <h2>${groupData.threadName}</h2>
+                    <p>Thread ID: ${groupData.threadID}</p>
+                    <button class="btn ${groupData.inviteLink.enable ? 'btn-primary' : 'btn-secondary'}" 
+                            ${!groupData.inviteLink.enable ? 'disabled' : ''}>
+                        ${groupData.inviteLink.enable ? 'Join Group' : 'Invite Link Disabled'}
+                    </button>
+                </div>
+            `;
+			$('#groupInfo').html(groupInfoHtml);
+		};
 
-			function groupCommandsByCategory(commands) {
-				const categories = {};
-				for (const [cmdName, cmdData] of Object.entries(commands)) {
-					const category = cmdData.category || 'Uncategorized';
-					if (!categories[category]) {
-						categories[category] = [];
-					}
-					categories[category].push({ name: cmdName, ...cmdData });
-				}
-				return categories;
-			}
+		const renderGroupStats = (groupData) => {
+			const maleCount = groupData.userInfo.filter(user => user.gender === 'MALE').length;
+			const femaleCount = groupData.userInfo.filter(user => user.gender === 'FEMALE').length;
+			const pendingCount = groupData.approvalQueue ? groupData.approvalQueue.length : 0;
 
-			function replacePlaceholders(guide, commandName) {
-				if (typeof guide !== 'string') return 'No guide available.';
-				return guide
-					.replace(/\{pn\}/g, `/${commandName}`)
-					.replace(/\{p\}n/g, `/${commandName}`)
-					.replace(/\{p\}/g, '/')
-					.replace(/\{n\}/g, commandName);
-			}
+			const statsHtml = `
+                <div class="stat-card">
+                    <h5>Total Members</h5>
+                    <p class="h3">${groupData.participantIDs.length}</p>
+                    <p class="gender-count">
+                        (Male: ${maleCount}, Female: ${femaleCount})
+                    </p>
+                </div>
+                <div class="stat-card">
+                    <h5>Total Messages</h5>
+                    <p class="h3">${groupData.messageCount}</p>
+                </div>
+                <div class="stat-card">
+                    <h5>Admins</h5>
+                    <p class="h3">${groupData.adminIDs.length}</p>
+                </div>
+                <div class="stat-card">
+                    <h5>Pending Members</h5>
+                    <p class="h3">${pendingCount}</p>
+                </div>
+            `;
+			$('#groupStats').html(statsHtml);
+		};
 
-			function renderCommands() {
-				const container = document.getElementById('commands-container');
-				const groupedCommands = groupCommandsByCategory(commandsData);
+		const renderUserList = (groupData) => {
+			const adminIds = new Set(groupData.adminIDs.map(admin => admin.id));
+			const users = groupData.userInfo.sort((a, b) => {
+				if (adminIds.has(a.id) && !adminIds.has(b.id)) return -1;
+				if (!adminIds.has(a.id) && adminIds.has(b.id)) return 1;
+				return 0;
+			});
 
-				for (const [category, commands] of Object.entries(groupedCommands)) {
-					const categoryCard = document.createElement('div');
-					categoryCard.className = 'card';
-					categoryCard.innerHTML = `
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="mb-0">${category}</h5>
-                        <i class="fas fa-chevron-down"></i>
+			const userListHtml = users.map(user => `
+                <div class="user-item ${user.gender === 'MALE' ? 'male-user' : 'female-user'}" 
+                     onclick="window.open('${user.url}', '_blank')">
+                    <div class="d-flex align-items-center">
+                        <img src="${user.thumbSrc}" alt="${user.name}" class="user-avatar me-3">
+                        <div>
+                            <h5 class="mb-0">
+                                ${user.name}
+                                ${adminIds.has(user.id) ? '<span class="admin-badge">ADMIN</span>' : ''}
+                            </h5>
+                            <small>UID: ${user.id}</small>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        ${commands
-													.map(
-														(cmd) => `
-                            <div class="command-item">
-                                <div class="command-name">/${cmd.name}</div>
-                                <div class="command-description">${
-																	cmd.shortDescription?.en || cmd.description?.en || 'No description available.'
-																}</div>
-                                <div class="command-aliases">Aliases: ${
-																	cmd.aliases ? cmd.aliases.map((alias) => `/${alias}`).join(', ') : 'None'
-																}</div>
-                                <div class="command-guide">${replacePlaceholders(cmd.guide?.en, cmd.name)}</div>
-                            </div>
-                        `
-													)
-													.join('')}
-                    </div>
-                `;
-					container.appendChild(categoryCard);
-				}
+                </div>
+            `).join('');
 
-				// Add click event listeners to category headers
-				document.querySelectorAll('.card-header').forEach((header) => {
-					header.addEventListener('click', function () {
-						const body = this.nextElementSibling;
-						const icon = this.querySelector('.fa-chevron-down');
-						body.style.display = body.style.display === 'block' ? 'none' : 'block';
-						icon.classList.toggle('rotate');
-					});
-				});
+			$('#userList').html(userListHtml);
+		};
+
+		// Main function to load and render data
+		const loadGroupData = async () => {
+			try {
+				const groupData = await fetchGroupData('5473736752744010');
+				renderGroupInfo(groupData);
+				renderGroupStats(groupData);
+				renderUserList(groupData);
+			} catch (error) {
+				console.error('Error loading group data:', error);
+				$('#groupInfo').html('<p class="text-danger">Error loading group data. Please try again later.</p>');
 			}
+		};
 
-			function filterCommands() {
-				const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-				document.querySelectorAll('.command-item').forEach((item) => {
-					const commandName = item.querySelector('.command-name').textContent.toLowerCase();
-					const commandDescription = item.querySelector('.command-description').textContent.toLowerCase();
-					if (commandName.includes(searchTerm) || commandDescription.includes(searchTerm)) {
-						item.style.display = 'block';
-						item.closest('.card').style.display = 'block';
-					} else {
-						item.style.display = 'none';
-					}
-				});
+		// Load data when the page is ready
+		$(document).ready(loadGroupData);
+	</script>
+</body>
 
-				document.querySelectorAll('.card').forEach((card) => {
-					const visibleItems = card.querySelectorAll('.command-item[style="display: block;"]');
-					if (visibleItems.length === 0) {
-						card.style.display = 'none';
-					} else {
-						card.style.display = 'block';
-					}
-				});
-			}
-
-			document.addEventListener('DOMContentLoaded', fetchCommands);
-			document.getElementById('searchInput').addEventListener('input', filterCommands);
-		</script>
-	</body>
 </html>

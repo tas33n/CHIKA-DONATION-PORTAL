@@ -1295,3 +1295,79 @@ body.light-mode .video-bg:before {
     margin-bottom: 10%;
   }
 }
+
+/* invite page */
+
+.group-card {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.group-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.stat-card {
+  background-color: var(--theme-bg-color);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.user-item {
+  background-color: var(--theme-bg-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.user-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.male-user {
+  border-left: 4px solid #4267B2;
+}
+
+.female-user {
+  border-left: 4px solid #FF69B4;
+}
+
+.admin-badge {
+  background-color: #FFD700;
+  color: #000;
+  font-size: 0.8rem;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.member-section {
+  margin-top: 20px;
+}
