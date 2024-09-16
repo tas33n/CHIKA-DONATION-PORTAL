@@ -610,7 +610,7 @@ async function handleExecutePayment(request) {
 				};
 
 				try {
-					const apiResponse = await fetch(`${BOT_API}/web/api/active/${tid}/${uid}`, {
+					const apiResponse = await fetch(`${BOT_API}/web/api/active/${uid}/${tid}`, {
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json',
