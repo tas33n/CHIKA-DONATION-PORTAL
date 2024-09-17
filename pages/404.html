@@ -2,33 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | CHIKA BOT</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ERROR - CHIKA WAIFU BOT</title>
+    <meta name="description"
+        content="Meet CHIKA BOT, your charming messenger waifu assistant. Manage groups, find media, and add fun to your chats with our AI-powered companion!" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{app_base}}/assets/imgs/icon-192x192.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chika.misfits.workers.dev/" />
+    <meta property="og:title" content="CHIKA BOT - Your Favorite Messenger Waifu Assistant" />
+    <meta property="og:description"
+        content="Discover the charm of CHIKA BOT, your AI waifu companion for Messenger. Enhance your chats with fun, media management, and group moderation!" />
+    <meta property="og:image" content="{{app_base}}/assets/imgs/thumb.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://chika.misfits.workers.dev/" />
+    <meta property="twitter:title" content="CHIKA BOT - Your Favorite Messenger Waifu Assistant" />
+    <meta property="twitter:description"
+        content="Meet CHIKA BOT, your AI waifu companion for Messenger. Add fun, manage media, and moderate groups with our charming assistant!" />
+    <meta property="twitter:image" content="{{app_base}}/assets/imgs/thumb.webp" />
+
+    <!-- Additional SEO tags -->
+    <meta name="keywords"
+        content="CHIKA BOT, messenger bot, waifu assistant, AI companion, group management, media finder, chat fun" />
+    <meta name="author" content="Tas33n" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://chika.misfits.workers.dev/" />
+
+    <!-- Additional meta tags -->
+    <meta name="theme-color" content="#f472b6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CHIKA BOT" />
+
+    <script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebApplication",
+				"name": "CHIKA BOT",
+				"description": "An AI-powered waifu assistant for Messenger, offering group management, media finding, and fun interactions.",
+				"url": "https://chika.misfits.workers.dev/",
+				"applicationCategory": "ChatBot",
+				"operatingSystem": "Web",
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "BDT"
+				},
+				"author": {
+					"@type": "Person",
+					"name": "Tas33n"
+				}
+			}
+		</script>
+
     <style>
         @keyframes glitch {
             0% {
-                transform: translate(0)
+                transform: translate(0);
             }
 
             20% {
-                transform: translate(-5px, 5px)
+                transform: translate(-5px, 5px);
             }
 
             40% {
-                transform: translate(-5px, -5px)
+                transform: translate(-5px, -5px);
             }
 
             60% {
-                transform: translate(5px, 5px)
+                transform: translate(5px, 5px);
             }
 
             80% {
-                transform: translate(5px, -5px)
+                transform: translate(5px, -5px);
             }
 
             100% {
-                transform: translate(0)
+                transform: translate(0);
             }
         }
 
@@ -46,17 +105,17 @@
 
         @keyframes typing {
             from {
-                width: 0
+                width: 0;
             }
 
             to {
-                width: 100%
+                width: 100%;
             }
         }
 
         @keyframes blink {
             50% {
-                border-color: transparent
+                border-color: transparent;
             }
         }
 
@@ -130,9 +189,7 @@
             white-space: nowrap;
             overflow: hidden;
             border-right: 0.15em solid #00ff00;
-            animation:
-                typing 3.5s steps(40, end),
-                blink 0.75s step-end infinite;
+            animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
         }
 
         .btn {
@@ -172,10 +229,7 @@
             top: -100%;
             width: 1px;
             height: 100%;
-            background-image: linear-gradient(0deg,
-                    rgba(0, 255, 0, 0) 0%,
-                    #00ff00 75%,
-                    rgba(0, 255, 0, 0) 100%);
+            background-image: linear-gradient(0deg, rgba(0, 255, 0, 0) 0%, #00ff00 75%, rgba(0, 255, 0, 0) 100%);
             animation: fall 15s infinite linear;
         }
 
@@ -195,8 +249,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image:
-                linear-gradient(to right, #00ff0022 1px, transparent 1px),
+            background-image: linear-gradient(to right, #00ff0022 1px, transparent 1px),
                 linear-gradient(to bottom, #00ff0022 1px, transparent 1px);
             background-size: 20px 20px;
             z-index: -1;
@@ -247,19 +300,19 @@
             const glitchText = document.querySelector('.glitch-effect');
 
             const messages = [
-                "Initializing system scan...",
-                "Error 404: Page not found in the chika-verse.",
+                'Initializing system scan...',
+                'Error 404: Page not found in the chika-verse.',
                 "Engaging Chika's ultimate judgment mode...💢",
-                "Recalibrating neural networks...",
-                "Baka alert! Critical error caused by user input!",
-                "Baka overload! Too much foolishness detected!",
-                "Error: Too many wrong choices. Chika is displeased!",
+                'Recalibrating neural networks...',
+                'Baka alert! Critical error caused by user input!',
+                'Baka overload! Too much foolishness detected!',
+                'Error: Too many wrong choices. Chika is displeased!',
                 "Access denied! You triggered Chika's angry mode!",
-                "Reality malfunction! Did you press the wrong button again?!",
+                'Reality malfunction! Did you press the wrong button again?!',
                 "Chika's patience level critically low. Adjust your actions NOW!",
-                "Warning: Unauthorized baka actions detected!",
+                'Warning: Unauthorized baka actions detected!',
                 "System purge initiated! Chika can't handle this nonsense!",
-                "Glitch in the system! Who messed up this time?!"
+                'Glitch in the system! Who messed up this time?!',
             ];
 
             let messageIndex = 0;

@@ -1,9 +1,9 @@
 <div class="container py-5">
   <div class="team-header text-center">
     <h1 class="display-4 text-purple mb-4">Our Amazing Team</h1>
-    <p class="lead text-muted">
-      Meet the dedicated individuals behind our waifu bot. Their passion and hard work bring joy to Discord servers
-      everywhere!
+    <p class="lead">
+      Meet the amazing team of admins and staff behind our waifu bot. Their dedication, passion, and hard work ensure an
+      enjoyable experience for our community!
     </p>
   </div>
 
@@ -11,92 +11,3 @@
     <!-- Team members will be dynamically inserted here -->
   </div>
 </div>
-
-<script>
-  $(document).ready(function () {
-    const teamMembers = [
-      {
-        name: "Yuki Tanaka",
-        designation: "Lead Developer",
-        image: "https://i.pravatar.cc/300?img=1",
-        socialLinks: {
-          facebook: "https://facebook.com/yukitanaka",
-          github: "https://github.com/yukitanaka",
-          email: "yuki@example.com",
-          telegram: "https://t.me/yukitanaka"
-        },
-        message: "As the Lead Developer, I'm excited to push the boundaries of what our waifu bot can do. Every line of code is a step towards creating unforgettable experiences for our users!"
-      },
-      {
-        name: "Sakura Miyamoto",
-        designation: "UI/UX Designer",
-        image: "https://i.pravatar.cc/300?img=5",
-        socialLinks: {
-          facebook: "https://facebook.com/sakuramiyamoto",
-          github: "https://github.com/sakuramiyamoto",
-          email: "sakura@example.com"
-        },
-        message: "Designing for our waifu bot is a dream come true! I strive to create interfaces that are not only beautiful but also intuitive and fun to use. Your joy is my greatest reward!"
-      },
-      {
-        name: "Hiroshi Nakamura",
-        designation: "Community Manager",
-        image: "https://i.pravatar.cc/300?img=7",
-        socialLinks: {
-          facebook: "https://facebook.com/hiroshinakamura",
-          email: "hiroshi@example.com",
-          telegram: "https://t.me/hiroshinakamura"
-        },
-        message: "Building and nurturing our community is my passion. I'm here to listen to your ideas, address your concerns, and ensure that our waifu bot continues to be a source of happiness for all!"
-      },
-      {
-        name: "Aiko Yamada",
-        designation: "Content Creator",
-        image: "https://i.pravatar.cc/300?img=9",
-        socialLinks: {
-          facebook: "https://facebook.com/aikoyamada",
-          github: "https://github.com/aikoyamada",
-          email: "aiko@example.com"
-        },
-        message: "Crafting engaging content for our waifu bot is an adventure every day! From witty responses to heartwarming interactions, I pour my creativity into every aspect to keep you smiling!"
-      }
-    ];
-
-    const teamMembersContainer = $('#team-members');
-
-    teamMembers.forEach(member => {
-      const memberCard = `
-                <div class="col">
-                    <div class="team-member-card">
-                        <div class="member-image">
-                            <img src="${member.image}" alt="${member.name}">
-                            <div class="member-info">
-                                <h5 class="mb-0">${member.name}</h5>
-                                <p class="mb-0">${member.designation}</p>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <div class="social-links text-center mb-3">
-                                ${member.socialLinks.facebook ? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>` : ''}
-                                ${member.socialLinks.github ? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>` : ''}
-                                ${member.socialLinks.email ? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>` : ''}
-                                ${member.socialLinks.telegram ? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>` : ''}
-                            </div>
-                            <button class="btn message-btn w-100 toggle-message">Show Message</button>
-                            <div class="member-message">
-                                <p>${member.message}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-      teamMembersContainer.append(memberCard);
-    });
-
-    $('.toggle-message').on('click', function () {
-      const messageDiv = $(this).siblings('.member-message');
-      messageDiv.slideToggle();
-      $(this).text(messageDiv.is(':visible') ? 'Hide Message' : 'Show Message');
-    });
-  });
-</script>

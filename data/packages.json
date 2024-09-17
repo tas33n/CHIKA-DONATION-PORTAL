@@ -1,0 +1,73 @@
+[
+    {
+        "tier": 1,
+        "name": "Chika's Cheerful Support",
+        "price": 50,
+        "icon": "🌟",
+        "description": "Support Chika's adventures with a cheerful donation!",
+        "benefits": [
+            "Activate a single group chat (GC) with the bot for 1 week.",
+            "Your name featured in a supporter list.",
+            "No feature unlocks, but your support is greatly appreciated!"
+        ]
+    },
+    {
+        "tier": 2,
+        "name": "Chika's Secret Plan",
+        "price": 100,
+        "icon": "🎯",
+        "description": "Unlock Chika's secret plan and enjoy exclusive perks!",
+        "benefits": [
+            "Activate a single group chat (GC) with the bot for 1 month.",
+            "Priority access to bot updates and announcements.",
+            "All Tier 1 benefits."
+        ]
+    },
+    {
+        "tier": 3,
+        "name": "Chika's Supreme Strategy",
+        "price": 200,
+        "icon": "🎯",
+        "description": "Boost Chika's supreme strategy and double the fun!",
+        "benefits": [
+            "Activate a group chat with the bot for 2 months.",
+            "Priority access to new features as they roll out.",
+            "Personalized thank-you video message from Chika.",
+            "All Tier 1 and Tier 2 benefits."
+        ]
+    },
+    {
+        "tier": 4,
+        "name": "VIP: Chika's Elite Fan",
+        "price": 500,
+        "icon": "👑",
+        "description": "Enjoy exclusive access reserved for Chika's most dedicated fans.",
+        "benefits": [
+            "Activate a group chat with the bot for 6 months.",
+            "VIP status: Access to private chats with the bot.",
+            "Live support and priority responses to queries.",
+            "Ability to submit feature requests and influence bot updates.",
+            "2x EXP boost and faster level-ups (2x speed).",
+            "Use the bot in any group or place, even if not currently active.",
+            "Special recognition in bot communications as a VIP supporter.",
+            "All Tier 1, Tier 2, and Tier 3 benefits."
+        ]
+    },
+    {
+        "tier": 5,
+        "name": "Legendary: Chika's Ultimate Patron",
+        "price": 1000,
+        "icon": "🏆",
+        "description": "Join Chika's inner circle as a true hero of the waifu world!",
+        "benefits": [
+            "Activate a group chat with the bot for 1 year.",
+            "3x EXP boost and even faster level-ups (3x speed).",
+            "Access to a private friends list feature with Chika.",
+            "Direct influence on bot features and priority in feature rollouts.",
+            "Personalized video shoutout from Chika, tailored to you.",
+            "Extra perks such as early access to new bot capabilities, special event invites, and customizable bot interactions.",
+            "Option to have Chika bot join and assist in your group events as a guest.",
+            "All Tier 1, Tier 2, Tier 3, and Tier 4 benefits."
+        ]
+    }
+]
