@@ -105,6 +105,7 @@ public
 worker/script.js
 worker/wrangler.toml
 **/node_modules/
+package-lock.json
 
 # src/worker.js
 src/worker.dev.js
