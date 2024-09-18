@@ -24,11 +24,12 @@
 
 
 // cdn src
-const CDN_BASE = 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main'; /*"http://127.0.0.1:5500"; */
+const CDN_BASE = "http://127.0.0.1:5500";  /*'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main'; */
 const HTML_BASE = `${CDN_BASE}/pages`;
 const DATA_BASE = `${CDN_BASE}/data`;
 
 // array placholder
+let packages = [];
 let selectedPackage = null;
 let commandsData = {};
 
@@ -65,7 +66,7 @@ const fetchJson = async (jsonName) => {
 
 const renderPage = async (pageName) => {
 	const content = await fetchHtml(pageName);
-	$('#main-content').html(content);
+	$('#main-content').html(content.replaceAll('{{CDN_BASE}}', CDN_BASE));
 };
 
 const showToast = (message) => {
@@ -125,7 +126,7 @@ const loadPage = async (page) => {
 		switch (page) {
 			case 'home':
 				checkBotStatus();
-			case 'donate':
+			case 'packages':
 				renderPackages();
 				break;
 			case 'admins':
@@ -260,7 +261,7 @@ $(document).ready(async () => {
 	});
 
 	// Preload HTML content
-	const pages = ['home', 'about', 'donate', 'supporters', 'commands', 'privacy', 'admins', 'invite'];
+	const pages = ['home', 'about', 'packages', 'supporters', 'commands', 'privacy', 'admins', 'invite'];
 	pages.forEach(fetchHtml);
 });
 
@@ -290,7 +291,7 @@ function checkBotStatus() {
 
 async function renderPackages() {
 	try {
-		let packages = await fetchJson("packages");
+		packages = await fetchJson("packages");
 		const packageContainer = document.getElementById('packageContainer');
 		if (!packageContainer) {
 			console.error('Package container not found');
