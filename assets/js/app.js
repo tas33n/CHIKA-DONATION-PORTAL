@@ -22,9 +22,8 @@
  *
  *****************************************************************************/
 
-
 // cdn src
-const CDN_BASE = "http://127.0.0.1:5500";  /*'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main'; */
+const CDN_BASE = 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
 const HTML_BASE = `${CDN_BASE}/pages`;
 const DATA_BASE = `${CDN_BASE}/data`;
 
@@ -61,8 +60,6 @@ const fetchJson = async (jsonName) => {
 	localStorage.setItem(`json_${jsonName}`, JSON.stringify(json));
 	return json;
 };
-
-
 
 const renderPage = async (pageName) => {
 	const content = await fetchHtml(pageName);
@@ -120,7 +117,7 @@ const hideLoading = () => {
 // Page Loading and Navigation
 const loadPage = async (page) => {
 	try {
-		console.log("loading ", page);
+		console.log('loading ', page);
 		await renderPage(page);
 
 		switch (page) {
@@ -291,7 +288,7 @@ function checkBotStatus() {
 
 async function renderPackages() {
 	try {
-		packages = await fetchJson("packages");
+		packages = await fetchJson('packages');
 		const packageContainer = document.getElementById('packageContainer');
 		if (!packageContainer) {
 			console.error('Package container not found');
@@ -314,8 +311,8 @@ async function renderPackages() {
 				<p class="card-text">${pkg.description}</p>
 				<ul class="list-unstyled">
 					${pkg.benefits
-					.map(
-						(benefit) => `
+						.map(
+							(benefit) => `
 						<li class=" mb-2">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
 								<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
@@ -323,8 +320,8 @@ async function renderPackages() {
 							${benefit}
 						</li>
 					`
-					)
-					.join('')}
+						)
+						.join('')}
 				</ul>
 			</div>
 			<div class="card-footer">
@@ -338,12 +335,11 @@ async function renderPackages() {
 		console.error('Error fetching packages data:', error);
 		$('#packageContainer').html('<p class="text-danger">Failed to load package data. Please try again later.</p>');
 	}
-
 }
 
 async function renderAdmins() {
 	try {
-		const teamMembers = await fetchJson("admins");
+		const teamMembers = await fetchJson('admins');
 
 		const teamMembersContainer = $('#team-members');
 
@@ -362,22 +358,26 @@ async function renderAdmins() {
                         <div>
                             ${member.bio ? `<p class="member-bio mb-3">${member.bio}</p>` : ''}
                             <div class="social-links text-center mb-3">
-                                ${member.socialLinks.facebook
-					? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
-					: ''
-				}
-                                ${member.socialLinks.github
-					? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
-					: ''
-				}
-                                ${member.socialLinks.email
-					? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
-					: ''
-				}
-                                ${member.socialLinks.telegram
-					? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
-					: ''
-				}
+                                ${
+																	member.socialLinks.facebook
+																		? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
+																		: ''
+																}
+                                ${
+																	member.socialLinks.github
+																		? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
+																		: ''
+																}
+                                ${
+																	member.socialLinks.email
+																		? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
+																		: ''
+																}
+                                ${
+																	member.socialLinks.telegram
+																		? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
+																		: ''
+																}
                             </div>
                         </div>
                     </div>
@@ -394,7 +394,7 @@ async function renderAdmins() {
 
 async function renderSupporters() {
 	try {
-		let supporters = await fetchJson("supporters");
+		let supporters = await fetchJson('supporters');
 
 		// Sort supporters by tier (highest to lowest)
 		supporters.sort((a, b) => b.tier - a.tier);
@@ -488,19 +488,21 @@ function renderCommands() {
             </div>
             <div class="card-body" style="display: none;">
                 ${commands
-				.map(
-					(cmd) => `
+									.map(
+										(cmd) => `
                     <div class="command-item mb-3">
                         <div class="command-name">/${cmd.name}</div>
-                        <div class="command-description">${cmd.shortDescription?.en || cmd.description?.en || 'No description available.'
-						}</div>
-                        <div class="command-aliases">Aliases: ${cmd.aliases ? cmd.aliases.map((alias) => `/${alias}`).join(', ') : 'None'
-						}</div>
+                        <div class="command-description">${
+													cmd.shortDescription?.en || cmd.description?.en || 'No description available.'
+												}</div>
+                        <div class="command-aliases">Aliases: ${
+													cmd.aliases ? cmd.aliases.map((alias) => `/${alias}`).join(', ') : 'None'
+												}</div>
                         <div class="command-guide">${replacePlaceholders(cmd.guide?.en, cmd.name)}</div>
                     </div>
                 `
-				)
-				.join('')}
+									)
+									.join('')}
             </div>
         `;
 		container.appendChild(categoryCard);
@@ -746,8 +748,8 @@ const renderInviteGroupInfo = (groupData) => {
 };
 
 const renderInviteGroupStats = (groupData) => {
-	const maleCount = groupData.userInfo.filter(user => user.gender === 'MALE').length;
-	const femaleCount = groupData.userInfo.filter(user => user.gender === 'FEMALE').length;
+	const maleCount = groupData.userInfo.filter((user) => user.gender === 'MALE').length;
+	const femaleCount = groupData.userInfo.filter((user) => user.gender === 'FEMALE').length;
 	const pendingCount = groupData.approvalQueue ? groupData.approvalQueue.length : 0;
 
 	const statsHtml = `
@@ -775,14 +777,16 @@ const renderInviteGroupStats = (groupData) => {
 };
 
 const renderInviteUserList = (groupData) => {
-	const adminIds = new Set(groupData.adminIDs.map(admin => admin.id));
+	const adminIds = new Set(groupData.adminIDs.map((admin) => admin.id));
 	const users = groupData.userInfo.sort((a, b) => {
 		if (adminIds.has(a.id) && !adminIds.has(b.id)) return -1;
 		if (!adminIds.has(a.id) && adminIds.has(b.id)) return 1;
 		return 0;
 	});
 
-	const userListHtml = users.map(user => `
+	const userListHtml = users
+		.map(
+			(user) => `
                 <div class="user-item ${user.gender === 'MALE' ? 'male-user' : 'female-user'}" 
                      onclick="window.open('${user.url}', '_blank')">
                     <div class="d-flex align-items-center">
@@ -796,7 +800,9 @@ const renderInviteUserList = (groupData) => {
                         </div>
                     </div>
                 </div>
-            `).join('');
+            `
+		)
+		.join('');
 
 	$('#userList').html(userListHtml);
 };
@@ -814,7 +820,6 @@ const renderInvitePage = async () => {
 		$('#groupInfo').html('<p class="text-danger">Error loading group data. Please try again later.</p>');
 	}
 };
-
 
 const handleProceedDonation = () => {
 	showLoading('Payment is processing, please complete the payment in the opened window.');
