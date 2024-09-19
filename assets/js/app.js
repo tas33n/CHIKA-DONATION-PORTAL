@@ -44,20 +44,32 @@ const fetchHtml = async (pageName) => {
 };
 
 const fetchJson = async (jsonName) => {
-	const cachedJson = localStorage.getItem(`json_${jsonName}`);
+	const cachedData = localStorage.getItem(`json_${jsonName}`);
+	const cachedTimestamp = localStorage.getItem(`json_${jsonName}_timestamp`);
+	const currentTime = Date.now();
 
-	if (cachedJson) {
-		try {
-			return JSON.parse(cachedJson);
-		} catch (error) {
-			console.error('Failed to parse cached JSON:', error);
+	if (cachedData && cachedTimestamp) {
+		const age = currentTime - cachedTimestamp;
+		if (age < 86400000) {
+			try {
+				return JSON.parse(cachedData);
+			} catch (error) {
+				console.error('Failed to parse cached JSON:', error);
+				localStorage.removeItem(`json_${jsonName}`);
+				localStorage.removeItem(`json_${jsonName}_timestamp`);
+			}
+		} else {
+			// If the cached data is older than 24 hours, remove it
 			localStorage.removeItem(`json_${jsonName}`);
+			localStorage.removeItem(`json_${jsonName}_timestamp`);
 		}
 	}
 
 	const response = await fetch(`${DATA_BASE}/${jsonName}.json`);
 	const json = await response.json();
 	localStorage.setItem(`json_${jsonName}`, JSON.stringify(json));
+	localStorage.setItem(`json_${jsonName}_timestamp`, currentTime.toString());
+
 	return json;
 };
 
@@ -239,6 +251,10 @@ $(document).ready(async () => {
 
 	// Cache update handling
 	$('#update-cache').click(async () => {
+		// Clear all data from localStorage
+		localStorage.clear();
+		console.log('Local storage data cleared.');
+
 		if ('serviceWorker' in navigator) {
 			try {
 				const registration = await navigator.serviceWorker.ready;
@@ -299,36 +315,46 @@ async function renderPackages() {
 		packages.forEach((pkg) => {
 			const packageCard = document.createElement('div');
 			packageCard.className = 'col';
+			let badgeClass = 'badge bg-secondary';
+			let iconClass = 'package-icon';
+			let cardClass = 'card h-100 glass-card';
+
+			if (pkg.tier >= 4) {
+				badgeClass = 'badge bg-warning text-dark';
+				iconClass += ' vip-icon';
+				cardClass += ' vip-card';
+			}
+
 			packageCard.innerHTML = `
-		<div class="card h-100 glass-card" data-tier="${pkg.tier}">
+		  <div class="${cardClass}" data-tier="${pkg.tier}">
 			<div class="card-body">
-				<div class="d-flex justify-content-between align-items-center mb-3">
-					<span class="badge bg-secondary">Tier ${pkg.tier}</span>
-					<span class="package-icon">${pkg.icon}</span>
-				</div>
-				<h5 class="card-title">${pkg.name}</h5>
-				<h6 class="card-subtitle mb-2 text-warning">৳${pkg.price}</h6>
-				<p class="card-text">${pkg.description}</p>
-				<ul class="list-unstyled">
-					${pkg.benefits
-						.map(
-							(benefit) => `
-						<li class=" mb-2">
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
-								<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-			</svg>
-							${benefit}
-						</li>
-					`
-						)
-						.join('')}
-				</ul>
+			  <div class="d-flex justify-content-between align-items-center mb-3">
+				<span class="${badgeClass}">${pkg.tier >= 4 ? 'VIP ' : ''}Tier ${pkg.tier}</span>
+				<span class="${iconClass}">${pkg.icon}</span>
+			  </div>
+			  <h5 class="card-title">${pkg.name}</h5>
+			  <h6 class="card-subtitle mb-2 text-warning">৳${pkg.price}</h6>
+			  <p class="card-text">${pkg.description}</p>
+			  <ul class="list-unstyled">
+				${pkg.benefits
+					.map(
+						(benefit) => `
+				  <li class="mb-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success me-2" viewBox="0 0 16 16">
+					  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+					</svg>
+					${benefit}
+				  </li>
+				`
+					)
+					.join('')}
+			  </ul>
 			</div>
 			<div class="card-footer">
-				<button class="btn btn-outline-light w-100 select-package">Select Package</button>
+			  <button class="btn btn-outline-light w-100 select-package">Select Package</button>
 			</div>
-		</div>
-	`;
+		  </div>
+		`;
 			packageContainer.appendChild(packageCard);
 		});
 	} catch (error) {
@@ -400,35 +426,42 @@ async function renderSupporters() {
 		supporters.sort((a, b) => b.tier - a.tier);
 
 		const supportersContainer = $('#supporters-container');
+		supportersContainer.empty();
 
 		supporters.forEach((supporter) => {
+			const isVIP = supporter.tier >= 4;
+			const tierClass = `tier-${supporter.tier}`;
+			const vipClass = isVIP ? 'vip-supporter' : '';
+
 			const supporterCard = `
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="team-member-card h-100">
-                    <div class="member-image">
-                        <img src="${supporter.image}" alt="${supporter.name}" class="img-fluid">
-                        <div class="member-info">
-                            <h5 class="mb-0">${supporter.name}</h5>
-                            <p class="mb-0">${supporter.packageName}</p>
-                        </div>
-                    </div>
-                    <div class="p-3 d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="badge bg-primary">Tier ${supporter.tier}</span>
-                                <a href="${supporter.fblink}" target="_blank" class="btn btn-outline-primary btn-sm">
-                                    <i class="fab fa-facebook-f me-2"></i>Facebook
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `;
+		  <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+			<div class="team-member-card h-100 ${tierClass} ${vipClass}">
+			  <div class="member-image">
+				<img src="${supporter.image}" alt="${supporter.name}" class="img-fluid">
+				<div class="member-info">
+				  <h5 class="mb-0">${supporter.name}</h5>
+				  <p class="mb-0">${supporter.packageName}</p>
+				</div>
+			  </div>
+			  <div class="p-3 d-flex flex-column justify-content-between">
+				<div>
+				  <div class="d-flex justify-content-between align-items-center mb-3">
+					<span class="badge ${isVIP ? 'bg-warning text-dark' : 'bg-primary'}">
+					  ${isVIP ? 'VIP ' : ''}Tier ${supporter.tier}
+					</span>
+					<a href="${supporter.fblink}" target="_blank" class="btn btn-outline-primary btn-sm">
+					  <i class="fab fa-facebook-f me-2"></i>Facebook
+					</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		`;
 			supportersContainer.append(supporterCard);
 		});
 	} catch (error) {
-		console.error('Error fetching admin data:', error);
+		console.error('Error fetching supporters data:', error);
 		$('#supporters-container').html('<p class="text-danger">Failed to load supporters data. Please try again later.</p>');
 	}
 }

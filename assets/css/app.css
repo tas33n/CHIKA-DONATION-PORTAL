@@ -1371,3 +1371,56 @@ body.light-mode .video-bg:before {
 .member-section {
   margin-top: 20px;
 }
+
+/* vip tiers */
+
+.team-member-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+}
+
+.tier-5 {
+  border-color: #FFD700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.tier-4 {
+  border-color: #C0C0C0;
+  box-shadow: 0 0 12px rgba(192, 192, 192, 0.5);
+}
+
+.tier-3 {
+  border-color: #CD7F32;
+  box-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+
+.tier-2 {
+  border-color: #4682B4;
+  box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
+}
+
+.tier-1 {
+  border-color: #228B22;
+  box-shadow: 0 0 6px rgba(34, 139, 34, 0.5);
+}
+
+.vip-supporter .member-image::before {
+  content: "VIP";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FFD700;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.vip-supporter .member-info {
+  background-color: rgba(255, 215, 0, 0.1);
+}

@@ -37,9 +37,8 @@ const DEFAULT_CONFIG = {
 	BKS_SEC: '2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b',
 	APP_URL: 'http://127.0.0.1:8787',
 	BOT_API: 'https://touka0x11-a0fc068a4b01.herokuapp.com',
-	BOT_APIKEY: '8d8e8ca0d542ce666e816dbb0659dd067f72f213474ebfde73aea3b241e39f5'
+	BOT_APIKEY: '8d8e8ca0d542ce666e816db0659dd067f72f213474ebfde73aea3b241e39f5',
 };
-
 
 /*****************************************************************************
  *
@@ -51,8 +50,8 @@ const DEFAULT_CONFIG = {
  *
  *****************************************************************************/
 
-import home from "./index.html";
-import error_404 from "./404.html";
+import home from './index.html';
+import error_404 from './404.html';
 
 async function fetchConfig(gistUrl) {
 	try {
@@ -119,10 +118,13 @@ async function serveAsset(fetchUrl) {
 }
 
 function serve404Page() {
-	return new Response(error_404.replaceAll('{{app_base}}', CONFIG.environment === 'production' ? CONFIG.CDN_SRC : 'http://127.0.0.1:5500'), {
-		status: 200,
-		headers: { 'Content-Type': 'text/html' },
-	});
+	return new Response(
+		error_404.replaceAll('{{app_base}}', CONFIG.environment === 'production' ? CONFIG.CDN_SRC : 'http://127.0.0.1:5500'),
+		{
+			status: 200,
+			headers: { 'Content-Type': 'text/html' },
+		}
+	);
 }
 
 async function handleApiRequest(path) {
@@ -345,9 +347,5 @@ async function handleExecutePayment(request) {
 
 // Event listener
 addEventListener('fetch', (event) => {
-	event.respondWith(
-		handleRequest(event.request).catch(
-			(err) => new Response('Internal Server Error: ' + err.stack, { status: 500 })
-		)
-	);
+	event.respondWith(handleRequest(event.request).catch((err) => new Response('Internal Server Error: ' + err.stack, { status: 500 })));
 });
