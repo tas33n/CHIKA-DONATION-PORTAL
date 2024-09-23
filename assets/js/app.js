@@ -384,26 +384,22 @@ async function renderAdmins() {
                         <div>
                             ${member.bio ? `<p class="member-bio mb-3">${member.bio}</p>` : ''}
                             <div class="social-links text-center mb-3">
-                                ${
-																	member.socialLinks.facebook
-																		? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
-																		: ''
-																}
-                                ${
-																	member.socialLinks.github
-																		? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
-																		: ''
-																}
-                                ${
-																	member.socialLinks.email
-																		? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
-																		: ''
-																}
-                                ${
-																	member.socialLinks.telegram
-																		? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
-																		: ''
-																}
+                                ${member.socialLinks.facebook
+					? `<a href="${member.socialLinks.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`
+					: ''
+				}
+                                ${member.socialLinks.github
+					? `<a href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
+					: ''
+				}
+                                ${member.socialLinks.email
+					? `<a href="mailto:${member.socialLinks.email}"><i class="fas fa-envelope"></i></a>`
+					: ''
+				}
+                                ${member.socialLinks.telegram
+					? `<a href="${member.socialLinks.telegram}" target="_blank"><i class="fab fa-telegram-plane"></i></a>`
+					: ''
+				}
                             </div>
                         </div>
                     </div>
@@ -521,21 +517,19 @@ function renderCommands() {
             </div>
             <div class="card-body" style="display: none;">
                 ${commands
-									.map(
-										(cmd) => `
+				.map(
+					(cmd) => `
                     <div class="command-item mb-3">
                         <div class="command-name">/${cmd.name}</div>
-                        <div class="command-description">${
-													cmd.shortDescription?.en || cmd.description?.en || 'No description available.'
-												}</div>
-                        <div class="command-aliases">Aliases: ${
-													cmd.aliases ? cmd.aliases.map((alias) => `/${alias}`).join(', ') : 'None'
-												}</div>
+                        <div class="command-description">${cmd.shortDescription?.en || cmd.description?.en || 'No description available.'
+						}</div>
+                        <div class="command-aliases">Aliases: ${cmd.aliases ? cmd.aliases.map((alias) => `/${alias}`).join(', ') : 'None'
+						}</div>
                         <div class="command-guide">${replacePlaceholders(cmd.guide?.en, cmd.name)}</div>
                     </div>
                 `
-									)
-									.join('')}
+				)
+				.join('')}
             </div>
         `;
 		container.appendChild(categoryCard);
@@ -632,6 +626,16 @@ const handleDonationSubmit = async (e) => {
 	e.preventDefault();
 	const uid = document.getElementById('uid').value.trim();
 	const tid = document.getElementById('tid').value.trim();
+	const amount = document.getElementById('selectedPackagePrice').textContent.trim();
+
+	if (!amount) {
+		Swal.fire({
+			icon: 'error',
+			title: 'Oops...',
+			text: 'Please select a package bfore proceeding.',
+		});
+		return;
+	}
 
 	if (!uid || !tid) {
 		Swal.fire({
