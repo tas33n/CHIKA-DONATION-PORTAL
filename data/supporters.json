@@ -30,9 +30,9 @@
 	{
 		"name": "Borson Joy Dip",
 		"image": "https://i.postimg.cc/zLVJPZLQ/458198675-122166805946134975-569107186486473424-n.jpg",
-		"packageName": "Legendary: Chika's Ultimate Patron",
+		"packageName": "VIP: Chika's Elite Fan",
 		"fblink": "https://www.facebook.com/BorsonJoyDip",
-		"tier": 5
+		"tier": 4
 	},
 	{
 		"name": "Md. Atiq Ullah",
@@ -40,19 +40,5 @@
 		"packageName": "Chika's Secret Plan",
 		"fblink": "https://www.facebook.com/md.atiq.ullah00",
 		"tier": 2
-	},
-	{
-		"name": "Anaf Tomioka",
-		"image": "https://i.postimg.cc/02wPqCTm/449448428-887386216544763-3837625707394277884-n.jpg",
-		"packageName": "Chika's Secret Plan",
-		"fblink": "https://www.facebook.com/anaf.abtahi",
-		"tier": 2
-	},
-	{
-		"name": "Neukie",
-		"image": "https://i.postimg.cc/t4dbs4C4/370072413-228729823490451-1283603662506736007-n.jpg",
-		"packageName": "Legendary: Chika's Ultimate Patron",
-		"fblink": "https://www.facebook.com/profile.php?id=100090603037686",
-		"tier": 5
 	}
 ]

@@ -23,13 +23,13 @@
  *****************************************************************************/
 
 // Gist URL for configuration (replace with your actual json gist URL, use the same key value pair as DEFAULT_CONFIG object.)
-const CONFIG_GIST_URL = 'https://gist.githubusercontent.com/tas33n/cc64b321e1677ed6be051e75aa0242c6/raw/chika-cf-worker.json';
+const CONFIG_GIST_URL = '';
 
 // Default configuration
 const DEFAULT_CONFIG = {
-	environment: 'local',
+	environment: 'production',
 	APP_NAME: 'CHIKA DONATION PANEL',
-	CDN_SRC: 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main',
+	CDN_SRC: 'https://cdn.jsdelivr.net/gh/meroitachi/chika-donation-portal@main',
 	BKS_URL: 'https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized', //bkash test account 01619777283 12345 12121
 	BKS_USER: 'sandboxTokenizedUser02',
 	BKS_PASS: 'sandboxTokenizedUser02@12345',

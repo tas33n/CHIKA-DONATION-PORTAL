@@ -1,20 +1,19 @@
 {
-  "status": "success",
+  "status":"success",
   "data": {
-    "userID": "100023553541678",
-    "name": "Farhan Isteak Taseen",
-    "gender": 2,
-    "vanity": "Tasu.Legend",
-    "exp": 42,
-    "money": 0,
+    "userID":"100057718477678",
+    "name":"Mero Itachi",
+    "gender":2,
+    "vanity":"meroitachi98",
+    "exp":0,
+    "money":0,
     "banned": {},
     "settings": {
       "token_time": 1724832294449,
-      "last_active_gc": "6519454968089625"
+      "last_active_gc": 6566967196705094
     },
     "data": {},
-    "createdAt": "2024-08-28T06:10:21Z",
-    "updatedAt": "2024-08-29T05:10:57Z",
-    "avatar": "https://scontent.fcgp30-1.fna.fbcdn.net/v/t39.30808-1/454300967_1659766768151759_1745075441449798361_n.jpg?stp=dst-jpg_s720x720&_nc_cat=109&ccb=1-7&_nc_sid=50d2ac&_nc_ohc=QsIqm1TIELQQ7kNvgG7Scq4&_nc_ht=scontent.fcgp30-1.fna&oh=00_AYAnyBS_5ZXrVhwZsKG5NL2Uf54bIUKK4UBOsXDqYcpKyA&oe=66D602CB"
-  }
-}
+    "createdAt":"2024-09-27T17:09:14.789Z",
+    "updatedAt":"2024-09-27T17:09:14.789Z",
+    "avatar":"https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/460094614_955020043098603_375366545130309115_n.jpg?stp=c0.0.487.487a_dst-jpg_s487x486&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=o1rqQeoMP6QQ7kNvgGS0kyA&_nc_ht=scontent-iad3-1.xx&_nc_gid=AymSezc04_pafaZ2YeCuOy5&oh=00_AYBgpCW2nEjAs4kZnOaQHhQCgQLXGGFaEYiXuTSiZp8PHA&oe=66FCD022"
+  }}
