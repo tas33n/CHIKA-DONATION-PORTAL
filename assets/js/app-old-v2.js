@@ -12,7 +12,7 @@
  * Description: A simple web panel to collect and manage donation for messenger bot projects.
  *
  * Author	: Tas33n (https://github.com/tas33n)
- * Modified by	: Meroitachi (https://github.com/meroitachi)
+ * Website	: https://tas33n.is-a.dev
  *
  * Copyright © 2024 MISFITSDEV. All rights reserved.
  *
@@ -21,21 +21,19 @@
  * via any medium, is strictly prohibited without express written permission.
  *
  *****************************************************************************/
-function delay(delay) {
-    return new Promise(resolve => {
-        setTimeout(resolve, delay);
-    });
-}
-const CDN_BASE = "http://localhost:4000";
-// "https://cdn.jsdelivr.net/gh/meroitachi/chika-donation-alt@main";
-const recipientNumber="01601244123"
-const APP_URL = "http://localhost:8787";
-const BOT_GC = "5473736752744010"; //bot group id
+
+// cdn src
+const CDN_BASE =
+    " https://cdn.jsdelivr.net/gh/meroitachi/chika-donation-portal@main"; //'https://cdn.sadmananik.pro'; // 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
 const HTML_BASE = `${CDN_BASE}/pages`;
 const DATA_BASE = `${CDN_BASE}/data`;
+
+// array placholder
 let packages = [];
 let selectedPackage = null;
 let commandsData = {};
+
+// Utility Functions
 const fetchHtml = async pageName => {
     const cachedHtml = localStorage.getItem(`html_${pageName}`);
     if (cachedHtml) return cachedHtml;
@@ -62,6 +60,7 @@ const fetchJson = async jsonName => {
                 localStorage.removeItem(`json_${jsonName}_timestamp`);
             }
         } else {
+            // If the cached data is older than 24 hours, remove it
             localStorage.removeItem(`json_${jsonName}`);
             localStorage.removeItem(`json_${jsonName}_timestamp`);
         }
@@ -127,6 +126,8 @@ const showLoading = message => {
 const hideLoading = () => {
     $("#loadingOverlay").remove();
 };
+
+// Page Loading and Navigation
 const loadPage = async page => {
     try {
         console.log("loading ", page);
@@ -247,9 +248,8 @@ $(document).ready(async () => {
     // Service Worker registration
     if ("serviceWorker" in navigator) {
         try {
-            const registration = await navigator.serviceWorker.register(
-                APP_URL + "/assets/js/service-worker.js"
-            );
+            const registration =
+                await navigator.serviceWorker.register("/service-worker.js");
             console.log("Service Worker registered:", registration);
         } catch (error) {
             console.error("Service Worker registration failed:", error);
@@ -297,25 +297,17 @@ $(document).ready(async () => {
 //raw functions
 
 function checkBotStatus() {
-    $.ajax({
-        url: "/api/me/1",
-        type: "GET",
-        timeout: 30000,
-        success: function (response) {
-            if (response.status === "success") {
-                const botID = Object.keys(response.data)[0];
-                const botData = response.data[botID];
-                $(".botavatar").attr("src", response.data.avatar);
-                $(".botname").text(botData.name);
-                // $('.botid').text(botID);
-            } else {
-                showToast("Bot server api is dead. please contact admin.");
-            }
-        },
-        error: function () {
+    try {
+        if (true) {
+            $(".botavatar").attr("src", "https://i.imgur.com/EIyOdfA.jpeg");
+            $(".botname").text("XBot");
+            // $('.botid').text(botID);
+        } else {
             showToast("Bot server api is dead. please contact admin.");
         }
-    });
+    } catch (err) {
+        showToast("Bot server api is dead. please contact admin.");
+    }
 }
 
 async function renderPackages() {
@@ -713,54 +705,27 @@ const handleDonationSubmit = async e => {
         return;
     }
 
-    try {
-        showLoading("Fetching user and thread data...");
-        const userResponse = await axios.get(`/api/user/${uid}`);
-        const threadResponse = await axios.get(`/api/thread/${tid}`);
+    // try {
+    showLoading("Fetching user and thread data...");
+    if (1 != 2) {
+        saveToLocalStorage("userData", "ExampleObj");
+        saveToLocalStorage("threadData", "ExampleObj");
+        renderUserThreadInfo();
 
-        if (!threadResponse.data.data.isGroup) {
-            Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "TID is not a valid group!"
-            });
-            return;
+        // hide the form if its mobile screen
+        if ($(window).width() < 768) {
+            $("#subscriptionForm").hide();
         }
-
-        if (!threadResponse.data.isSubscribed) {
-            Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Please add me in your group before proceeding!"
-            });
-            return;
-        }
-
-        if (
-            userResponse.data.status === "success" &&
-            threadResponse.data.status === "success"
-        ) {
-            const userData = userResponse.data.data;
-            const threadData = threadResponse.data.data;
-            saveToLocalStorage("userData", userData);
-            saveToLocalStorage("threadData", threadData);
-            renderUserThreadInfo(userData, threadData);
-
-            // hide the form if its mobile screen
-            if ($(window).width() < 768) {
-                $("#subscriptionForm").hide();
-            }
-        } else {
-            throw new Error("User or Thread not found");
-        }
-    } catch (error) {
-        alert(
-            "An error occurred while fetching data. Please check your User ID and Thread ID."
-        );
-        console.error("Error:", error);
-    } finally {
-        hideLoading();
+    } else {
+        throw new Error("User or Thread not found");
     }
+    //     } catch (error) {
+    //         alert(
+    //             "An error occurred while fetching data. Please check your User ID and Thread ID."
+    //         );
+    //         console.error("Error:", error);
+
+    hideLoading();
 };
 
 const renderUserThreadInfo = (userData, threadData) => {
@@ -769,135 +734,55 @@ const renderUserThreadInfo = (userData, threadData) => {
         console.error("Package container not found");
         return;
     }
+
     packageContainer.innerHTML = `
-<div class="col-12">
-    <div class="card mb-3">
-        <div class="card-header bg-primary text-white">User Information</div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <img
-                        src="${userData.avatar}"
-                        class="rounded-circle mb-3"
-                        alt="${userData.name}"
-                        width="130px"
-                    />
-                </div>
-                <div class="col-md-8">
-                    <h5 class="card-title">${userData.name}</h5>
-                    <p class="card-text">Username: ${userData.vanity}</p>
-                    <p class="card-text">User ID: ${userData.userID}</p>
-                    <p class="card-text">Exp: ${userData.exp}</p>
-                    <p class="card-text">Money: ${userData.money}</p>
-                    <p class="card-text">
-                        Last Active GC: ${new Date(
-                            userData.settings.last_active_gc
-                        ).toLocaleString("en-US")}
-                    </p>
-                    <p class="card-text">
-                        Token Time: ${new Date(
-                            userData.settings.token_time
-                        ).toLocaleString()}
-                    </p>
+        <div class="col-12">
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">User Information</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <img src="https://i.imgur.com/EIyOdfA.jpeg" class="rounded-circle mb-3" alt="Xperson" width="130px">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="card-title">Xperson</h5>
+                            <p class="card-text">Username: XUsername</p>
+                            <p class="card-text">User ID: Xid83743</p>
+                            <p class="card-text">Exp: XExp150</p>
+                            <p class="card-text">Money: XMoney500</p>
+                            <p class="card-text">Last Active GC: XTime</p>
+                            <p class="card-text">Token Time: XTime</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class="card-header bg-success text-white">Thread Information</div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <img
-                        src="${threadData.imageSrc}"
-                        class="rounded-circle mb-3"
-                        alt="${threadData.threadName}"
-                        width="130px"
-                    />
-                </div>
-                <div class="col-md-8">
-                    <h5 class="card-title">${threadData.threadName}</h5>
-                    <p class="card-text">Thread ID: ${threadData.threadID}</p>
-                    <p class="card-text">
-                        Approval Mode: ${
-                            threadData.approvalMode ? "Enabled" : "Disabled"
-                        }
-                    </p>
-                    <p class="card-text">
-                        Admins: ${threadData.adminIDs.length}
-                    </p>
-                    <p class="card-text">
-                        Members: ${threadData.members.length}
-                    </p>
-                    <p class="card-text">
-                        Updated At: ${new Date(
-                            threadData.updatedAt
-                        ).toLocaleString()}
-                    </p>
+            <div class="card mb-3">
+                <div class="card-header bg-success text-white">Thread Information</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <img src="https://i.imgur.com/EIyOdfA.jpeg" class="rounded-circle mb-3" alt="Xthread" width="130px">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="card-title">Xthread</h5>
+                            <p class="card-text">Thread ID: XTID-1633</p>
+                            <p class="card-text">Approval Mode: Enabled</p>
+                            <p class="card-text">Admins: Xlistad-5</p>
+                            <p class="card-text">Members: Xmemnumb-78</p>
+                            <p class="card-text">Updated At: Xdate</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="text-center">
+                <button id="confirmProceed" class="btn btn-success btn-lg">Confirm and Proceed</button>
+            </div>
         </div>
-    </div>
-<div class="alert alert-info text-center" role="alert">
-            Please send the payment to this number: <strong>${recipientNumber}</strong>.<br>
-            Make sure to double-check the number before sending. Once you've sent the payment, enter the transaction details below to confirm.
-        </div>
-    <form id="confirmProceed">
-        <div class="mb-3">
-            <label for="paymentMethod" class="form-label">Payment Method</label>
-            <select class="form-control" id="paymentMethod" required>
-                <option value="">Select Payment Method</option>
-                <option value="bkash">Bkash</option>
-                <option value="nagad">Nagad</option>
-                <option value="rocket">Rocket</option>
-            </select>
-        </div>
+    `;
 
-        <div class="mb-3">
-            <label for="senderNumber" class="form-label">Sender Number</label>
-            <input
-                type="number"
-                class="form-control"
-                id="senderNumber"
-                placeholder="Enter your sender number"
-                required
-            />
-        </div>
-
-        <div class="mb-3">
-            <label for="trxid" class="form-label">Transaction ID (TRXID)</label>
-            <input
-                type="text"
-                class="form-control"
-                id="trxid"
-                placeholder="Enter Transaction ID"
-                required
-            />
-        </div>
-
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Enter your email"
-                required
-            />
-        </div>
-
-        <div class="text-center">
-            <button type="submit" class="btn btn-success btn-lg">
-                Confirm and Proceed
-            </button>
-        </div>
-    </form>
-</div>
-`;
     const confirmProceedButton = document.getElementById("confirmProceed");
     if (confirmProceedButton) {
-        confirmProceedButton.addEventListener("submit", handleProceedDonation);
+        confirmProceedButton.addEventListener("click", handleProceedDonation);
     }
 };
 
@@ -912,37 +797,29 @@ const fetchInviteGroupData = async groupId => {
             console.error("Error parsing stored data:", error);
         }
     }
-    const response = await axios.get(`/api/thread/${groupId}`);
-    //const response = await fetch(`/api/thread/${groupId}`);
-    // const data = await response.json();
-    if (response.data.status !== "success") {
-        hideLoading();
-        return;
-    }
-    localStorage.setItem(storageKey, JSON.stringify(response.data));
 
-    return response.data;
+    const response = await fetch(`/api/thread/raw/${groupId}`);
+    const data = await response.json();
+
+    localStorage.setItem(storageKey, JSON.stringify(data.data));
+
+    return data.data;
 };
 
 const renderInviteGroupInfo = groupData => {
     const groupInfoHtml = `
                 <div class="text-center">
-                    <img src="${groupData.data.imageSrc}" alt="${
-                        groupData.data.threadName
+                    <img src="${groupData.imageSrc}" alt="${
+                        groupData.threadName
                     }" class="rounded-circle group-image">
-                    <h2>${groupData.data.threadName}</h2>
-                    <p>Thread ID: ${groupData.data.threadID}</p>
+                    <h2>${groupData.threadName}</h2>
+                    <p>Thread ID: ${groupData.threadID}</p>
                     <button class="btn ${
-                        /*groupData.inviteLink.enable==true
-                           ? "btn-primary"
-                            : "btn-secondary"*/ groupData.inviteLink.enable
+                        groupData.inviteLink.enable
                             ? "btn-primary"
                             : "btn-secondary"
                     }" 
-                            ${
-                                /*groupData.inviteLink.enable==false ? "disabled" : ""*/
-                                !groupData.inviteLink.enable ? "disabled" : ""
-                            }>
+                            ${!groupData.inviteLink.enable ? "disabled" : ""}>
                         ${
                             groupData.inviteLink.enable
                                 ? "Join Support Group"
@@ -955,37 +832,31 @@ const renderInviteGroupInfo = groupData => {
 };
 
 const renderInviteGroupStats = groupData => {
-    const data = groupData.data;
-    let maleCount = 0,
-        femaleCount = 0,
-        messageCount = 0;
-    for (let i = 0; i < data.members.length; i++) {
-        if (data.members[i].gender === "MALE") {
-            maleCount++;
-        } else if (data.members[i].gender === "FEMALE") {
-            femaleCount++;
-        }
-        messageCount = data.members[i].count + messageCount;
-    }
-    const pendingCount = groupData.data.approvalQueue
-        ? groupData.data.approvalQueue.length
+    const maleCount = groupData.userInfo.filter(
+        user => user.gender === "MALE"
+    ).length;
+    const femaleCount = groupData.userInfo.filter(
+        user => user.gender === "FEMALE"
+    ).length;
+    const pendingCount = groupData.approvalQueue
+        ? groupData.approvalQueue.length
         : 0;
 
     const statsHtml = `
                 <div class="stat-card">
                     <h5>Total Members</h5>
-                    <p class="h3">${data.members.length}</p>
+                    <p class="h3">${groupData.participantIDs.length}</p>
                     <p class="gender-count">
                         (Male: ${maleCount}, Female: ${femaleCount})
                     </p>
                 </div>
                 <div class="stat-card">
                     <h5>Total Messages</h5>
-                    <p class="h3">${messageCount}</p>
+                    <p class="h3">${groupData.messageCount}</p>
                 </div>
                 <div class="stat-card">
                     <h5>Admins</h5>
-                    <p class="h3">${groupData.data.adminIDs.length}</p>
+                    <p class="h3">${groupData.adminIDs.length}</p>
                 </div>
                 <div class="stat-card">
                     <h5>Pending Members</h5>
@@ -996,32 +867,20 @@ const renderInviteGroupStats = groupData => {
 };
 
 const renderInviteUserList = groupData => {
-    let users = [];
-    let admins = [];
-
-    for (let i = 0; i < groupData.data.members.length; i++) {
-        let member = groupData.data.members[i];
-        if (groupData.data.adminIDs.includes(member.userID)) {
-            admins.push(member);
-        } else {
-            users.push(member);
-        }
-    }
-    users.sort((a, b) => {
-        if (a.id < b.id) return -1;
-        if (a.id > b.id) return 1;
+    const adminIds = new Set(groupData.adminIDs.map(admin => admin.id));
+    const users = groupData.userInfo.sort((a, b) => {
+        if (adminIds.has(a.id) && !adminIds.has(b.id)) return -1;
+        if (!adminIds.has(a.id) && adminIds.has(b.id)) return 1;
         return 0;
     });
-    let cc = admins.concat(users);
-    const userListHtml = cc
+
+    const userListHtml = users
         .map(
             user => `
                 <div class="user-item ${
                     user.gender === "MALE" ? "male-user" : "female-user"
                 }" 
-                     onclick="window.open('${
-                         "https://facebook.com/" + user.userID
-                     }', '_blank')">
+                     onclick="window.open('${user.url}', '_blank')">
                     <div class="d-flex align-items-center">
                         <img src="${user.thumbSrc}" alt="${
                             user.name
@@ -1030,12 +889,12 @@ const renderInviteUserList = groupData => {
                             <h5 class="mb-0">
                                 ${user.name}
                                 ${
-                                    admins.includes(user)
+                                    adminIds.has(user.id)
                                         ? '<span class="admin-badge">ADMIN</span>'
                                         : ""
                                 }
                             </h5>
-                            <small>UID: ${user.userID}</small>
+                            <small>UID: ${user.id}</small>
                         </div>
                     </div>
                 </div>
@@ -1049,8 +908,7 @@ const renderInviteUserList = groupData => {
 const renderInvitePage = async () => {
     try {
         showLoading("Fetching Bot official group data...");
-        const groupData = await fetchInviteGroupData(BOT_GC);
-
+        const groupData = await fetchInviteGroupData("5473736752744010");
         renderInviteGroupInfo(groupData);
         renderInviteGroupStats(groupData);
         renderInviteUserList(groupData);
@@ -1064,62 +922,74 @@ const renderInvitePage = async () => {
 };
 
 const handleProceedDonation = () => {
-    let pkg = selectedPackage.name;
-    showLoading("Please wait..");
+    showLoading(
+        "Payment is processing, please complete the payment in the opened window."
+    );
     $.ajax({
         url: "/submit/payment-info",
-        method: "POST",
+        method: "get",
         data: {
             amount: $("#selectedPackagePrice").text(),
             uid: $("#uid").val(),
-            tid: $("#tid").val(),
-            paymentMethod: $("#paymentMethod").val(),
-            senderNumber: $("#senderNumber").val(),
-            trxid: $("#trxid").val(),
-            email: $("#email").val(),
-            packageName: pkg
+            tid: $("#tid").val()
         },
-        success: async function (response) {
-            if (response.status && response.status == "success") {
-                await delay(3000);
-                handlePaymentResponse(response);
-                console.info("hh ", response.status, "hhh ", response.info);
+        success: function (response) {
+            if (response.bkashURL) {
+                const paymentPopup = window.open(
+                    response.bkashURL,
+                    "bKash Payment",
+                    "width=500,height=600"
+                );
+                // Listen for messages from the popup window
+                window.addEventListener(
+                    "message",
+                    function (event) {
+                        if (event.origin === window.location.origin) {
+                            const paymentStatus = event.data;
+                            handlePaymentResponse(paymentStatus);
+                            if (paymentPopup) paymentPopup.close();
+                        }
+                    },
+                    false
+                );
             } else {
                 hideLoading();
                 Swal.fire({
                     icon: "error",
                     title: "Oops...",
-                    text: "Something went wrong while sending the request!"
+                    text: "Something went wrong while creating the payment!"
                 });
             }
         },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.error(
-                `Error: ${textStatus} - ${errorThrown} - Response: ${jqXHR.responseText}`
-            );
+        error: function () {
             hideLoading();
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "The request failed to process. Please try again."
+                text: "Failed to initiate payment. Please try again."
             });
         }
     });
 };
-const handlePaymentResponse = async paymentStatuss => {
+
+const handlePaymentMessage = event => {
+    if (event.origin === window.location.origin) {
+        const paymentStatus = event.data;
+        handlePaymentResponse(paymentStatus);
+        if (event.source) event.source.close();
+    }
+};
+
+const handlePaymentResponse = paymentStatus => {
     hideLoading();
-    if (paymentStatuss.status === "success") {
+    if (paymentStatus.status === "success") {
         const userData = getFromLocalStorage("userData");
         const threadData = getFromLocalStorage("threadData");
         if (userData && threadData) {
-            const paymentStatus = paymentStatuss.info;
             const paymentInfo = {
-                email: paymentStatus.email,
-                senderNumber: paymentStatus.senderNumber,
-                paymentMethod: paymentStatus.paymentMethod,
-                transactionId: paymentStatus.trxid,
-                amount: paymentStatus.amount,
-                packageName: paymentStatus.packageName,
+                transactionId: paymentStatus.trxID,
+                amount: selectedPackage.price,
+                packageName: selectedPackage.name,
                 date: new Date()
             };
             renderThankYouMessage(userData, threadData, paymentInfo);
@@ -1130,17 +1000,17 @@ const handlePaymentResponse = async paymentStatuss => {
                 text: "User or Thread data not found. Please try again."
             });
         }
-    } else if (paymentStatuss.status === "failed") {
+    } else if (paymentStatus.status === "cancel") {
         Swal.fire({
             icon: "info",
-            title: "Request Failed",
-            text: "Invalid Information."
+            title: "Payment Cancelled",
+            text: "Payment was cancelled by the user."
         });
     } else {
         Swal.fire({
             icon: "error",
-            title: "Failed Request",
-            text: paymentStatuss.Messages
+            title: "Payment Failed",
+            text: paymentStatus?.message
         });
     }
 };
@@ -1151,16 +1021,17 @@ const renderThankYouMessage = (userData, threadData, paymentInfo) => {
         console.error("Package container not found");
         return;
     }
+
     packageContainer.innerHTML = `
         <div class="col-12">
             <div class="card mb-4 border-0 shadow-lg">
                 <div class="card-body text-center">
                     <img src="https://64.media.tumblr.com/f112992d6f5fdfc598619d78b701c105/e0e5408e2bd0e970-12/s540x810/73addda07b419e86e22ef92cfc155a12d16a5ccd.gifv" alt="Chika Thank You" class="img-fluid mb-4" style="max-width: 200px;">
                     <h2 class="card-title mb-4 text-primary">Thank You for Your Support!</h2>
-                    <p class="card-text lead mb-4">Your request is in process, you will be notified of the result by the admin (the notification should be in your email inbox or email spam box)</p>
-                  <!--  <div class="alert alert-success" role="alert">
+                    <p class="card-text lead mb-4">Your subscription has been successfully processed. Chika is excited to join your group!</p>
+                    <div class="alert alert-success" role="alert">
                         You can now use Chika Bot in your group. Thank you for helping keep the Chika Bot project alive!
-                    </div>-->
+                    </div>
                 </div>
             </div>
 
@@ -1172,17 +1043,11 @@ const renderThankYouMessage = (userData, threadData, paymentInfo) => {
                         </div>
                         <div class="card-body">
                             <div class="text-center mb-3">
-                                <img src="${
-                                    userData.avatar
-                                }" class="rounded-circle" alt="${
-                                    userData.name
-                                }" width="100px">
+                                <img src="https://i.imgur.com/EIyOdfA.jpeg" class="rounded-circle" alt="XName" width="100px">
                             </div>
-                            <h6 class="card-title">${userData.name}</h6>
-                            <p class="card-text">Username: ${
-                                userData.vanity
-                            }</p>
-                            <p class="card-text">User ID: ${userData.userID}</p>
+                            <h6 class="card-title">XName</h6>
+                            <p class="card-text">Username: XuserName</p>
+                            <p class="card-text">User ID: Xuid1343</p>
                         </div>
                     </div>
                 </div>
@@ -1194,19 +1059,11 @@ const renderThankYouMessage = (userData, threadData, paymentInfo) => {
                         </div>
                         <div class="card-body">
                             <div class="text-center mb-3">
-                                <img src="${
-                                    threadData.imageSrc
-                                }" class="rounded-circle" alt="${
-                                    threadData.threadName
-                                }" width="100px">
+                                <img src="https://i.imgur.com/EIyOdfA.jpeg" class="rounded-circle" alt="Xthread" width="100px">
                             </div>
-                            <h6 class="card-title">${threadData.threadName}</h6>
-                            <p class="card-text">Thread ID: ${
-                                threadData.threadID
-                            }</p>
-                            <p class="card-text">Members: ${
-                                threadData.members.length
-                            }</p>
+                            <h6 class="card-title">Xthread</h6>
+                            <p class="card-text">Thread ID: Xtid</p>
+                            <p class="card-text">Members: Xtlength</p>
                         </div>
                     </div>
                 </div>
@@ -1217,19 +1074,13 @@ const renderThankYouMessage = (userData, threadData, paymentInfo) => {
                             <h5 class="mb-0">Payment Information</h5>
                         </div>
                         <div class="card-body">
-                            <h6 class="card-title">Payment Method: ${
-                                paymentInfo.paymentMethod
+                            <h6 class="card-title">Transaction ID: ${
+                                paymentInfo.trxID
                             }</h6>
-                                                        <p class="card-text">Transaction ID: ${
-                                                            paymentInfo.transactionId
-                                                        }</p>
                             <p class="card-text">Amount: ৳${
                                 paymentInfo.amount
                             }</p>
-                            <p class="card-text">Sender Number: ${
-                                paymentInfo.senderNumber
-                            }</p>
-                            <p class="card-text">Package Name: ${
+                            <p class="card-text">Package: ${
                                 paymentInfo.packageName
                             }</p>
                             <p class="card-text">Date: ${paymentInfo.date.toLocaleString()}</p>

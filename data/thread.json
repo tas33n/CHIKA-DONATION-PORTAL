@@ -1,2177 +1,1439 @@
 {
-  "status": "success",
+  "status":"success",
   "data": {
-    "threadID": "5473736752744010",
-    "threadName": "☠️ CHIKA ZONE 🟢 x Touka",
-    "threadThemeID": "1895494420887872",
-    "emoji": "🙂",
-    "adminIDs": [
-      "100002488001085",
-      "100012140762912",
+    "threadID":"5473736752744010",
+    "threadName":"☠️ CHIKA ZONE 🔴 1500",
+    "threadThemeID":"1895494420887872",
+    "emoji":"🔥",
+    "adminIDs":["100012140762912",
       "100023553541678",
-      "100029261872618",
       "100037084717775",
       "100048505268635",
       "100085763542628",
-      "100086462920374",
       "100091525077656",
-      "100092293096810"
-    ],
-    "imageSrc": "https://scontent.fcgp30-1.fna.fbcdn.net/v/t1.15752-9/448458059_868503615297907_125540385436964265_n.png?_nc_cat=104&ccb=1-7&_nc_sid=935a9d&_nc_ohc=XbTMVcY4b5AQ7kNvgGW_iop&_nc_ht=scontent.fcgp30-1.fna&oh=03_Q7cD1QFXOzqf9ZS3HTpF-DjPS3iZ7-HG86lHjI22Q19WmkDqXA&oe=66F61A8C",
-    "approvalMode": true,
-    "members": [
-      {
-        "userID": "61550008299045",
-        "name": "Aritra Exeity",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61550013770797",
-        "name": "Zaigham Yeamin",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61550039175953",
-        "name": "Ariyan Dicaprio",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61550122733198",
-        "name": "Ahmod Al Mahmud",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61550277880038",
-        "name": "Arifa Islam",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61551570163788",
-        "name": "Nure Alam Nafi",
-        "gender": "MALE",
-        "nickname": "Vampire 🧛🏻‍♂️",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61551690584864",
-        "name": "Facebook user",
-        "nickname": "😭",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61551881116122",
-        "name": "Kiyotaka Ayanokoji",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61551929443135",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61552058534581",
-        "name": "Hydra A",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61552086880292",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61552149982332",
-        "name": "Levi Ackerman",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61552212606558",
-        "name": "Eren Yeager",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61552349878418",
-        "name": "Picchi Vut",
-        "gender": "FEMALE",
-        "nickname": "Ghost",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61552493821196",
-        "name": "Mitsuri Chan",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61552634437012",
-        "name": "Katana X Hinami",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61553061924050",
-        "name": "Abdullah Al Saleh",
-        "gender": "MALE",
-        "nickname": "ʙᴀɴᴋᴀɪ || 鬆",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61553831554503",
-        "name": "Īt'ß Çāllïñg Dørēāmøñ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61553862967993",
-        "name": "Ishan Mutsuddi",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61554049259916",
-        "name": "Borson Joy Dip",
-        "gender": "MALE",
-        "nickname": "nero",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61554502687919",
-        "name": "Zihad Islam",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61554548431305",
-        "name": "Chris Dave",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61554970870370",
-        "name": "Joseph Deladem",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555029670531",
-        "name": "Md Asif Ahamed Arnob",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555072899235",
-        "name": "Sistine Fible",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555227160975",
-        "name": "Ken Kaneki",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555296412204",
-        "name": "Xaif Chowdhury",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555478800596",
-        "name": "Zifan Winters",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555590273569",
-        "name": "Hasibur Kurosaki",
-        "gender": "MALE",
-        "nickname": "Niqqa Cat [Main Admin]",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555816790641",
-        "name": "Akkhar Rongdi",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555887493470",
-        "name": "sᴀɪᴅᴜʟ 園",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555963617502",
-        "name": "Yor Forger",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61555982962623",
-        "name": "Jordan Barratt",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556188882979",
-        "name": "Obanai Iguro",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556199298310",
-        "name": "Itz Opu",
-        "gender": "MALE",
-        "nickname": "Itachi",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556542915804",
-        "name": "Fardin Hasan Safin",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556666859294",
-        "name": "Sarkar Arnove Lite",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556707222819",
-        "name": "Ew'r Hinata",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556761073957",
-        "name": "Abu Nur Mohammod Hamim",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556799775443",
-        "name": "Wild メ Hunter",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556914402452",
-        "name": "Tousif Ahmed",
-        "gender": "MALE",
-        "nickname": "ami",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61556964808971",
-        "name": "IcHigo No",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61557305847886",
-        "name": "Genesis愛",
-        "gender": "FEMALE",
-        "nickname": "[ ♡ ] ღ noorie chan",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61557409690407",
-        "name": "Md Iftekharul Islam Alif",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61557500369562",
-        "name": "Serizawa Hāruki",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61557650938438",
-        "name": "Gru Ain't No Minions",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61557841572072",
-        "name": "Ken Kaneki",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61557881870067",
-        "name": "Tanjiro Kamado",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61558181533010",
-        "name": "Chika Shirogane",
-        "gender": "FEMALE",
-        "nickname": "ღ chika chan",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61559539760556",
-        "name": "Yór Forgér",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61559635216854",
-        "name": "Remi Ayasaki",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61559889294739",
-        "name": "Kategiri Mujtoba",
-        "gender": "MALE",
-        "nickname": "Mangerput Sharingan User Itachi",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61559956139331",
-        "name": "Pika愛",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61560068001105",
-        "name": "নওশীন ইরা",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61560337821162",
-        "name": "Shuvro Evan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61560855118612",
-        "name": "গরম পানি",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61560928574803",
-        "name": "Ri Ma",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61561215287308",
-        "name": "Cyntrux Alastair II",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61562470886115",
-        "name": "Mitul Hasan II",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "61563442237828",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100000436645880",
-        "name": "Shahriar Ahammed Limon",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100000493798407",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100001647935235",
-        "name": "Mis Rose",
-        "gender": "MALE",
-        "nickname": "ღ remu chan",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100002488001085",
-        "name": "Mohammad Nayeem",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100007743615052",
-        "name": "Fayaz Ahmed Chowdhury",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100009145011487",
-        "name": "Fardin Mushdic",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100009435369806",
-        "name": "ψΦυπ ξαιϜ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100010324453972",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100010594054699",
-        "name": "Akio Hiroki",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100011293895973",
-        "name": "Mujtoba Mahmud",
-        "gender": "MALE",
-        "nickname": ".",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100011692483895",
-        "name": "Ahmed Kishor Sabbir",
-        "gender": "MALE",
-        "nickname": "33N-3",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100011979522595",
-        "name": "Abidur Rahman",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100012140762912",
-        "name": "Ehtasham Ahmed",
-        "gender": "MALE",
-        "nickname": "Acting Admin [Waifu Hunter]",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100013026633975",
-        "name": "Emam Hossan Nayem",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100013504444818",
-        "name": "Samí",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100013812332459",
-        "name": "Rishan Bin Shihan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100014625904498",
-        "name": "Nasrullah Abid Foraze",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100016458902475",
-        "name": "Azmain Sadat",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100018023650543",
-        "name": "Franz Castor",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100020361826673",
-        "name": "Raihan Jamil",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100020441437585",
-        "name": "Nosrat Bin",
-        "gender": "MALE",
-        "nickname": "‍            ‍",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100022479371666",
-        "name": "Riad Ahmed",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100023195563159",
-        "name": "Sadman Adib",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100023211739422",
-        "name": "Muhib Abrar",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100023443192318",
-        "name": "Itachi Dav",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100023472999281",
-        "name": "Farhad Shaikat",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100023553541678",
-        "name": "Farhan Isteak Taseen",
-        "gender": "MALE",
-        "nickname": "🅰🅳🅼🅸🅽  33 🅽 [no more anime]",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100023695562808",
-        "name": "Ahsan Khan Rony",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100024222472611",
-        "name": "Ezel",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100027029502145",
-        "name": "Ikram Hassan Jisan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100027496751089",
-        "name": "Samir Parvez",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100028304061042",
-        "name": "Md Munna",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100029261872618",
-        "name": "Himiko Midoriya",
-        "gender": "FEMALE",
-        "nickname": "[.] ღ hemiko",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100030555761830",
-        "name": "Abdullah Al Sami Junan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100031644276919",
-        "name": "Na H Id",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100034524712246",
-        "name": "Fa Him",
-        "gender": "MALE",
-        "nickname": "N2F",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100034864426296",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100035408208873",
-        "name": "আরেফিন সামি আরাফ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100036868322134",
-        "name": "Sakib Al Hasan",
-        "gender": "MALE",
-        "nickname": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100037084717775",
-        "name": "Md. Ariful Islam",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100037931201424",
-        "name": "Rafsun Jani",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100038213712278",
-        "name": "Sheykh Abdur Rahman",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100039519366887",
-        "name": "Leo Crimson",
-        "gender": "MALE",
-        "nickname": "☢️Aizen Sama ☢️",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100040355744830",
-        "name": "Nathbir Hasan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100040361354124",
-        "name": "Tasmi Chowdhry",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100040552261226",
-        "name": "Rasel Hossain Hridoy",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100041764957627",
-        "name": "Md Arfat Islam",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100041931226770",
-        "name": "Sahadat Hossen",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100047446970124",
-        "name": "MD Sayem Hosen",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100047481257472",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100048450277757",
-        "name": "Jűbãýèř Ąľ Mãhmüđ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100048505268635",
-        "name": "সাদমান অনিক",
-        "gender": "MALE",
-        "nickname": "D👀D",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100048788644542",
-        "name": "Mahiya Islam Mim",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100049669981393",
-        "name": "Taj Khondokar",
-        "gender": "MALE",
-        "nickname": "Admin Chacha ke bolte chai amio admin hote chai",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100050049544129",
-        "name": "Orewa Tah Mid",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100051705516865",
-        "name": "Adnan Islam II",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100052252753113",
-        "name": "AR M AN",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100054683696996",
-        "name": "Hasibul Hasan Htgb",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100054921821665",
-        "name": "Meherab RaFi",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100055099069054",
-        "name": "Shariful Alam",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100055234252200",
-        "name": "Yeadbeen Ahammed",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100055915952418",
-        "name": "Rizvi Ahamed Joy",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100056191091637",
-        "name": "Md Yeasir Arafat",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100056830672390",
-        "name": "Zahidul Islam Himel",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100056882444952",
-        "name": "Shinon Tokisaki愛",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100057432825567",
-        "name": "Sarkar Tamim",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100059035310772",
-        "name": "Fahriad Ahmed Nafiz",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100059642616273",
-        "name": "Shinichiro Exicst",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100060340563670",
-        "name": "Syed Samir Chowdhury",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100061382239218",
-        "name": "MdRabby Hossan",
-        "gender": "MALE",
-        "nickname": "Kʌĸʌsʜɩ Hʌtʌĸɘ",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100061454936475",
-        "name": "MI Rakib",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100063573600122",
-        "name": "Mehedi Hasan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100063937255380",
-        "name": "Sagittarius A",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100063995617912",
-        "name": "Nk Nurhossen",
-        "gender": "MALE",
-        "nickname": "মহামারী NK",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100064496418503",
-        "name": "Adnan Akanda",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100064763179341",
-        "name": "ナヴェア ザカリー",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100066383881166",
-        "name": "Mitul Hasan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100066795169165",
-        "name": "Nayeem Uzmaki",
-        "gender": "MALE",
-        "nickname": "𝘤𝘩𝘪𝘬𝘢 𝘤𝘩𝘢𝘯 𝘦𝘳 𝘫𝘢𝘮𝘢𝘪 \u003C3",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100066811177238",
-        "name": "Mahmudur Rahman",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100066839859875",
-        "name": "γουπ ΗιΜυ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100067366147414",
-        "name": "Irfat Hossen",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100068026748814",
-        "name": "Tåßíñ Íßlåm ẞråbøñ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100068063418426",
-        "name": "MD Atikul",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100068388249426",
-        "name": "Hosain Ahamed",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100068444380881",
-        "name": "Nk Nabil",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100068492980884",
-        "name": "Md Tawhid Islam Siam",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100068610815322",
-        "name": "Facebook user",
-        "nickname": "Ropom",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100069579908820",
-        "name": "Ri Yan",
-        "gender": "MALE",
-        "nickname": "Turtle:)",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100069981512436",
-        "name": "Mhd Prartho",
-        "gender": "MALE",
-        "nickname": "Banito Fleks ⚡🍵",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100070731823692",
-        "name": "Yùtā Okkötsū",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100070928597686",
-        "name": "Simon Sarkar",
-        "gender": "MALE",
-        "nickname": "touka sent a x video 🫦",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100071435800386",
-        "name": "NA H ID",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100071511796180",
-        "name": "Afran Nisho Naeem",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100072079190186",
-        "name": "Tamim Shikder",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100072276544027",
-        "name": "Imran Khan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100073617025062",
-        "name": "M. Ans Ali",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100074079127966",
-        "name": "Shahariar Shuvo",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100074942374574",
-        "name": "AriYan AhmEd",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100075052158210",
-        "name": "Sakib Sheikh",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100075218927376",
-        "name": "Ernesto Jhon",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100075359269640",
-        "name": "Arfan Moinul",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100075454605535",
-        "name": "Siam Ahmed",
-        "gender": "MALE",
-        "nickname": "A person who don’t exists anymore🗿",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100075521874765",
-        "name": "Ken Kaneki",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100075834272177",
-        "name": "Nahiyan Ferdous Mahir",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100075932858754",
-        "name": "DH RU BO",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100076556842055",
-        "name": "مصطفى حسن رافي",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100076848047120",
-        "name": "Faiyaz 恣",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100077189727025",
-        "name": "Smd Mithun",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100077802847868",
-        "name": "Araf Ibn Akbar",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100078159229218",
-        "name": "Md Jubaer Ahmed",
-        "gender": "MALE",
-        "nickname": "সাপের রাজা ওরোচিমারু ⌁ぷ⌁",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100078727245414",
-        "name": "মাহাদি আল মুনতাজার",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100079317362792",
-        "name": "Faiz R",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100079673914424",
-        "name": "Farhan Ahmed",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100080429766569",
-        "name": "Jisun Bhuiyan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100081110403065",
-        "name": "Gold D. Luffy",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100081177656948",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100081207131217",
-        "name": "Rezoanul Mezba",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100081257367644",
-        "name": "Tanha Chowdhury",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100081263506685",
-        "name": "Taib Hasan Alif",
-        "gender": "MALE",
-        "nickname": "タイブ ハサン アリフ",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100081444554315",
-        "name": "Patrick Harron",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100081804909596",
-        "name": "BI Joy",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100082103085154",
-        "name": "Tanvir Hajime",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100082247235177",
-        "name": "Facebook user",
-        "nickname": "Where is vuda fata Kazi Jabid Hassan",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100082278946174",
-        "name": "Initiated Spark",
-        "gender": "MALE",
-        "nickname": "Farhan Er Boro Vai 🌝🤌🏻",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100082479699127",
-        "name": "Shourav Roy",
-        "gender": "MALE",
-        "nickname": "ROY [ Black Goku] 🔥",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100082730088634",
-        "name": "Evan Ahmed Akash",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100082993742402",
-        "name": "Sra Bon",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083023159425",
-        "name": "Mahmuudur Rahman Siam",
-        "gender": "MALE",
-        "nickname": "orewa Monkey D Luffy",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083078285195",
-        "name": "Trix D Rui Kuruichi",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083107016753",
-        "name": "Abir Ahsan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083265795860",
-        "name": "Eshan Sensi",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083274484755",
-        "name": "Niskat Jahan Nawrin",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083291928486",
-        "name": "ADi Ti O",
-        "gender": "MALE",
-        "nickname": "KEMON ASO ☺️",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083981632700",
-        "name": "Damian Ahmed",
-        "gender": "MALE",
-        "nickname": "Walt Rizney",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100083992789819",
-        "name": "Uzui Tengen ʚĩɞ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100084056321819",
-        "name": "Aumit Acharjee",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100084133132193",
-        "name": "Ayan Khan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100084319067011",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100084469998544",
-        "name": "Mohammad Hasan Mahmud",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100084471513468",
-        "name": "Fahad Bin Younus Bhuiyan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100084731630155",
-        "name": "Chifuyu Ishmam",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100085177699091",
-        "name": "Xʌƴŋ Aʜɱɘɗ Sojɩɓ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100085286675494",
-        "name": "Asifa Nafisa",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100085763542628",
-        "name": "Touka Kirishima",
-        "gender": "FEMALE",
-        "nickname": "[.] ღ touka",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100086147821671",
-        "name": "Mufttaul Islam",
-        "gender": "MALE",
-        "nickname": "Zihad 😮‍💨",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100086462920374",
-        "name": "Chika Shirogane",
-        "gender": "FEMALE",
-        "nickname": "[/] ღ chika chan",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100087205573894",
-        "name": "ファイサル アーメド",
-        "gender": "MALE",
-        "nickname": "Doctor Doom \u003E\u003E3",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100087447266952",
-        "name": "Ew'r Sourav",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100087855357857",
-        "name": "SiFat Wadud SiFat",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100087889626553",
-        "name": "Istiak Ahamed",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100088210671288",
-        "name": "ØHio FiNal Don",
-        "gender": "MALE",
-        "nickname": "F@K3 Adm!Ñ✓™[mythical flag master🗿✓]",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100088575311120",
-        "name": "Sadman Anik",
-        "gender": "MALE",
-        "nickname": "- [bot]",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100088990832128",
-        "name": "Tamim Sarkar Arnov",
-        "gender": "MALE",
-        "nickname": "professor kheta",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100089109969595",
-        "name": "Yeamin Sheikh",
-        "gender": "MALE",
-        "nickname": "33N-2",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100089198352452",
-        "name": "Tajin Firdaous Tajin",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100089420258494",
-        "name": "AniZone BN",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100089602921052",
-        "name": "Sumaia Tabassum",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100089752761359",
-        "name": "RiFat HossEn BiswAs",
-        "gender": "MALE",
-        "nickname": "You left the group 😶",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100089768747639",
-        "name": "Abu Sufian Elahi",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100089793048524",
-        "name": "Md Sadik Hassan Rifat",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100090351982579",
-        "name": "Zara Chowdhury",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100090496280485",
-        "name": "RK Ayan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100090952281221",
-        "name": "KM Uchiha",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100091525077656",
-        "name": "アマネ・ フジミヤ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100091898606171",
-        "name": "Anika Tasnim",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100091926990178",
-        "name": "Ishan Mutsuddi",
-        "gender": "MALE",
-        "nickname": "🦆Queck..........!",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100092177763774",
-        "name": "Maher Hassan",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100092293096810",
-        "name": "Mohammad Alamin",
-        "gender": "MALE",
-        "nickname": "Alu",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100092672307501",
-        "name": "Ifran Xayaz",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100093112022226",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100093149274584",
-        "name": "SAIDUL ゝ",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100093293210691",
-        "name": "Akib X SiAm",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100093642882130",
-        "name": " Prince Liton 󱢏",
-        "gender": "MALE",
-        "nickname": "😩🤌",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100093674545346",
-        "name": "Facebook user",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100094259190784",
-        "name": "Supon Shikder",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100094389542517",
-        "name": "Sa Santho",
-        "gender": "MALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100094924471568",
-        "name": "Farhan Muh Tasim",
-        "gender": "FEMALE",
-        "nickname": null,
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100095021385629",
-        "name": "Aman Yajid",
-        "gender": "MALE",
-        "nickname": "Xerox\":)^^",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      },
-      {
-        "userID": "100095287226025",
-        "name": "Mahmud Hasan",
-        "gender": "MALE",
-        "nickname": "Mahmud [God Level Waifu Hunter]",
-        "inGroup": true,
-        "count": 0,
-        "permissionConfigDashboard": false
-      }
-    ],
-    "banned": {
-
+      "100092293096810"],
+    "imageSrc":"https://scontent-iad3-1.xx.fbcdn.net/v/t1.15752-9/457404462_425914063301806_8286166359165035944_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=935a9d&_nc_eui2=AeELPtGVGql40XT0XENMrCqxQKYk_mR_sOFApiT-ZH-w4ZdQ2PL8DJo_IOuWXZVU69NmJQEHzuEKF_-PNSiQrsAP&_nc_ohc=10wHBqOGxlUQ7kNvgEr45Hn&_nc_ht=scontent-iad3-1.xx&_nc_gid=AhaMPHFhcwmuZh0eKjewxan&oh=03_Q7cD1QGJEdypD8uS_CQFWE5e9UsKzTwj7kUESIrJahRWMRoZ1Q&oe=671E4B9B",
+    "approvalMode":true,
+    "members":[{
+      "userID":"100068952302073",
+      "name":"M S Sahed",
+      "gender":"MALE",
+      "nickname":null,
+      "inGroup":false,
+      "count":0
     },
-    "settings": {
-      "sendWelcomeMessage": true,
-      "sendLeaveMessage": true,
-      "sendRankupMessage": false,
-      "customCommand": true
-    },
-    "data": {
-
-    },
-    "isGroup": true,
-    "createdAt": "2024-08-28T06:10:22Z",
-    "updatedAt": "2024-08-28T06:10:22Z"
-  }
-}
+      {
+        "userID":"1650157507",
+        "name":"Kurumi Tokisaki",
+        "gender":"FEMALE",
+        "nickname":"𝙺𝚞𝚛𝚞𝚖𝚒 𝚃𝚘𝚔𝚒𝚜𝚊𝚔𝚒",
+        "inGroup":false,
+        "count":3142,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100023283376765",
+        "name":"Luffy X Arafat",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":16,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61556799775443",
+        "name":"Wild メ Hunter",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550013770797",
+        "name":"Zaigham Yeamin",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550039175953",
+        "name":"Ariyan Dicaprio",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550122733198",
+        "name":"Ahmod Al Mahmud",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550277880038",
+        "name":"Arifa Islam",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61551881116122",
+        "name":"Kiyotaka Ayanokoji",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61551929443135",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552058534581",
+        "name":"Hydra A",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552086880292",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552149982332",
+        "name":"Levi Ackerman",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552212606558",
+        "name":"Eren Yeager",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552493821196",
+        "name":"Mitsuri Chan",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61555029670531",
+        "name":"Md Asif Ahamed Arnob",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61555072899235",
+        "name":"Kaori Kaido",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61555296412204",
+        "name":"Xaif Chowdhury",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61555816790641",
+        "name":"Akkhar Rongdi",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61555963617502",
+        "name":"Yor Forger",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61556542915804",
+        "name":"Fardin Hasan Safin",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61557305847886",
+        "name":"Genesis愛",
+        "gender":"FEMALE",
+        "nickname":"[ ♡ ] ღ noorie chan",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61557650938438",
+        "name":"Gru Ain't No Minions",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61557841572072",
+        "name":"Ken Kaneki",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61557881870067",
+        "name":"Tanjiro Kamado",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61558181533010",
+        "name":"Chika Shirogane",
+        "gender":"FEMALE",
+        "nickname":"ღ chika chan",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61559539760556",
+        "name":"Yór Forgér",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61559635216854",
+        "name":"Remi Ayasaki",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61559956139331",
+        "name":"Pika愛",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61560928574803",
+        "name":"Ri Ma",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61562109174802",
+        "name":"Īt'ß Cāllïng Mīnī Dørēāmøn",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61563442237828",
+        "name":"Anya Forger",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100000493798407",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100001647935235",
+        "name":"Mis Rose",
+        "gender":"MALE",
+        "nickname":"ღ remu chan",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100009145011487",
+        "name":"Fardin Mushdic",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100009435369806",
+        "name":"ψΦυπ ξαιϜ",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100010324453972",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100013812332459",
+        "name":"Rishan Bin Shihan",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100014625904498",
+        "name":"Nasrullah Abid Foraze",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100016458902475",
+        "name":"Azmain Sadat",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100023211739422",
+        "name":"Muhib Abrar",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100023443192318",
+        "name":"Itachi Dav",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100023695562808",
+        "name":"Ahsan Khan Rony",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100024222472611",
+        "name":"Ezel",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100027029502145",
+        "name":"Ikram Hassan Jisan",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100027496751089",
+        "name":"Samir Parvez",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100028304061042",
+        "name":"Md Munna",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100036868322134",
+        "name":"Sakib Al Hasan",
+        "gender":"MALE",
+        "nickname":"‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100041764957627",
+        "name":"Md Arfat Islam",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100047481257472",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100048450277757",
+        "name":"Jűbãýèř Ąľ Mãhmüđ",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100048788644542",
+        "name":"Mahiya Islam Mim",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100052252753113",
+        "name":"AR M AN",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100054683696996",
+        "name":"Hasibul Hasan Htgb",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100056191091637",
+        "name":"Md Yeasir Arafat",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100056882444952",
+        "name":"Shinon Tokisaki愛",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100059035310772",
+        "name":"Fahriad Ahmed Nafiz",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100060340563670",
+        "name":"Syed Samir Chowdhury",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100061454936475",
+        "name":"MI Rakib",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100068610815322",
+        "name":"Nomair Islam Ropom",
+        "gender":null,
+        "nickname":"Ropom",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100082247235177",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":"Where is vuda fata Kazi Jabid Hassan",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100085286675494",
+        "name":"Asifa Nafisa",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":25
+      },
+      {
+        "userID":"100093112022226",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61556454184238",
+        "name":"Maki Ma",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0
+      },
+      {
+        "userID":"100052933278021",
+        "name":"Afjal Hosen",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0
+      },
+      {
+        "userID":"100082365406732",
+        "name":"SA IK AT",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100084221550933",
+        "name":"Munshi Shafin",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":2,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61556964808971",
+        "name":"IcHigo No",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":61,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100014789853724",
+        "name":"Mujahidur Rahman",
+        "gender":"MALE",
+        "nickname":"Kirigaya",
+        "inGroup":false,
+        "count":52,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100060734935792",
+        "name":"R AJ",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100073845646398",
+        "name":"Ashik Mridha",
+        "gender":"MALE",
+        "nickname":"A failure 😌💔",
+        "inGroup":false,
+        "count":3,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61561703964971",
+        "name":"Nosrat",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100048785594138",
+        "name":"Sa Ra",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100072987076477",
+        "name":"Ra Fi",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100077745636690",
+        "name":"Al A Min",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":32,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100092187528255",
+        "name":"Ahanaf Ahmed Adittya",
+        "nickname":null,
+        "inGroup":false,
+        "count":1
+      },
+      {
+        "userID":"100073734213510",
+        "name":"βαρρψ Ήαξαη παͿα",
+        "gender":"MALE",
+        "nickname":"🎤sent a voice.",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100063573600122",
+        "name":"Mehedi Hasan",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100078373338736",
+        "name":"MD Siamul",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100086397470354",
+        "name":"FA YS AL",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":160,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100090631320181",
+        "name":"Fagun Karlsefni",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100016782369003",
+        "name":"Johan Liebert",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100082479699127",
+        "name":"Shourav Roy",
+        "gender":"MALE",
+        "nickname":"‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ BatMan ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎",
+        "inGroup":false,
+        "count":1745,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100082103085154",
+        "name":"Tanvir Hajime",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":8,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100091990756163",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61560873236393",
+        "name":"Aditto Reza Mithil",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100093674545346",
+        "name":"Pan Da",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":4,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100081919380587",
+        "name":"Alif忍",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100077682152177",
+        "name":"Md Asaduzzaman",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100083291928486",
+        "name":"ADi Ti O",
+        "gender":"MALE",
+        "nickname":"KEMON ASO ☺️",
+        "inGroup":false,
+        "count":803,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100081562158766",
+        "name":"N R SiAm",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":6
+      },
+      {
+        "userID":"61552500085101",
+        "name":"Riham Islam",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100093346925617",
+        "name":"Ahmed Sabbir",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100088804913932",
+        "name":"一 ʀɘʌctoʀ বেবি ཐི༏ཋྀ",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":1
+      },
+      {
+        "userID":"100040142143839",
+        "name":"S M Jubayer Rahman",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100053880016960",
+        "name":"Abid Hasan Anondo",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100062963606643",
+        "name":"Razia Khandaker Shumi",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":1
+      },
+      {
+        "userID":"61561353835631",
+        "name":"Anika Tabassum",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":29,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100047876195993",
+        "name":"Roman Mondol",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":44,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100072783161006",
+        "name":"Arvin Medha Sarkar",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":3,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100087273445333",
+        "name":"Rafi Ahmed",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":2,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61551690584864",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":"𝄟✮⃝❤𝗛𝗜×͜×𝗠𝗨✮⃝❤𝄟",
+        "inGroup":false,
+        "count":567,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100000666529568",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":"- [bot]",
+        "inGroup":false,
+        "count":27,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100018023650543",
+        "name":"Franz Castor",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100034864426296",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":273,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100079272680301",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100081177656948",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100081257367644",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100091514508507",
+        "name":"Type Null",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":7,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100092354355693",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100093534706660",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61558971307861",
+        "name":"Tishiya Jannat",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0
+      },
+      {
+        "userID":"100074722578899",
+        "name":"SI Y Âm",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":131,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100068388249426",
+        "name":"Hosain Ahamed",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61561486235902",
+        "name":"Md Zubayer Hossen Zim",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":45,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100075454605535",
+        "name":"Siam Ahmed",
+        "gender":"MALE",
+        "nickname":"A person who don’t exists anymore🗿",
+        "inGroup":false,
+        "count":15,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100055816793879",
+        "name":"Arifa Khatun",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0
+      },
+      {
+        "userID":"61555750499847",
+        "name":"Md Shahajalal",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100089602921052",
+        "name":"Sumaia Tabassum",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61555274690073",
+        "name":"ジレル ジャスミン",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":3,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100074313172868",
+        "name":"As Hik",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61553831554503",
+        "name":"Īt'ß Çāllïñg Dørēāmøñ",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":207,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61556188882979",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":328,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61556761073957",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":"😬😬😤",
+        "inGroup":false,
+        "count":207,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61564911925708",
+        "name":"Facebook user",
+        "nickname":null,
+        "inGroup":false,
+        "count":12,
+        "gender":null,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100001847451158",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":8,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100029261872618",
+        "name":"Himiko Midoriya",
+        "gender":"FEMALE",
+        "nickname":"[.] ღ hemiko",
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100034545096744",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":"Ultimate Black Niggar",
+        "inGroup":false,
+        "count":31,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100068019815064",
+        "name":"MD Torikul",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100053449420642",
+        "name":"Sakib All Hasan",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":7,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100083023159425",
+        "name":"Mahmuudur Rahman Siam",
+        "gender":"MALE",
+        "nickname":"orewa Monkey D Luffy",
+        "inGroup":false,
+        "count":606,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100094259190784",
+        "name":"Supon Shikder",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":19,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61560068001105",
+        "name":"নওশীন ইরা",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":2,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100081444554315",
+        "name":"Patrick Harron",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100093642882130",
+        "name":" Prince Liton 󱢏",
+        "gender":"MALE",
+        "nickname":"🆆🅰🅸🅵🆄 🅗🅤🅝🅣🅔🅡 🅹︎🆁︎",
+        "inGroup":false,
+        "count":670,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100081644815119",
+        "name":"らいやん ナイーム",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":127,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61553609046516",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":"[-] ღ Dipty the maid",
+        "inGroup":false,
+        "count":129,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61561635057426",
+        "name":"ভালো বাসি তোমায়",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":0
+      },
+      {
+        "userID":"100060610112196",
+        "name":"Sadiul Alam Rokib",
+        "nickname":null,
+        "inGroup":false,
+        "count":9,
+        "gender":"MALE",
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61556807585156",
+        "name":"Hussain Vaiya",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":false,
+        "count":6,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61563655377425",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":61,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61566029811820",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":175,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100050542423388",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":26,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100086462920374",
+        "name":"Chika Shirogane",
+        "gender":"FEMALE",
+        "nickname":"[/] ღ chika chan",
+        "inGroup":false,
+        "count":404,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"100089958845924",
+        "name":"Facebook user",
+        "gender":null,
+        "nickname":null,
+        "inGroup":false,
+        "count":0,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550008299045",
+        "name":"Aritra Exeity",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":106,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550230433924",
+        "name":"Muntasir Mahmud",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":82,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550533641018",
+        "name":"Fense Spencer",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":16,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61550968802153",
+        "name":"Md Shiyab Hossain",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":3,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61551068339119",
+        "name":"Johan Liebert",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":129,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61551570163788",
+        "name":"Nure Alam Nafi",
+        "gender":"MALE",
+        "nickname":"Vampire 🧛🏻‍♂️",
+        "inGroup":true,
+        "count":429,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552167878065",
+        "name":"Tutul Ghumacce",
+        "gender":"MALE",
+        "nickname":"Ohh",
+        "inGroup":true,
+        "count":248,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552349878418",
+        "name":"Picchi Vut",
+        "gender":"FEMALE",
+        "nickname":"Ghost",
+        "inGroup":true,
+        "count":37,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552634437012",
+        "name":"Katana X Hinami",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":1,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61552720493818",
+        "name":"Lucius Artorius Castus",
+        "gender":"FEMALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":395,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61553061924050",
+        "name":"Abdullah Al Saleh",
+        "gender":"MALE",
+        "nickname":"ʀʏᴏɪᴋɪ ʙᴀɴᴋᴀɪ ɪɴꜰɪɴɪᴛʏ ʜᴇɴᴛᴀɪ",
+        "inGroup":true,
+        "count":20,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61553862967993",
+        "name":"Ishan Mutsuddi",
+        "gender":"MALE",
+        "nickname":null,
+        "inGroup":true,
+        "count":1471,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61553882860085",
+        "name":"Tanzim Ferdous Shouhardo",
+        "gender":"MALE",
+        "nickname":"Papa Ranjeet",
+        "inGroup":true,
+        "count":67,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61554049259916",
+        "name":"Borson Joy Dip",
+        "gender":"MALE",
+        "nickname":"🆆🅰🅸🅵🆄 🅗🅤🅝🅣🅔🅡",
+        "inGroup":true,
+        "count":8880,
+        "permissionConfigDashboard":false
+      },
+      {
+        "userID":"61554432150675",
+        "name":"Eren Yeager",
+        "gender":"MALE","nickname":null,"inGroup":true,"count":7,"permissionConfigDashboard":false},{"userID":"61554454614731","name":"サジム ムーン","gender":"MALE","nickname":"Mr Prince","inGroup":true,"count":48,"permissionConfigDashboard":false},{"userID":"61554502687919","name":"Zihad Islam","gender":"MALE","nickname":null,"inGroup":true,"count":171,"permissionConfigDashboard":false},{"userID":"61554548431305","name":"Chris Dave","gender":"MALE","nickname":null,"inGroup":true,"count":25,"permissionConfigDashboard":false},{"userID":"61554781049020","name":"Ayanokoji Kiyotaka","gender":"MALE","nickname":null,"inGroup":true,"count":96,"permissionConfigDashboard":false},{"userID":"61554970870370","name":"Joseph Deladem","gender":"MALE","nickname":null,"inGroup":true,"count":56,"permissionConfigDashboard":false},{"userID":"61555227160975","name":"MD Moktadir","gender":"MALE","nickname":null,"inGroup":true,"count":42,"permissionConfigDashboard":false},{"userID":"61555478800596","name":"Zifan Winters","gender":"MALE","nickname":null,"inGroup":true,"count":79,"permissionConfigDashboard":false},{"userID":"61555590273569","name":"Hasibur Kurosaki","gender":"MALE","nickname":"বটকা বিলাই ডরামন","inGroup":true,"count":126,"permissionConfigDashboard":false},{"userID":"61555808586309","name":"Keiko Fushiguro","gender":"FEMALE","nickname":null,"inGroup":true,"count":3463,"permissionConfigDashboard":false},{"userID":"61555887493470","name":"Àhmed Śaidûl","gender":"MALE","nickname":null,"inGroup":true,"count":22,"permissionConfigDashboard":false},{"userID":"61555982962623","name":"Jordan Barratt","gender":"MALE","nickname":null,"inGroup":true,"count":30,"permissionConfigDashboard":false},{"userID":"61556199298310","name":"Itz Opu","gender":"MALE","nickname":"HIRO    (016)","inGroup":true,"count":24,"permissionConfigDashboard":false},{"userID":"61556227419696","name":"Xii A M","gender":"MALE","nickname":null,"inGroup":true,"count":114,"permissionConfigDashboard":false},{"userID":"61556433683145","name":"Bro Ken","gender":"FEMALE","nickname":null,"inGroup":true,"count":5,"permissionConfigDashboard":false},{"userID":"61556666859294","name":"Sarkar Arnove Lite","gender":"MALE","nickname":null,"inGroup":true,"count":2,"permissionConfigDashboard":false},{"userID":"61556707222819","name":"Ew'r Hinata","gender":"FEMALE","nickname":null,"inGroup":true,"count":2,"permissionConfigDashboard":false},{"userID":"61556914402452","name":"Tousif Ahmed","gender":"MALE","nickname":"ami","inGroup":true,"count":287,"permissionConfigDashboard":false},{"userID":"61557153787460","name":"Mula Chan","gender":"FEMALE","nickname":null,"inGroup":true,"count":9,"permissionConfigDashboard":false},{"userID":"61557358750609","name":"Yū Setoguchi","gender":"MALE","nickname":null,"inGroup":true,"count":75,"permissionConfigDashboard":false},{"userID":"61557409690407","name":"Md Iftekharul Islam Alif","gender":"MALE","nickname":null,"inGroup":true,"count":35,"permissionConfigDashboard":false},{"userID":"61557500369562","name":"Serizawa Hāruki","gender":"MALE","nickname":null,"inGroup":true,"count":9,"permissionConfigDashboard":false},{"userID":"61559030439698","name":"Shiranai Hito","gender":"MALE","nickname":null,"inGroup":true,"count":1,"permissionConfigDashboard":false},{"userID":"61559343691694","name":"Watashi Wa Jimmy","gender":"MALE","nickname":null,"inGroup":true,"count":35,"permissionConfigDashboard":false},{"userID":"61559889294739","name":"Kategiri Mujtoba","gender":"MALE","nickname":"Dhner moton nickname disi,sei hoise :)","inGroup":true,"count":706,"permissionConfigDashboard":false},{"userID":"61560337821162","name":"Shuvro Evan","gender":"MALE","nickname":null,"inGroup":true,"count":59,"permissionConfigDashboard":false},{"userID":"61560511525563","name":"Faysal Ahmed","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"61560639623202","name":"Zara Moni","gender":"FEMALE","nickname":null,"inGroup":true,"count":65,"permissionConfigDashboard":false},{"userID":"61560808719111","name":"Alya AI Maneger","gender":"MALE","nickname":"Evil+good","inGroup":true,"count":9,"permissionConfigDashboard":false},{"userID":"61560835263349","name":"Hanzala Uzair","gender":"MALE","nickname":null,"inGroup":true,"count":31,"permissionConfigDashboard":false},{"userID":"61560855118612","name":"গরম পানি","gender":"FEMALE","nickname":"Orewa Konan < 3","inGroup":true,"count":406,"permissionConfigDashboard":false},{"userID":"61561194878554","name":"Md Nabil Hossain","gender":"MALE","nickname":null,"inGroup":true,"count":75,"permissionConfigDashboard":false},{"userID":"61561215287308","name":"Elixiøn Sēngāturo II","gender":"MALE","nickname":null,"inGroup":true,"count":29,"permissionConfigDashboard":false},{"userID":"61562470886115","name":"Mitul Hasan II","gender":"MALE","nickname":null,"inGroup":true,"count":6,"permissionConfigDashboard":false},{"userID":"61562616140134","name":"Abir Saturo","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"61563973322008","name":"Tutul Ahmed","gender":"MALE","nickname":null,"inGroup":true,"count":5,"permissionConfigDashboard":false},{"userID":"61564651446231","name":"Psy Cho","gender":"MALE","nickname":null,"inGroup":true,"count":99,"permissionConfigDashboard":false},{"userID":"61564714395224","name":"NM Muntasir","gender":"MALE","nickname":"Q-J-T","inGroup":true,"count":15,"permissionConfigDashboard":false},{"userID":"61564861401319","name":"Miles Morales","gender":"MALE","nickname":null,"inGroup":true,"count":55,"permissionConfigDashboard":false},{"userID":"61565331826045","name":"ZA RA","gender":"FEMALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"61565946275341","name":"Nomair Islam Ropom","gender":"MALE","nickname":"Looking for cheap  তৈলাক্ত নিজ্ঞাrs","inGroup":true,"count":457,"permissionConfigDashboard":false},{"userID":"100000436645880","name":"Shahriar Ahammed Limon","gender":"MALE","nickname":null,"inGroup":true,"count":32,"permissionConfigDashboard":false},{"userID":"100002488001085","name":"Mohammad Nayeem","gender":"MALE","nickname":null,"inGroup":true,"count":133,"permissionConfigDashboard":false},{"userID":"100007715505579","name":"Anthony Luciano","gender":"MALE","nickname":null,"inGroup":true,"count":6,"permissionConfigDashboard":false},{"userID":"100007743615052","name":"Fayaz Ahmed Chowdhury","gender":"MALE","nickname":null,"inGroup":true,"count":10,"permissionConfigDashboard":false},{"userID":"100007869158252","name":"Md. Atiq Ullah","gender":"MALE","nickname":null,"inGroup":true,"count":1205,"permissionConfigDashboard":false},{"userID":"100010594054699","name":"Akio Hiroki","gender":"MALE","nickname":null,"inGroup":true,"count":21,"permissionConfigDashboard":false},{"userID":"100010684576385","name":"Fahim Rahman","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100011293895973","name":"Mujtoba Mahmud","gender":"MALE","nickname":".","inGroup":true,"count":51,"permissionConfigDashboard":false},{"userID":"100011692483895","name":"Ahmed Kishor Sabbir","gender":"MALE","nickname":"33N-3","inGroup":true,"count":584,"permissionConfigDashboard":false},{"userID":"100011979522595","name":"Abidur Rahman","gender":"MALE","nickname":null,"inGroup":true,"count":37,"permissionConfigDashboard":false},{"userID":"100012140762912","name":"Ehtasham Ahmed","gender":"MALE","nickname":"Acting Admin [Waifu Hunter]","inGroup":true,"count":1708,"permissionConfigDashboard":false},{"userID":"100012428101549","name":"Nahiyan Islam","gender":"MALE","nickname":"a failure","inGroup":true,"count":1286,"permissionConfigDashboard":false},{"userID":"100012559182757","name":"Sayedul Bashar","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100013026633975","name":"Emam Hossan Nayem","gender":"MALE","nickname":null,"inGroup":true,"count":12,"permissionConfigDashboard":false},{"userID":"100013504444818","name":"Samí","gender":"MALE","nickname":null,"inGroup":true,"count":33,"permissionConfigDashboard":false},{"userID":"100014173418173","name":"Ahanaf Shikto","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100015585724028","name":"Touhidul Tahmid","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100020361826673","name":"Raihan Jamil","gender":"MALE","nickname":null,"inGroup":true,"count":4,"permissionConfigDashboard":false},{"userID":"100020441437585","name":"Nosrat Bin","gender":"MALE","nickname":"‍            ‍","inGroup":true,"count":422,"permissionConfigDashboard":false},{"userID":"100022479371666","name":"Riad Ahmed","gender":"MALE","nickname":null,"inGroup":true,"count":8,"permissionConfigDashboard":false},{"userID":"100022662911321","name":"AL Amin Ahmed Titu","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100023195563159","name":"Sadman Adib","gender":"MALE","nickname":null,"inGroup":true,"count":1,"permissionConfigDashboard":false},{"userID":"100023472999281","name":"Farhad Shaikat","gender":"MALE","nickname":null,"inGroup":true,"count":28,"permissionConfigDashboard":false},{"userID":"100023553541678","name":"Farhan Isteak Taseen","gender":"MALE","nickname":"🅰🅳🅼🅸🅽  33 🅽 [no more anime]","inGroup":true,"count":3347,"permissionConfigDashboard":false},{"userID":"100024747487462","name":"Ahnaf Sadiq","gender":"MALE","nickname":null,"inGroup":true,"count":7,"permissionConfigDashboard":false},{"userID":"100025099211536","name":"Ariyan Hridoy","gender":"MALE","nickname":null,"inGroup":true,"count":4,"permissionConfigDashboard":false},{"userID":"100030555761830","name":"Abdullah Al Sami Junan","gender":"MALE","nickname":null,"inGroup":true,"count":27,"permissionConfigDashboard":false},{"userID":"100031644276919","name":"Na H Id","gender":"MALE","nickname":null,"inGroup":true,"count":147,"permissionConfigDashboard":false},{"userID":"100034524712246","name":"Fa Him","gender":"MALE","nickname":"N2F","inGroup":true,"count":30,"permissionConfigDashboard":false},{"userID":"100035408208873","name":"আরেফিন সামি আরাফ","gender":"MALE","nickname":null,"inGroup":true,"count":1415,"permissionConfigDashboard":false},{"userID":"100035677042205","name":"Prangon Ghosh","gender":"MALE","nickname":null,"inGroup":true,"count":447,"permissionConfigDashboard":false},{"userID":"100037084717775","name":"Md. Ariful Islam","gender":"MALE","nickname":null,"inGroup":true,"count":1,"permissionConfigDashboard":false},{"userID":"100037433943993","name":"Tanvir Rayhan","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100037931201424","name":"Rafsun Jani","gender":"MALE","nickname":null,"inGroup":true,"count":17,"permissionConfigDashboard":false},{"userID":"100038213712278","name":"Sheykh Abdur Rahman","gender":"MALE","nickname":null,"inGroup":true,"count":235,"permissionConfigDashboard":false},{"userID":"100039519366887","name":"Leo Crimson","gender":"MALE","nickname":"☢️Aizen Sama ☢️","inGroup":true,"count":842,"permissionConfigDashboard":false},{"userID":"100040355744830","name":"Nathbir Hasan","gender":"MALE","nickname":null,"inGroup":true,"count":154,"permissionConfigDashboard":false},{"userID":"100040361354124","name":"Tasmi Chowdhry","gender":"FEMALE","nickname":null,"inGroup":true,"count":237,"permissionConfigDashboard":false},{"userID":"100040552261226","name":"Rasel Hossain Hridoy","gender":"MALE","nickname":null,"inGroup":true,"count":48,"permissionConfigDashboard":false},{"userID":"100041931226770","name":"Sahadat Hossen","gender":"MALE","nickname":null,"inGroup":true,"count":44,"permissionConfigDashboard":false},{"userID":"100044327656712","name":"Dip To","gender":"MALE","nickname":null,"inGroup":true,"count":10,"permissionConfigDashboard":false},{"userID":"100045078230005","name":"Makim Chan","gender":"MALE","nickname":null,"inGroup":true,"count":4,"permissionConfigDashboard":false},{"userID":"100047446970124","name":"MD Sayem Hosen","gender":"MALE","nickname":null,"inGroup":true,"count":159,"permissionConfigDashboard":false},{"userID":"100048505268635","name":"সাদমান অনিক","gender":"MALE","nickname":"D👀D","inGroup":true,"count":51,"permissionConfigDashboard":false},{"userID":"100049456032890","name":"Shah Riar","gender":"MALE","nickname":null,"inGroup":true,"count":5,"permissionConfigDashboard":false},{"userID":"100049669981393","name":"Taj Khondokar","gender":"MALE","nickname":"Admin Chacha ke bolte chai amio admin hote chai","inGroup":true,"count":214,"permissionConfigDashboard":false},{"userID":"100050049544129","name":"Orewa Tah Mid","gender":"MALE","nickname":null,"inGroup":true,"count":12,"permissionConfigDashboard":false},{"userID":"100050056818688","name":"Zoro Exists","gender":"MALE","nickname":"zoro removed you from the group.","inGroup":true,"count":1002,"permissionConfigDashboard":false},{"userID":"100050103396878","name":"Shreya Debnath","gender":"FEMALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100050288554282","name":"Kuze Kun","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100050475276274","name":"Jaber Rahman","gender":"MALE","nickname":null,"inGroup":true,"count":25,"permissionConfigDashboard":false},{"userID":"100050728155391","name":"Muhammad Sabbir Hossen","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100050735784196","name":"Jerin Tasnim Diya","gender":"FEMALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100051705516865","name":"Adnan Islam II","gender":"MALE","nickname":null,"inGroup":true,"count":4,"permissionConfigDashboard":false},{"userID":"100053467609761","name":"Vabnar Khorak","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100053648190277","name":"Marrcus Donquixote","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100054921821665","name":"Meherab RaFi","gender":"MALE","nickname":null,"inGroup":true,"count":639,"permissionConfigDashboard":false},{"userID":"100055099069054","name":"Shariful Alam","gender":"MALE","nickname":null,"inGroup":true,"count":310,"permissionConfigDashboard":false},{"userID":"100055181898618","name":"MD Shuvo Khan","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100055234252200","name":"Yeadbeen Ahammed","gender":"MALE","nickname":null,"inGroup":true,"count":3,"permissionConfigDashboard":false},{"userID":"100055915952418","name":"Rizvi Ahamed Joy","gender":"MALE","nickname":"DR«DOOM»","inGroup":true,"count":201,"permissionConfigDashboard":false},{"userID":"100056475082077","name":"Miuki Mei","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100056830672390","name":"Zahidul Islam Himel","gender":"MALE","nickname":null,"inGroup":true,"count":40,"permissionConfigDashboard":false},{"userID":"100057332882456","name":"Ullash","gender":"MALE","nickname":null,"inGroup":true,"count":11,"permissionConfigDashboard":false},{"userID":"100057432825567","name":"Sarkar Tamim","gender":"MALE","nickname":"flimtum","inGroup":true,"count":568,"permissionConfigDashboard":false},{"userID":"100057727688131","name":"Sazim Moon","gender":"MALE","nickname":"NOBODY","inGroup":true,"count":443,"permissionConfigDashboard":false},{"userID":"100058657082625","name":"Tarek Bro","gender":"MALE","nickname":null,"inGroup":true,"count":34,"permissionConfigDashboard":false},{"userID":"100058670160637","name":"Savior Ň À RúTö","gender":"MALE","nickname":null,"inGroup":true,"count":41,"permissionConfigDashboard":false},{"userID":"100059642616273","name":"Shinichiro Exicst","gender":"MALE","nickname":null,"inGroup":true,"count":44,"permissionConfigDashboard":false},{"userID":"100061382239218","name":"MdRabby Hossan","gender":"MALE","nickname":"Kʌĸʌsʜɩ Hʌtʌĸɘ","inGroup":true,"count":659,"permissionConfigDashboard":false},{"userID":"100062437207344","name":"Md Siam","gender":"MALE","nickname":null,"inGroup":true,"count":66,"permissionConfigDashboard":false},{"userID":"100063758466674","name":"Mahmudul Tawsan","nickname":null,"inGroup":true,"count":301,"gender":"MALE","permissionConfigDashboard":false},{"userID":"100063937255380","name":"Sagittarius A","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100063995617912","name":"Nk Nurhossen","gender":"MALE","nickname":"মহামারী NK","inGroup":true,"count":8,"permissionConfigDashboard":false},{"userID":"100064496418503","name":"Adnan Akanda","gender":"MALE","nickname":null,"inGroup":true,"count":26,"permissionConfigDashboard":false},{"userID":"100064763179341","name":"ナヴェア ザカリー","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100064974332202","name":"Md Fardin Hasan","gender":"MALE","nickname":null,"inGroup":true,"count":64,"permissionConfigDashboard":false},{"userID":"100066383881166","name":"Mitul Hasan","gender":"MALE","nickname":null,"inGroup":true,"count":421,"permissionConfigDashboard":false},{"userID":"100066795169165","name":"Nayeem Uzmaki","gender":"MALE","nickname":"𝘤𝘩𝘪𝘬𝘢 𝘤𝘩𝘢𝘯 𝘦𝘳 𝘫𝘢𝘮𝘢𝘪 <3","inGroup":true,"count":337,"permissionConfigDashboard":false},{"userID":"100066811177238","name":"Mahmudur Rahman","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100066839859875","name":"Høpéléss Hîmú","gender":"MALE","nickname":"🆆🅰🅸🅵🆄 🅗🅤🅝🅣🅔🅡 𝟮.𝟬","inGroup":true,"count":709,"permissionConfigDashboard":false},{"userID":"100067366147414","name":"Irfat Hossen","gender":"MALE","nickname":null,"inGroup":true,"count":1,"permissionConfigDashboard":false},{"userID":"100068026748814","name":"Tåßíñ Íßlåm ẞråbøñ","gender":"MALE","nickname":null,"inGroup":true,"count":6,"permissionConfigDashboard":false},{"userID":"100068063418426","name":"MD Atikul","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100068444380881","name":"Nk Nabil","gender":"MALE","nickname":null,"inGroup":true,"count":3,"permissionConfigDashboard":false},{"userID":"100068492980884","name":"Md Tawhid Islam Siam","gender":"MALE","nickname":null,"inGroup":true,"count":53,"permissionConfigDashboard":false},{"userID":"100069026134807","name":"Md Ababil","gender":"MALE","nickname":"ᴋᴀᴢᴜᴍᴀ Sato","inGroup":true,"count":369,"permissionConfigDashboard":false},{"userID":"100069579908820","name":"Riyan Alt","gender":"MALE","nickname":"Turtle:)","inGroup":true,"count":8,"permissionConfigDashboard":false},{"userID":"100069981512436","name":"Mhd Prartho","gender":"MALE","nickname":"Banito Fleks ⚡🍵","inGroup":true,"count":264,"permissionConfigDashboard":false},{"userID":"100070731823692","name":"Yùtā Okkötsū","gender":"MALE","nickname":null,"inGroup":true,"count":2,"permissionConfigDashboard":false},{"userID":"100070928597686","name":"Simon Sarkar","gender":"MALE","nickname":"touka sent a x video 🫦","inGroup":true,"count":347,"permissionConfigDashboard":false},{"userID":"100071435800386","name":"NA H ID","gender":"MALE","nickname":null,"inGroup":true,"count":24,"permissionConfigDashboard":false},{"userID":"100071511796180","name":"Afran Nisho Naeem","gender":"MALE","nickname":null,"inGroup":true,"count":15,"permissionConfigDashboard":false},{"userID":"100072079190186","name":"Tamim Shikder","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100072205088593","name":"Safwan Ahmed Yusuf","gender":"MALE","nickname":null,"inGroup":true,"count":54,"permissionConfigDashboard":false},{"userID":"100072276544027","name":"Imran Khan","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100073617025062","name":"M Ans Ali","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100074006375339","name":"Yk Zenitsu","gender":"MALE","nickname":null,"inGroup":true,"count":776,"permissionConfigDashboard":false},{"userID":"100074079127966","name":"Shahariar Shuvo","gender":"MALE","nickname":null,"inGroup":true,"count":886,"permissionConfigDashboard":false},{"userID":"100074942374574","name":"AriYan AhmEd","gender":"MALE","nickname":null,"inGroup":true,"count":14,"permissionConfigDashboard":false},{"userID":"100075052158210","name":"Sakib Sheikh","gender":"MALE","nickname":"🅼🅴🅼🅱🅴🆁  34 🅽 [ɴᴏ ᴍᴏʀᴇ ᴀɴɪᴍᴇ]","inGroup":true,"count":1326,"permissionConfigDashboard":false},{"userID":"100075218927376","name":"Ernesto Jhon","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100075359269640","name":"Arfan Moinul","gender":"MALE","nickname":null,"inGroup":true,"count":68,"permissionConfigDashboard":false},{"userID":"100075521874765","name":"Ken Kaneki","gender":"MALE","nickname":null,"inGroup":true,"count":25,"permissionConfigDashboard":false},{"userID":"100075834272177","name":"Nahiyan Ferdous Mahir","gender":"MALE","nickname":"জ্ঞানীকে উল্টালে নিজ্ঞা হয় 🥰✨","inGroup":true,"count":1272,"permissionConfigDashboard":false},{"userID":"100075847939829","name":"Maruful Islam","gender":"MALE","nickname":null,"inGroup":true,"count":309,"permissionConfigDashboard":false},{"userID":"100075932858754","name":"DH RU BO","gender":"MALE","nickname":null,"inGroup":true,"count":34,"permissionConfigDashboard":false},{"userID":"100076556842055","name":"مصطفى حسن رافي","gender":"MALE","nickname":null,"inGroup":true,"count":3,"permissionConfigDashboard":false},{"userID":"100076848047120","name":"Faiyaz 恣","gender":"MALE","nickname":null,"inGroup":true,"count":45,"permissionConfigDashboard":false},{"userID":"100077171605004","name":"Zenitsu Agatsuma","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100077189727025","name":"Smd Mithun","gender":"MALE","nickname":"𝑃𝑎𝑟𝑡 𝑡𝑖𝑚𝑒 𝑊𝑎𝑖𝑓𝑢 𝐻𝑢𝑛𝑡𝑒𝑟🏹","inGroup":true,"count":1081,"permissionConfigDashboard":false},{"userID":"100077501809658","name":"Eyasin Arafat","gender":"FEMALE","nickname":"touka sent a x video 💦","inGroup":true,"count":423,"permissionConfigDashboard":false},{"userID":"100077802847868","name":"Araf Ibn Akbar","gender":"MALE","nickname":null,"inGroup":true,"count":278,"permissionConfigDashboard":false},{"userID":"100078143028108","name":"Tansin Hossain Zarif","gender":"MALE","nickname":null,"inGroup":true,"count":5,"permissionConfigDashboard":false},{"userID":"100078159229218","name":"Md Jubaer Ahmed","gender":"MALE","nickname":"NIGGA SLAYER","inGroup":true,"count":5700,"permissionConfigDashboard":false},{"userID":"100078192234147","name":"Md Sakib","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100078727245414","name":"মাহাদি আল মুনতাজার","gender":"MALE","nickname":null,"inGroup":true,"count":7,"permissionConfigDashboard":false},{"userID":"100079317362792","name":"Faiz R","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100079673914424","name":"Farhan Ahmed","gender":"MALE","nickname":":⫍ ⃢🍁ܫ🍁⃢ ⫎:Farhan ahmed","inGroup":true,"count":828,"permissionConfigDashboard":false},{"userID":"100079955858757","name":"Tamim Islam","gender":"MALE","nickname":null,"inGroup":true,"count":17,"permissionConfigDashboard":false},{"userID":"100080195076753","name":"TA WS IN","gender":"MALE","nickname":null,"inGroup":true,"count":15,"permissionConfigDashboard":false},{"userID":"100080429766569","name":"Jisun Bhuiyan","gender":"MALE","nickname":null,"inGroup":true,"count":16,"permissionConfigDashboard":false},{"userID":"100080887770894","name":"Shikto Editz","gender":"MALE","nickname":null,"inGroup":true,"count":54,"permissionConfigDashboard":false},{"userID":"100080952112609","name":"ẞk ẞråbøñ Íßlåm","gender":"MALE","nickname":null,"inGroup":true,"count":15,"permissionConfigDashboard":false},{"userID":"100081110403065","name":"Gold D. Luffy","gender":"MALE","nickname":null,"inGroup":true,"count":4,"permissionConfigDashboard":false},{"userID":"100081207131217","name":"কাব্যহীন কবি","gender":"MALE","nickname":null,"inGroup":true,"count":170,"permissionConfigDashboard":false},{"userID":"100081263506685","name":"Taib Hasan Alif","gender":"MALE","nickname":"タイブ ハサン アリフ","inGroup":true,"count":101,"permissionConfigDashboard":false},{"userID":"100081804909596","name":"Sveinz X Bijoy","gender":"MALE","nickname":null,"inGroup":true,"count":48,"permissionConfigDashboard":false},{"userID":"100081883175834","name":"MD Huzayfa Assadik","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100082278946174","name":"Initiated Spark","gender":"MALE","nickname":"Farhan Er Boro Vai 🌝🤌🏻","inGroup":true,"count":1516,"permissionConfigDashboard":false},{"userID":"100082730088634","name":"Evan Ahmed Akash","gender":"MALE","nickname":"Tom..!!","inGroup":true,"count":11,"permissionConfigDashboard":false},{"userID":"100082830627935","name":"Ikramul Hasan","gender":"MALE","nickname":null,"inGroup":true,"count":23,"permissionConfigDashboard":false},{"userID":"100082993742402","name":"Sra Bon","gender":"MALE","nickname":null,"inGroup":true,"count":21,"permissionConfigDashboard":false},{"userID":"100083078285195","name":"Trix D Rui Kuruichi","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100083107016753","name":"Abir Ahsan","gender":"MALE","nickname":null,"inGroup":true,"count":8,"permissionConfigDashboard":false},{"userID":"100083265795860","name":"Eshan Sensi","gender":"MALE","nickname":null,"inGroup":true,"count":15,"permissionConfigDashboard":false},{"userID":"100083274484755","name":"Niskat Jahan Nawrin","gender":"FEMALE","nickname":null,"inGroup":true,"count":42,"permissionConfigDashboard":false},{"userID":"100083981632700","name":"Damian Ahmed","gender":"MALE","nickname":"Walt Rizney","inGroup":true,"count":220,"permissionConfigDashboard":false},{"userID":"100083992789819","name":"Uzui Tengen ʚĩɞ","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100084056321819","name":"Aumit Acharjee","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100084133132193","name":"Ayan Khan","gender":"MALE","nickname":null,"inGroup":true,"count":4,"permissionConfigDashboard":false},{"userID":"100084235120459","name":"Murphy Lawden","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100084319067011","name":"Cryptic Twenty-Five X","gender":"MALE","nickname":null,"inGroup":true,"count":7,"permissionConfigDashboard":false},{"userID":"100084469998544","name":"Mohammad Hasan Mahmud","gender":"MALE","nickname":null,"inGroup":true,"count":2,"permissionConfigDashboard":false},{"userID":"100084471513468","name":"Fahad Bin Younus Bhuiyan","gender":"MALE","nickname":null,"inGroup":true,"count":103,"permissionConfigDashboard":false},{"userID":"100084731630155","name":"Xera Chifuyu","gender":"MALE","nickname":null,"inGroup":true,"count":74,"permissionConfigDashboard":false},{"userID":"100085177699091","name":"Xʌƴŋ Aʜɱɘɗ Sojɩɓ","gender":"MALE","nickname":null,"inGroup":true,"count":141,"permissionConfigDashboard":false},{"userID":"100085258066034","name":"Satoru Gojo","gender":"FEMALE","nickname":null,"inGroup":true,"count":63,"permissionConfigDashboard":false},{"userID":"100085763542628","name":"Touka Kirishima","gender":"FEMALE","nickname":"[.] ღ Mis Touka","inGroup":true,"count":1895,"permissionConfigDashboard":false},{"userID":"100086147821671","name":"Mufttaul Islam","gender":"MALE","nickname":"Zihad 😮‍💨","inGroup":true,"count":52,"permissionConfigDashboard":false},{"userID":"100087205573894","name":"ファイサル アーメド","gender":"MALE","nickname":"Aesthetic Itachi <","inGroup":true,"count":3352,"permissionConfigDashboard":false},{"userID":"100087274061727","name":"Tor Nanir Heda","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100087447266952","name":"Ew'r Sourav","gender":"MALE","nickname":null,"inGroup":true,"count":9,"permissionConfigDashboard":false},{"userID":"100087855357857","name":"SiFat Wadud SiFat","gender":"MALE","nickname":null,"inGroup":true,"count":160,"permissionConfigDashboard":false},{"userID":"100087889626553","name":"Istiak Ahamed","gender":"MALE","nickname":null,"inGroup":true,"count":540,"permissionConfigDashboard":false},{"userID":"100088157362790","name":"Orewa Pain","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100088210671288","name":"ØHio FiNal Don","gender":"MALE","nickname":"F@K3 🅰🅳🅼🅸🅽🔞©️®️™️☑️ [ur chexy waifu]","inGroup":true,"count":1866,"permissionConfigDashboard":false},{"userID":"100088575311120","name":"Sadman Anik","gender":"MALE","nickname":"- [bot]","inGroup":true,"count":18,"permissionConfigDashboard":false},{"userID":"100088927025631","name":"Altruistic Ahnaf","gender":"MALE","nickname":null,"inGroup":true,"count":11,"permissionConfigDashboard":false},{"userID":"100088990832128","name":"Tamim Sarkar Arnov","gender":"MALE","nickname":"Weakest waifu hunter⚰","inGroup":true,"count":890,"permissionConfigDashboard":false},{"userID":"100089109969595","name":"Yeamin Sheikh","gender":"MALE","nickname":"33N-2","inGroup":true,"count":262,"permissionConfigDashboard":false},{"userID":"100089198352452","name":"Tajin Firdaous Tajin","gender":"MALE","nickname":null,"inGroup":true,"count":37,"permissionConfigDashboard":false},{"userID":"100089420258494","name":"AniZone BN","gender":"MALE","nickname":null,"inGroup":true,"count":5,"permissionConfigDashboard":false},{"userID":"100089637589741","name":"Sprsh Zen","gender":"MALE","nickname":null,"inGroup":true,"count":16,"permissionConfigDashboard":false},{"userID":"100089752761359","name":"RiFat HossEn BiswAs","gender":"MALE","nickname":"You left the group 😶","inGroup":true,"count":30,"permissionConfigDashboard":false},{"userID":"100089768747639","name":"Abu Sufian Elahi","gender":"MALE","nickname":null,"inGroup":true,"count":130,"permissionConfigDashboard":false},{"userID":"100089793048524","name":"Md Sadik Hassan Rifat","gender":"MALE","nickname":null,"inGroup":true,"count":29,"permissionConfigDashboard":false},{"userID":"100090026905901","name":"Hina Rin","gender":"FEMALE","nickname":null,"inGroup":true,"count":29,"permissionConfigDashboard":false},{"userID":"100090351982579","name":"Zara Chowdhury","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100090496280485","name":"RK Ayan","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100090603037686","name":"ۦۦ Neukie","gender":"MALE","nickname":null,"inGroup":true,"count":445,"permissionConfigDashboard":false},{"userID":"100090878972614","name":"Rafsun Zani","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100090952281221","name":"KM Uchiha","gender":"MALE","nickname":null,"inGroup":true,"count":30,"permissionConfigDashboard":false},{"userID":"100090988715005","name":"Amitabh Sana","gender":"MALE","nickname":"Loki🕛🌀😴","inGroup":true,"count":458,"permissionConfigDashboard":false},{"userID":"100091525077656","name":"アマネ・ フジミヤ","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100091898606171","name":"Anika Tasnim","gender":"FEMALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100091926990178","name":"Ishan Mutsuddi","gender":"MALE","nickname":"🦆Queck..........!","inGroup":true,"count":636,"permissionConfigDashboard":false},{"userID":"100092177763774","name":"Maher Hassan","gender":"MALE","nickname":"🅰🅳🅼🅸🅽  33 🅽 [no more sigma]","inGroup":true,"count":156,"permissionConfigDashboard":false},{"userID":"100092293096810","name":"Mohammad Alamin","gender":"MALE","nickname":"anbuinfosec 🇧🇩 | admin","inGroup":true,"count":273,"permissionConfigDashboard":false},{"userID":"100092672307501","name":"Ifran Xayaz","gender":"MALE","nickname":null,"inGroup":true,"count":1,"permissionConfigDashboard":false},{"userID":"100093149274584","name":"SAIDUL ゝ","gender":"MALE","nickname":null,"inGroup":true,"count":172,"permissionConfigDashboard":false},{"userID":"100093293210691","name":"Akib X SiAm","gender":"MALE","nickname":null,"inGroup":true,"count":226,"permissionConfigDashboard":false},{"userID":"100093504885346","name":"Afx Xenon","gender":"MALE","nickname":null,"inGroup":true,"count":1,"permissionConfigDashboard":false},{"userID":"100094389542517","name":"Sa Santho","gender":"MALE","nickname":null,"inGroup":true,"count":6,"permissionConfigDashboard":false},{"userID":"100094648186124","name":"╰❤️╯𝄘🇭 🇮 🇲 🇺𝄘╰❤️╯ۦۦ ۦۦ","gender":"MALE","nickname":null,"inGroup":true,"count":0,"permissionConfigDashboard":false},{"userID":"100094924471568","name":"Farhan Muh Tasim","gender":"FEMALE","nickname":null,"inGroup":true,"count":6,"permissionConfigDashboard":false},{"userID":"100094960765356","name":"Høpeléss Lîtôñ","gender":"MALE","nickname":null,"inGroup":true,"count":12,"permissionConfigDashboard":false},{"userID":"100095021385629","name":"Aman Yajid","gender":"MALE","nickname":"Xerox\":)^^","inGroup":true,"count":128,"permissionConfigDashboard":false},{"userID":"100095287226025","name":"Mahmud Hasan","gender":"MALE","nickname":"Mahmud [God Level Waifu Hunter]","inGroup":true,"count":259,"permissionConfigDashboard":false}],"banned":{},"settings":{"sendWelcomeMessage":true,"sendLeaveMessage":true,"sendRankupMessage":true,"customCommand":true,"leaveWarn":false,"isApprove":true,"tokenExp":1727861230424,"Token":"Admin","waifuBot":true,"antiSpam":true,"antiOut":false,"antiSpamOn":false,"reSend":false,"badWords":true,"activatedBy":"100087205573894","activationDate":1727256430424},"data":{"stolenWaifu":["kaho-hinata-blend-s","leone","natsuki-doki-doki-literature-club","kokoro-1","nezuko-kamado-demon-slayer-kimetsu-no-yaiba","miu-iruma-danganronpa","ryuuko-matoi-kill-la-kill","ram-re-zero-starting-life-in-another-world","faye-valentine-cowboy-bebop","mirajane-strauss-fairy-tail","holo-spice-and-wolf","joseph-joestar-jojo-s-bizarre-adventure","lucoa-miss-kobayashi-s-dragon-maid","illyasviel-von-einzbern-fate-stay-night","sasha-blouse-attack-on-titan","nobara-kugisaki-sorcery-fight","tsukihi-araragi","mako-mankanshoku-kill-la-kill","himiko-toga-my-hero-academia","yotsuba-nakano-the-quintessential-quintuplets","temari-nara-naruto","junko-enoshima-danganronpa","karen-araragi-monogatari-series","shizuka-marikawa-highschool-of-the-dead","futaba-sakura-persona","mei-overwatch","dola-stephanie","azusa-nakano-k-on","roxy-migurdia-mushoku-tensei","seryu-ubiquitous","nonon-jakuzure-kill-la-kill","mona-megistus","yui-hirasawa-k-on","mori-calliope-hololive-production","ikumi-mito-food-wars-shokugeki-no-soma","kirisaki-chitoge","alice-nakiri-food-wars-shokugeki-no-soma","shouko-komi","yuri-doki-doki-literature-club","asuna-yuuki-sword-art-online","vignette-tsukinose-april-gabriel-dropout","suruga-kanbaru-monogatari-series","tatsumaki","camilla-fire-emblem","fischl-von-luftschloss-narfidort","ritsu-tainaka-k-on","chisa-kotegawa-grand-blue","elma-miss-kobayashi-s-dragon-maid","riza-hawkeye-fullmetal-alchemist-brotherhood","aki-adagaki-masamune-kun-s-revenge","power","rory-mercury","zombina","secre-swallowtail","mitsuri-kanroji-demon-slayer-kimetsu-no-yaiba","inaba-himeko-kokoro-connect","monika-doki-doki-literature-club","misty-pokemon","tohru-miss-kobayashi-s-dragon-maid","nami-one-piece","saya-takagi","gabriel-tenma-white-gabriel-dropout","umaru-doma-himouto-umaru-chan","winry-rockbell","ruri-gokou","kazuto-kirigaya-sword-art-online","hachikuji-mayoi-monogatari-series","rika-shinozaki-sword-art-online","kotori-minami-love-live-school-idol-project","mine-akame-ga-kill","yui-kotegawa","neptune-hyperdimension-neptunia","akitsuki-fuuka-fuuka","mai-sakurajima-rascal-does-not-dream-of-bunny-girl-senpai","serena","yukino-yukinoshita-my-teen-romantic-comedy-snafu","aqua-konosuba-god-s-blessing-on-this-wonderful-world","suu","korone-inugami-hololive-production","rangiku-matsumoto","celestia-ludenberg-danganronpa","suzuha-amane-steins-gate","cana-alberona-fairy-tail","eris","nejire-hado-my-hero-academia","alice-zuberg-sword-art-online","tsuyu-asui-my-hero-academia","rukia-kuchiki-bleach","hibana-fire-force","yamato-one-piece","yuuko-kamishiro","yamano-satoko","elaine-3","despia","kashin-suikou","azami-1","hinako-komori","raika-kamijou","ludmila-lourie","demia","kieli","chito","youmu-konpaku","carabiniere-azur-lane","airu-isshiki","nagatsuki","hatsu-hasegawa","p90","jersey-azur-lane","fiona","bella-1","hrist-record-of-ragnarok","maina","maki-6","grigori-07","huanger-li","atla-the-rising-of-the-shield-hero","maria-arusu","michie-matsumoto","linkle","tsubame-kamoi","re-l-rayford-rokudenashi-majutsu-koushi-to-akashic-records","shion-sumeragi","yuzuko-hazuki","azai-nagamasa","brandish-m-fairy-tail","ricotta-elmar","yuni-1","febronia","kanon-momoi","atalanta-fate-apocrypha","kaguya-shinjuin","yui-kisaragi","wendy-3","dark-witch-yu-gi-oh","emily-shirase","alaska","clissa","folinic","nozomi-kokuro","risa-kamisuura-gakuen-de-jikan-yo-tomare","brigette-pokemon","louisa-richter","yuka-azumi","seiran","aya-kitahara","toki-onjouji-saki-episode-of-side-a","kaguya-hime","ayuko-hayami","ena-susanne-hillenbrand","kaede-nagase","yang-wenli","jinguuji-marimo","kamishiro-sui","itsuki-asakura","elementsaber-nalu","honda-fit","chizuru-takano","sayaka-mibu","paril-hall-mcgryued","fantina","megumi-amano","nao-kashiwagi-your-lie-in-april","matsuri-2","satsuki-kirishima","mosin-nagant","gilda-1","tagitsuhime","makise-kurisu-steins-gate","haruna-mita","fate-testarossa","veronica-liones","tuan-kirie","aya-nijou","minazuki-azur-lane","sophie-neuenmuller","misa","nui-harime","millfie","mahmut-tugrul","ten-ten","kura-asako","risako-kashima","riko-fukamine","girl-23","hiyori-oofusa","eris-6","quitterie-raffaeli","mai-asagiri","zoe-1","totoko-yowai-osomatsu-san","yanfei","akuma-no-ana-uketsuke-jo-interspecies-reviewers","nelson","felicia-5","kasumi-mayuzumi","situ-mingyue","michaela","maja","heles","alice-6","shori-wanizuka","sakurako-gotou","chikage","mitsuko-yukimori","neferure","de-la-fille","fujinami","meteorite","mui-aiba","sharifa-1","therese-voerman","masaki-akemiya","ayane-okusora-blue-archive","mariko-mari-kumakura","hilda-fagan","brilith-ruin","mikoto-hase","eruna-ichinomiya","ayane-tenhouin","vine","prim","koushi-sugawara","astarte-1","miho-karasuma","ichigo-momomiya","medoki","cosmo-queen","ichikishimahime","inaho-yamato","karin-sawatari","adora","kurihara-yuki","guri","kanon-izumi","chitose-2","akira-okuzaki","momo-kisaragi","haruka-momochi","ayako-suzuki-usakame","koizuka-mana","theodore","nozomi-momijidani-angel-s-3piece","michelle-1","phonon","kyouko-omiya","lady-armaroid","ai-hibiki","agatha","shiras-saifan","ryu-hari","koyomi-kanou","astarte-strike-the-blood","moe-mizukoshi","matrona","yuri-takanashi","chitose-ninomiya","mazda-demio","sae-kuroki","aceto-balsamico","nui-no-kata-dororo","cyberconnect2","mycale","domestic-cat","miu-takigawa","keine-kanzaki","melvina","ruenheid-ariarhod","prier","matsuri-aoi","youko-sakaue","kei-higashide","xiu-mei-liu","ayana-amamoto","maron","mikazuki-hanai","yukina-sonogi","azuma-nakao","the-enforcers","helga-wagner","elvira-riefenstahl","athena","sagiri-yamada-asaemon","nono-1","muriel-besson","nene-odagiri-yamada-kun-and-the-seven-witches","sion-ogura","mefis-yura-satana","ray","cyprine","kiara-takanashi-hololive-production","luna-aegis","selene-1","miyu-3","doyoon-kang-under-observation-my-first-loves-and-i","lymee","umi-natori","ikazuchi-azur-lane","sarina-shizukume","airmid-teasanare","rosalyn-1","yuki-kuran","hammer","alice-17","daisy-oak","vert-hyperdimension-neptunia","peter-strasser","anzu-1","agatha-christie","mafuyu-oribe","rin-6","evangelyne","nano","emi-ibarazaki","mother-alba","mao-kurokawa","satya","juni-1","kai-harn","nozomi-onda-farewell-my-dear-cramer","rina-fujimoto","himejima-akeno","harpie-girl","chihaya-yamase-1","panam-palmer","megumi-sagano","riche","harry-tribeca","ingrid-3","shamisen","musashi-2","midare-toushirou","diamond","stella-bremer","undine","rachel-5","michiru-ogawa-1","hibiki","hisui","adele-millennium-war-aigis","anne-hanamaru","kentou-kanami","medea-1","kaho-ootani-mesu-kyoushi-4-kegasareta-kyoudan-mesu-kyoushi-4-kegasareta-kyoudan","m870","kanna-2","noa-sakura","mana-kawamura","venom","iris-shirasaki","riza-hawkeye","naoko-asakura","genevieve-dieudonne","ansel","rin-9","asakura-kaori-1","kayo-goutokuji","ak-5","asuka-ninomiya","minori-sawamura","shiragami-youko","mimori-kiryu","maria-ross","sayuri-hyuuga","hikari-1","momone-momo","galil","helga-pialoza","asahi-kasugano","kaede-foxia","eddelrittuo","maris-stella","nana-ebina-himouto-umaru-chan","fail","kaede-8","melty-melromarc-the-rising-of-the-shield-hero","kanade-miyashiro","thea","stella-hill","rin-tooyama-new-game","mrs-tamaki","xiao-moxian","elena-haven","ti","golem","hitomi-chris-youtube","suzu-fura","tomoyo-itano","kokoro-sakura","neera","hiyori-moritani","kuwahara","felicia-hardy","hayanami","employee-a","sumire-asahina","mt-9","yuki-koyomi","kanna-makino-tamako-market","riko-kurosaki","zoe-baker","umino-mikyuki","tokiwa-s-mother","asu-rito","mrs-kobold","setsuka-soul-calibur","concept-heroine","edda-mirjasdottir-1","tama-3","ky-kiske","kazumi-amano","an-jinpou","fikatsia-latrova","satou-1","tsuruno-yui","i-pin-katekyo-hitman-reborn","rip-van-winkle-hellsing","colt","mayoko-kurobane","manaka-kanou-hoshino-close-your-eyes","megami-s-mother","naomi-fujimaki","luigia","little-enterprise","le-triomphant","hotaru-tachibana","satsuki-1","ayako-hiiragi","kirino-kousaka-oreimo","sophie-twilight","sarah","gin-toudou","abercrombie-azur-lane","chito-1","rogue","klan-klang","yumina-urnea-belfast","coco-1","yoshino-fujieda-digimon-digital-monsters-dejimon-dejitaru-monsuta","seven-1","feh","reika-morimura","naden-delal","chiaki-gantz-gantsu","aki-mogami-majikoi-oh-samurai-girls","kanako-sumiyoshi","suitsu-andromeda","sora-sakuma","tribal-warrior","ibu-kirisaki","elena-3","lilynette-gingerbuck","rena-toyohara","sistermon-noir","emms","lucy-westenra","laundry-dragonmaid","loretta-lecarde","kako-kurai","nanasaki-ai","caroline-cordovin","wonderworm","hiwatari","stella-6","carrie-nishikawa","aurelia-le-guin-the-legend-of-heroes-trails-of-cold-steel","redcap","durga-angel","rino-3","somali","mine-kurimina","nene-himekura","cerebella","miho-fujikawa","yuzu-midorikawa","harpie-oracle","yagi","izumi-saegusa","glass-the-rising-of-the-shield-hero","sayaka-ogata","wanda-1","mariemaia-khushrenada","kum-haehyun","takako-narumi","tsukushi","sara-9","hisako-1","watanuki-kimihiro","rara-mu","playstation-chan","mikki","johanna-2","nagisa-yoshiyuki","nesat-olfred","masturi-himeyama-oppai-no-ouja-48","manticore-monster-girl-encyclopedia","lyriel","perrine-valley","elq-hrqstn","ryoko-otonashi","forte-4","cecily-fairchild","shino-hiiragi","sekibanki","anna-sasaki","anju-emma","madoka-date","gloxinia","aya-nanase","maiko-serizawa","hibiki-hagyuu","nozomi-makino","takayama-maria","alberta-1","amane-fuuma","yuuri","elizabeth-7","yuzuki-kitagawa","hana-okada","satsuki-miyanoshita-gakkou-no-kaidan","rie-yamada","umi-hayama","blanche-pokemon","ibaraki-douji","tomoko-yamaguchi","ibuki-heike","alma-5","kyouko-machi","amelia-rose-quartz-my-status-as-an-assassin-obviously-exceeds-the-brave-s","darcia-1","terror-azur-lane","uruka-sumeragi","yumi-nagoshi","matsuri-mizusawa","lilith-van-strauss-arclaim","karen-stewart","tatsuru-iwamoto","arachne","namiki-rin","lillith-zaberisk","kadode-koyama","reiko-saotome","yoshimoto-shizuka","kenta-takao","marimo","ludus","niyon","youko-yaginuma","ling-xiaoyu","kumi-yamanaka","colorado-1","ye-xin-rou","rin-tamaki","ibuki-nijima","kimika-tachibana-subarashiki-hibi-furenzoku-sonzai","asako-kondou","yukikaze-panettone","kejourou","himeno-awayuki","merli","souryuu","agitha","shoko-haimawari","yuuko-konagai","kaoruko-hanamaru","nijouin-kaoruko","juufuku-miho","chiaki-kanda","rinia-dedorudia","arisu-toriumi","arashi-narukami-ensemble-stars","shizuka-hoshijiro","shizuka-nanami","yoroi-mikoto","sena-asakawa","norfolk","mana-shikimiya","gray-wolf","tokiko-tsumura-busou-renkin","ooyodo-kancolle-kantai-collection","yuuka-sasaki-1","gaap","tooru-mutsuki","aoi-isuzu","komoe-tsukuyomi-a-certain-magical-index","rika","chika","asami","charlotte-e-firobisher","x95","kaguya-5","kiyoko-shimizu-haikyu","athena-2","sadira","iona","luce-fou-bartford","z24-azur-lane","mana-mizuki-white-album","tarisa-manandal","toriumi-sakura","ayame-3","kawakaze-azur-lane","yukiji-ushiwaka","emmy-felton","matsushita","yoshino-kawaguchi-tamayomi","nagi-kirima-1","marie-11","daisy-louise-johnson","sofia-de-sainte-coquille-rune-factory","eriko-nagai","telne","elena-arshavina","kaede-4","warabida","fiore-brunelli","shadow-ring","metera","morgan-fey","kuro-kazamiya-shounen-maid-kuuro-kun-tenshi-no-uta","tamaki-tsukidate","manami-ogura","funifura","maki-yoshi","keito","marian-hawke","surin","aina-yoshiwara-grand-blue","misaki-souma","fuu-saiki","raiju","dorona","lilith-7","bob-semple","white-rock-shooter","xia-xia","mist-1","oka-ruto","saki-hanakago","touka-nishina","mizuki-sera","ai-ohto-wonder-egg-priority","miharu-nijino-comic-girls","hollow","ddeokbokki","sayaka-sumino","ryushen","mitsuki-kappa-mikey","yoichi-saotome","kalista","ancientmermaimon","quentin","treat","maid-mask","lily-someya","rin-yamabuki","sabuko","bloodberry","excel-1","asumi-nase","shizuka-2","sayaka-itomi","aranea-highwind","ooka-myoujin","handsome-jack","vishnal","soma-peries-mobile-suit-gundam","alis-landale","korwa","lord-dominator","harumi-ichikawa","ivy","winged-kuriboh","shami","tomoka-fusano","kaede-kurobane-bi-chiku-beach","lisa-garland","shi-miao-please-take-my-brother-away","elias","fuuka-kikuchi-bottom-tier-character-tomozaki","koeru-nobagoshi","shinonome-ena","elizabeth-mably-freezing","milk-2","erubetie","kasumi-tomine","shino-fujikawa","miia","zara-3","aria-9","eris-boreas-greyrat-mushoku-tensei","emilia-3","yuuko-nishi","shirakawa-miwa","runa-sugizaki","misery","yuuri-yanagi","rin-asukaze","maori-ichinose","shouko-hida","emma-verde-love-live-school-idol-project","mimori-unyu","alisa-stewart","yuuna-souma","m1918","sophia-esteed-star-ocean","fee-carmichael","waner-ling-immortal-swordsman-in-the-reverse-world","seimei-1","isolde-belle-of-the-underworld","mimete","ardent-1","camilla","kijima-matako","lisa-yadomaru","haruka-ooi","kayo-yashiro","yobuko-fue","nadja-applefield","martha","kumi-mochizuki","jessica-riley-until-dawn","lily-9","sachiko-shinozaki","aisha-greyrat","kaoru-toki","rio-kurotori","koyori-kokubunji","haru-estia-soul-worker","atsuko-takagi","millerna-aston","tetora-nagumo","lysithea-von-ordelia-fire-emblem","asuka-oishi-the-ryuo-s-work-is-never-done","nanami-shiranui","gilnelise","meroune-lorelei-du-neptune-monster-musume-everyday-life-with-monster-girls","patricia-wagon","karina-milsa","togakushi-touko","mona","sylvie-4","seira-2","sanka","kyouka-narumiya","shino-asada-sword-art-online","salus","kalina","satomi-fujino","miyako-miyamura-ef-a-tale-of-memories","yuri-mariya","ruru-amour","hiroko-1","niele","ami-onuki","ayane-inui","azusa-sawa","fujita-megumi","karen-onodera-please-teacher","sera-no-haha","ellen-mira-mathers-date-a-live","maho-amane","karina-lyle-blue-rose","kirigaya-midori-sword-art-online","cheekama","tamara-lienoa","sonya-5","miyu-hirasawa","miharu-saigi","esmeraude","saki-kanda-1","bowsette-super-mario-bros","gou-matsuoka-free-iwatobi-swim-club","tuka-luna-marceau","poyon-sgt-frog","rebecca-catalina","sakura-shinguji","ryoko-kakei","shamal","elm-ederne","ruth-d-kline","montmorency-margarita-la-fere-de-montmorency","kim-oong-nyuh","kyasariro-totona","karako-koshio","lotus-sun","kiki-rosita","mengyan-chen-so-pure-so-flirtatious","dodonko","carrera","victor-s-secretary","amazon-2","gumina-glassred","lou-1","ranka","mina-yuen","doumeki-parker","alicia-7","jinn-rwby","meika-daihatsu","kyuel","kaori-miyazono-your-lie-in-april","miwako-satou","tessa-3","galatea","chinatsu-furuhashi","golden-jackal","musse-egret","belfast-1","francis-drake","midori-sakurazawa","irako","muginami","michi-kuroki","slime-1","tara-bryck","charmy","akiko-akko-oohashi","n","saeko-nogami","karin-7","judge","forest-spirit","rina-saijou","orine-aida","yun-yun","jamaica-azur-lane","asahi-kuga","nene-1","hillary-clinton","amane-toujou","navi-1","mida-rana","shiori-kujou","mayuko-nise-high-rise-invasion","kaede-marikouji","mimika","haroma-becker","rio-meilong","kii","mutsu-amatani","michiko-takiyama","marta-tachibana","calliope","mamiya-1","machina","shuuka","chichi","bellestarmon","cecilia-von-claude","zhen-ji-dynasty-warriors","chieru-kazama","sophia-persona","cordelia-gallo","yuki-fukuzumi","chihiro","isu-152","kau","nozomi-kasaki","charlotte-citron","aguri-sakurano-gamers","edda","ino-sakura","kamiki-inori","hol-horse","jiwoo","san-juan-azur-lane","doya","ami-natuna","mizuki-shibata","kati-raikkonen","meron-lantgres","asmodeus-1","aiko-kudou","tamako-tamai","nagisa-tsukayama","didier-lydianne-strike-the-blood","makoto-hiiragi","raiha-uesugi","nao-yasumori","zerozaki-hitoshiki","patra-suou","nightdrem","purpure-sylviola","shiina-yuika","ruise-sanjo","yuumi-holiete","mai-kirishima","hibiki-1","kanaria-1","hina-araki","miria-katsuragi","lancis","rumi-toono","fuka-hinogami","wendy-4","kanna-kizuchi","executive-girl","kurohoro","catherine-1","kikyo-zoldyck-hunter-x-hunter","raphtalia-the-rising-of-the-shield-hero","sharyu","divine-dream","lucille","jean-greyerl","kiwako-oe","komura","kanako-watanabe","maria-himesato","filine","isabella-r-leon","hellhound","tessa-1","hilda-2","bit","shizuru","yui-nitta","emi-handa","mother-moroboshi","heather-mason","song-minghua","julis-alexia-von-riessfeld-the-asterisk-war","tanpopo-yamazaki","haori","deadly-fighter-braid-claw-yu-gi-oh-trading-card-game","suntory-nomu-youtube","ravian","mashima-himeko","rikka-kajiura","haruna-1","kataigou","lucatiel-of-mirrah","mitsuki-3","bm59","arisawa-tatsuki","momoko-ogasawara","iku-nagae","raisa-poettgen","kyo-nijimura","akatsuki-moegi","saaya","ikaruga-1","dorothea-1","lilf","mari-kazaoka-white-album","chiaki-ichihara","matilda-2","fami-harukaze","nagisa-aizawa","nene-nomura","sonia-nevermind-danganronpa","illena","tensai-ikkyuu","i-168","beltorchika-irma","roux-louka","rei-todoroki","astaroth-7","pyra","chihaya-yamase","kurona-yasuhisa-tokyo-ghoul","kazama-mana","elesis-sieghart","shin-kotonashi","layla-2","nova-terra","sansei-muramasa","pascal-1","sylvie-lumiere","kriemhild","jervis","hacka-doll-no-4","schokolade","porno-diane","anzu-iyojima","ra-tiki","kasumi-saegusa","miki-kousaka","polpo","maka-albarn-soul-eater","hanae-mishima","kyouka-2","queen-azshara","suzanna-randall-lana-smith","misa-1","falcom","lihua-tianzi-jiang","yawara-kai","rui-akana","violette","goga","nenohi","beatrice-6","lena-tracer-oxton","sharite","girl-8","sortiliena-serlut-sword-art-online","bianca-1","yuzu-yamamoto","teria-wang-boarding-school-juliet","astraea","sayuri-sawatari","fubuki-yoshina","zuikaku","yukari-hinata","azuma-matsubara","sonia-shaflnarz","yukie-aoi","arlette-armaju","misaki-5","chie-arai","carmilla-5","millenia-1","u-511-ro-500","sage","wendy","julia-munberk","zas-m76","yumemi-hidaka-1","linca","ballista","fujino-asagami","mir-goepe","elena-9","kuronuma-sawako","ichie-otonashi","eris-5","hayan-park","fuyumi-fukagawa","koyori-togashi","nanako-misonoo","singyoku","soujin-shikou","teru-momijiyama","isabella-4","cruz-silva","sharu","risa-fujiwara-tamayomi","akane-kuryuu","juno-fire-emblem","rakka","rafleisha-s-orangewood","zest-the-testament-of-sister-new-devil","opacho","akari-fuyuzora-hip-whip-girl-keijo","sara-1","ib","sakiko-higashida","kotoha-isone","agate-xenoblade-chronicles-2","hacka-doll-no-1","reitia","amamiya","kisala","na-yi","ryouko-kaji","dana","uomihime","ten-arimura","suzu-fujimi","ange-katrina","miyuji-shan","rina-koyanagi","tsumugi-hiiragi","malva-pokemon","sabine","tsukuyo-inaba","hyuuga-natsu","red-napalm","misha-flott","raging-raven","princeton","svd","leiko-strauss","chika-amatori","sayaka-shiina","laala-manaka","hajime-shibata","namanie-nienami","limone","nilgiri","elektricitie","sill","azumi-1","quiet-metal-gear-solid","i","niwaka-denkigai","mo-eversnow","mayu-watanabe","johanna-1","esmeralda-2","frost","saki-yoshida-emergence","crested-porcupine","elemental-hero-burstinatrix","ran-shibuki-1","sayo-yotsuba","anju-matsuura-kutsujoku","cookie-4is","lien-neville","undine-3","hikari-haibane-renmei","fbi-chan","bicorn","ringo-1","naruse-shiroha","veronica-2","artemis-9","ika-sainokami","lid","stuntchica","maria-campbell","lyca","sakurakouji-atore","kyou-yamada","anubis-1","sakura","melty","erasa","yui-3","jinrai","fina-1","nonoka-hanasaki","fei-yen","hanbee-takenaka","miwako-mizukoshi","edelgard-how-not-to-summon-a-demon-lord","ingui-yoon","emerald-sustrai-rwby","suzu-5","cz52","shouko-2","venus","mavelle-froesson","hinata-ema","suzu-taniguchi","raimu-shijou","lee-yeo-reum","situ-yaoyue","hana-sakurazaki","reika-ryuzaki","phi","shahra","papillon-rose","mafuyu-kirisu-we-never-learn","sienna","quistis-trepe-final-fantasy-viii","hibari","anubis","empress-of-prophecy","sapphire-2","victor-juli-frankenstein","koko","hakua-shidome","rin-ogata","ookura-lumine","ayase-kishimoto","li-rong","eleonora-yumizuru-tokyo-mirage-sessions-fe","panni","ritsuka-nakano","jennifer-walters","talia-alborea","choi-yeonha","jeanne-d-arc-6","agari-kamiya","haruka-amanogawa","rika-2","yuikonnu-1","suika-2","kaede-2","muramata-san","matsumoto-maya","hitori-bocchi","ulla-eulesse-hecmatika","takami-karibuchi","rika-ichinose","hedyeh","cherry-1","chizuru-yoshida","yubelluna","serila","akari-hayasaka","tide-pod-chan","lucie-menelumia-youkoso-sukebe-elf-no-mori-e","matake-ogata","rita-3","maria-barcelito","witch-princess","cupid","gina-dickinson","helena-harper","nami-koishikawa","sistine-fibel","juli","yagi-1","mai-shiranui-the-king-of-fighters","hitomi-sakamoto","anna-8","mirei-kudou","nagi-aiza-your-lie-in-april","pulse-trans","katagiri-amane","onee-san","homare-onishima","cissnei","mana-inuyama","no-name","anzu-yukimura","kamoi","kiri-sakura","barous","yumeko-tachibana","lorna-crowley","lisa-silverman","type-03","tailtiu","sierra","yuuki-miyagishi","mehira","rocca","hibiki-amami","kitagou-fumika","ziyan-tang-immortal-swordsman-in-the-reverse-world","kurebayashi-yuzuki","mira-yamana-trinity-seven","shio","yamane-byoinzaka","yukiho-kosaka-love-live-school-idol-project"],"antiChangeInfoBox":{"avatar":"https://i.ibb.co/sgXPDC7/457404462-425914063301806-8286166359165035944-n-jpg-nc-cat-102-ccb-1-7-nc-sid-9f807c-nc-ohc-yr-Y45-R.jpg","nickname":{"513722700":null,"100093997622100":null,"61555863754322":null,"61551355883744":null,"100022228637945":null,"100076504982605":null,"100093998132238":null,"61550241140385":null,"100006699155999":null,"100069565446149":null,"100079758466711":null,"100081686770639":null,"100090064284158":null,"100090473449621":null,"100092732490486":null,"100094234513164":null,"100094448948934":null,"100095015012484":null,"100090758964561":null,"100023915054458":null,"100003965333464":null,"100014635216526":null,"100050697380855":null,"100079240347520":null,"100083305493738":null,"100084476504910":null,"61550848101245":null,"61554688296307":null,"100005336476945":null,"100005696520939":null,"100007188018790":null,"100009696781260":null,"100010868585835":null,"100013647399176":null,"100021723698151":null,"100022367452992":null,"100023746061902":null,"100024747487462":null,"100025695756325":null,"100026783541927":null,"100027590616546":null,"100028044038657":null,"100030881434374":null,"100033986137709":null,"100037206225589":null,"100037683692453":null,"100039865543445":null,"100043740827732":null,"100047143567919":null,"100047413008069":null,"100047595576740":null,"100049672116060":null,"100050392594292":null,"100052087011455":null,"100052252086500":null,"100053187365518":null,"100054015222868":null,"100056221291029":null,"100059434190042":null,"100060231078769":null,"100062907313602":null,"100063503971982":null,"100063965154276":null,"100064260592921":null,"100066581186568":"Loki*_*","100066690640894":null,"100066889346867":null,"100067994687783":null,"100069113824902":null,"100069572166131":null,"100070515422984":null,"100071011121356":null,"100071633402402":null,"100071811551156":null,"100077022206613":"No.1💖","100078690544708":null,"100010335499038":null,"100019296656712":null,"100051421781887":null,"100056905784617":null,"100087348702095":null,"61555500719779":null,"61556563486177":null,"100037727202161":null,"100057254814665":"Ohio final boss 🗿☕","100074337263280":null,"100081710696394":null,"100082830627935":null,"100084436748280":"[The Reader Who Seeks Tea]","100039619904198":null,"100086712023580":null,"61552489280326":null,"100054363909421":null,"100091841474449":null,"100079937767957":null,"61551142498822":"ღ remu chan","61552995167688":null,"61553222995073":null,"61553631376094":null,"61554254051816":null,"61556014045057":null,"100014416422960":null,"100036990771217":null,"100062658505111":null,"100064833824206":null,"100066419555487":null,"100068947897570":null,"100076391678863":null,"100078284731949":null,"100084698203532":null,"61554110124036":null,"100023412454242":null,"100061230453591":null,"100073220843658":null,"100077299765764":"Tanbu chan ×Pro","61556391450194":null,"61556407778437":null,"61550102452818":null,"61551218939515":"Fushiguro","61552021619576":null,"61552811410125":null,"61553716660924":null,"61553813657790":"🥰🙏🏻 waifu ক্রেতা & বিক্রেতা","61554374420491":"🖤『ʙʟᴀᴄᴋ』『ᴅɪᴀᴍᴏɴᴅ』🖤","61554775961848":null,"61555063404592":null,"61556188882979":null,"61556551623190":null,"61557296503887":null,"61557315512924":"watashi wa nahida","100014909475932":null,"100022479371666":null,"100023386512581":null,"100032967312190":null,"100036627946441":null,"100039637431916":null,"100055619678796":null,"100055809050725":null,"100055929373744":null,"100057726995076":null,"100057797227088":null,"100058597090059":null,"100062470538922":null,"100063506931082":null,"100064847350977":null,"100067057308013":null,"100072109878579":"Necessary Evil","100073063717710":null,"100073582987943":null,"100073605489043":null,"100077201746743":null,"100078125258923":null,"100078425389888":null,"100078936368798":null,"100079582227854":null,"100080687962339":null,"100080803056094":null,"100080817451799":null,"100081074084324":null,"100081308250915":null,"100081460838986":null,"100081806651068":null,"100083241635819":null,"100083410287076":null,"100084174360700":null,"100085252628294":null,"100086359012796":null,"100086411367630":null,"100086915194600":null,"100088016553475":null,"100088216021947":"[0] ღ remu chan","100089687857816":null,"100089820094345":null,"100090428806698":null,"100090514082172":null,"100091235067437":null,"100091849875804":"(❁Alisha chan❁)","100092247856800":null,"100092623050482":null,"100092737512689":null,"100092977841274":null,"100093232116986":null,"100093237332364":null,"100093992769875":null,"100094020286521":null,"100094121704620":null,"100095014324540":null,"100095396895691":null,"100037951718438":null,"61553659702147":null,"61556577242074":null,"100002502921624":null,"100036578839172":null,"100075968025066":null,"100074722578899":null,"61555075313517":null,"61556062712310":null,"100023551715113":null,"100083345180476":null,"100085053866915":null,"100091084029785":null,"100071730108966":null,"61552058764899":null,"100014173418173":null,"100073734213510":"🎤sent a voice.","100084352710740":null,"61552385077538":null,"100044320278528":null,"100080195076753":null,"61552936763710":null,"100027345159845":null,"100038948352878":null,"100088590098255":null,"100089034037647":null,"100091744911212":"Milf Hunter","61552729763512":null,"61558654239256":null,"100069742221852":null,"100070510171868":"Singel of the year","100071097702148":"bokachoda","100081072227053":null,"61550431187399":null,"61551995489150":null,"61552040068540":null,"61552842621257":null,"61553402249596":null,"61555809871433":null,"61556417016341":null,"61556979105289":null,"61557611503425":null,"61557952007192":null,"61557970234844":null,"100028090191005":null,"100045681489155":null,"100045767405740":null,"100051854193040":null,"100052296101137":null,"100057399829870":null,"100060338704273":null,"100063600331393":null,"100065327422517":null,"100070621015347":null,"61555185539219":null,"100022025859174":null,"100047429690243":null,"100059507944662":null,"100057731943656":null,"100094356310989":null,"100086950881159":null,"100094508015059":"Ami Akta Mosha :)","61552170609667":null,"61554982619396":null,"100003717452919":null,"100039519366887":"☢️Aizen Sama ☢️","100075437845766":"∆ᴢɪᴍᴜᴛʜ ɢᴇɴᴇsɪs~🍸🛐","100076676303198":null,"100077603790652":null,"100091083957225":null,"100092238331787":null,"100094464502389":null,"100051869042398":null,"61559606697429":null,"100044327656712":null,"100074783019404":null,"100081963251873":null,"100083520680035":null,"100084713389776":null,"100088569657121":null,"100089889411077":null,"100090970480849":null,"100091503229514":null,"100084298242432":null,"100071150602974":null,"100045823417357":"Bostir Khanki Mesbah ta koi gelo?","100053648190277":null,"100072214327056":"Where is magirpola Mesbah ?","100086453762555":null,"100048747773279":null,"100080178140299":null,"100089246799641":null,"100092732714040":"Sir Issac Newton","100044260504704":null,"100052797103635":null,"100073781424890":null,"61557640091624":null,"100014629513973":null,"100040510542200":null,"100064559921608":null,"100083306049456":"Barik Pramanik","100089058696070":null,"100091514508507":null,"61556202264295":null,"61556980162300":null,"100074223314921":null,"100078193001468":"Arohi","100087855357857":null,"100091316371650":null,"61560050885709":null,"100070511155763":null,"100079209661748":null,"61554259192475":null,"61556021174469":null,"61556156554570":null,"61557164154362":null,"61559334562976":null,"61559424309712":null,"100006164358066":null,"100009534816333":null,"100015120995185":null,"100015685393940":null,"100028354381529":null,"100029185118069":null,"100054724600641":null,"100069798834807":null,"100074006375339":null,"100074029148782":null,"100075212171427":null,"100077648071412":null,"100080952112609":null,"100083336901034":null,"100085185385216":null,"100085424222037":null,"100086377436066":null,"100089349646629":null,"100091648771326":null,"100093425561958":null,"100093534706660":null,"100094894052675":null,"100072875693084":null,"100088232740646":null,"100050656305591":null,"100006343272963":null,"100052204312950":null,"61555926243316":null,"61551848108578":null,"61557932361726":null,"100010015665981":null,"100052179035501":null,"100094879848794":null,"61550302951365":null,"100069579908820":"Turtle:)","61556402990507":null,"100072205088593":null,"100090478317773":null,"100081887721823":null,"61550687055711":null,"61552790698916":null,"61553678180120":null,"61554258035379":null,"61554270792881":null,"61554750934360":null,"61554829439044":null,"61555029670531":null,"61557220108614":null,"61557277139053":null,"61557358750609":null,"61557409690407":null,"61558590213201":null,"61558731230841":null,"61559343691694":null,"61560822413186":null,"100004552121872":null,"100005974028062":null,"100011017952696":null,"100011617030993":null,"100012236582516":null,"100012315764513":null,"100031148378424":null,"100036962419197":null,"100041733399448":null,"100042440596539":null,"100043358199775":null,"100050475276274":null,"100052903027322":null,"100055042127124":null,"100058670160637":null,"100063995617912":"মহামারী NK","100067933578389":null,"100070628477855":null,"100073201632934":null,"100076891535721":null,"100076901035740":null,"100077746470368":null,"100078225717237":null,"100081017562568":null,"100081045412074":null,"100081883180255":null,"100082039304294":null,"100088409540840":null,"100088587444298":null,"100088726813398":null,"100089155989023":null,"100089168987866":null,"100089603216989":null,"100091209624535":null,"100092490435544":null,"100094960765356":null,"100046602310750":null,"61550008299045":null,"61550013770797":null,"61550039175953":null,"61550122733198":null,"61550277880038":null,"61551570163788":"Reacted 😆 to your message","61551690584864":"😭","61551881116122":null,"61551929443135":null,"61552058534581":null,"61552149982332":null,"61552212606558":null,"61552349878418":"Ghost","61552493821196":null,"61553061924050":"ʙᴀɴᴋᴀɪ || 鬆","61553737532785":null,"61553831554503":null,"61553862967993":null,"61554049259916":"nero","61554502687919":null,"61554548431305":null,"61554970870370":null,"61555047747942":null,"61555197105566":null,"61555227160975":null,"61555296412204":null,"61555336142356":null,"61555478800596":null,"61555590273569":"Niqqa Cat [Main Admin]","61555808586309":null,"61555816790641":null,"61555963617502":null,"61555982962623":null,"61556199298310":"Itachi","61556391740833":null,"61556454184238":null,"61556542915804":null,"61556666859294":null,"61556707222819":null,"61556799775443":null,"61556888807332":null,"61556914402452":"ami","61556964808971":null,"61557305847886":"[ ♡ ] ღ noorie chan","61557500369562":null,"61557592485924":null,"61557650938438":null,"61557841572072":null,"61557881870067":null,"61558181533010":"ღ chika chan","61558529642980":"[-] ღ Experimental","61559635216854":null,"61559889294739":null,"61559956139331":null,"61560068001105":null,"61560337821162":null,"61560590604390":null,"61561215287308":null,"100000436645880":null,"100000493798407":null,"100000666529568":"- [bot]","100001647935235":"ღ remu chan","100002488001085":null,"100007227227548":null,"100007743615052":null,"100009145011487":null,"100009435369806":null,"100010324453972":null,"100010594054699":null,"100011293895973":"Tumi","100011692483895":"33N-3","100011979522595":null,"100012140762912":"Acting Admin [Waifu Hunter]","100013026633975":null,"100013504444818":null,"100013812332459":null,"100014625904498":null,"100016458902475":null,"100018023650543":null,"100020361826673":null,"100020441437585":"‍            ‍","100023195563159":null,"100023211739422":null,"100023283376765":null,"100023443192318":null,"100023472999281":null,"100023553541678":"🅰🅳🅼🅸🅽  33 🅽 [no more anime]","100023695562808":null,"100024222472611":null,"100027029502145":null,"100027496751089":null,"100028304061042":null,"100029185594637":"..","100030555761830":null,"100031644276919":null,"100034524712246":"N2F","100034864426296":null,"100035408208873":null,"100036868322134":"‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎","100037084717775":null,"100037931201424":null,"100038213712278":null,"100040355744830":null,"100040361354124":null,"100040552261226":null,"100041764957627":null,"100041931226770":null,"100043141655827":"VinSmoKe SanJi","100043931887285":null,"100044990840296":null,"100047446970124":null,"100047481257472":null,"100048450277757":null,"100048505268635":"D👀D","100048761019673":null,"100048788644542":null,"100049669981393":"Admin Chacha ke bolte chai amio admin hote chai","100050049544129":null,"100051705516865":null,"100052252753113":null,"100054683696996":null,"100054921821665":"","100055099069054":null,"100055234252200":null,"100055845711760":null,"100055915952418":null,"100056191091637":null,"100056830672390":null,"100056882444952":null,"100057432825567":null,"100059035310772":null,"100059327852644":null,"100059642616273":null,"100060340563670":null,"100061382239218":null,"100061454936475":"Rakib reached 🐸 in your message.....","100063573600122":null,"100063758466674":"","100063937255380":null,"100064496418503":null,"100064763179341":null,"100065445284007":null,"100065648581946":null,"100066383881166":null,"100066795169165":"𝘤𝘩𝘪𝘬𝘢 𝘤𝘩𝘢𝘯 𝘦𝘳 𝘫𝘢𝘮𝘢𝘪 <3","100066839859875":null,"100067366147414":null,"100068026748814":null,"100068063418426":null,"100068444380881":null,"100068492980884":null,"100068610815322":"Ropom","100068952302073":null,"100069981512436":"⌁ぷ⌁Giyu Chan","100070731823692":null,"100070928597686":"Seiko's trap 🪤","100071435800386":null,"100071511796180":null,"100072079190186":null,"100072276544027":null,"100073290900271":null,"100073617025062":null,"100074079127966":"🅰🅳🅼🅸🅽  33 🅽 removed you from the group","100074474385769":null,"100074707595060":null,"100074942374574":null,"100075052158210":null,"100075218927376":null,"100075359269640":null,"100075454605535":null,"100075521874765":null,"100075834272177":null,"100075932858754":null,"100076556842055":null,"100076848047120":null,"100077189727025":null,"100077802847868":null,"100078159229218":"সাপের রাজা ওরোচিমারু ⌁ぷ⌁","100078727245414":null,"100078995839900":null,"100079317362792":null,"100079472884451":null,"100079673914424":null,"100079858983732":null,"100080429766569":null,"100081110403065":null,"100081177656948":null,"100081207131217":null,"100081263506685":"タイブ ハサン アリフ","100081444554315":null,"100081804909596":null,"100082247235177":"Where is vuda fata Kazi Jabid Hassan","100082278946174":"Farhan Er Boro Vai 🌝🤌🏻","100082479699127":"ROY [ Black Goku] 🔥","100082730088634":null,"100082993742402":null,"100083023159425":"orewa Monkey D Luffy","100083066891162":"[.] ღ nagatoro san","100083078285195":null,"100083107016753":null,"100083265795860":null,"100083274484755":null,"100083291928486":"KEMON ASO ☺️","100083981632700":"Walt Rizney","100083992789819":null,"100084056321819":null,"100084133132193":null,"100084319067011":null,"100084469998544":null,"100084471513468":null,"100084731630155":null,"100085177699091":null,"100085286675494":null,"100085763542628":"[.] ღ Mis Touka","100086147821671":"Zihad 😮‍💨","100086462920374":"[/] ღ chika chan","100086807116044":null,"100087205573894":"Chapri >>3 🤡","100087447266952":null,"100087889626553":null,"100088210671288":"F@K3 Adm!Ñ✓™[mythical flag master🗿✓]","100088575311120":null,"100088990832128":"professor kheta","100089109969595":"33N-2","100089198352452":null,"100089420258494":null,"100089602921052":null,"100089752761359":"You left the group 😶","100089768747639":null,"100089793048524":null,"100090351982579":null,"100090496280485":null,"100091525077656":null,"100091926990178":"🦆Queck..........!","100092177763774":null,"100092293096810":"anbuinfosec 🇧🇩 | admin","100092672307501":null,"100093112022226":null,"100093149274584":null,"100093293210691":"","100093642882130":null,"100093674545346":null,"100094189827824":null,"100094259190784":null,"100094389542517":null,"100094924471568":null,"100095021385629":"Xerox\":)^^","100095287226025":"Mahmud [God Level Waifu Hunter]","100082103085154":null,"61552634437012":null,"100029261872618":"[.] ღ hemiko","61560855118612":""}},"shortcut":[{"key":"#todo-anilist","content":"Kalker plan\n\nAnilist a add to plan anime manga, \nTotal planned anime/manga left ,\nAnd other anilist related update","attachments":[],"author":"100023553541678"},{"key":"#todo2","content":"waifu stealer game","attachments":[],"author":"100023553541678"},{"key":"@everyone","content":"কি হইছে চিল্লাস কেন? গে নাকি তুই?","attachments":[],"author":"100092293096810"},{"key":"art3","content":"eval await globalData.set(\"config\", \"token\", \"data.token\");","attachments":[],"author":"100023553541678"},{"key":"donate","content":"https://chika.misfits.workers.dev/#donate","attachments":[],"author":"100023553541678"},{"key":"dance","content":"","attachments":["1RPR5yh0h-f5ZTwQSEkuCvrNCdn3zBIJI"],"author":"100023553541678"},{"key":"eval-add-tid","content":"eval api.addUserToGroup(event.senderID, 24554219954176784)\n  .then(()=>out(\"Added\"))!","attachments":[],"author":"100023553541678"},{"key":"wakeup","content":"","attachments":["1lVb3yw102nkQ6obOX4rInxvaPNkCu2h7"],"author":"100023553541678"},{"key":"isvip","content":"isvip = let isVip = await usersData.set(event.messageReply.senderID, true, \"settings.isVip\");\nif (isVip) out(\"done ✅\");","attachments":[],"author":"100023553541678"}],"setRole":{"shortcut":1,"setname":1,"milf":1,"prefix":1,"up":2,"lastword":1},"warn":[{"uid":"100048788644542","list":[{"reason":"kick dimuni mia","dateTime":"16/04/2024 07:55:19","warnBy":"100023553541678"}]},{"uid":"61555047747942","list":[{"reason":"disturbing","dateTime":"25/04/2024 12:59:28","warnBy":"100023553541678"}]},{"uid":"100011293895973","list":[{"reason":"for unsending waifu","dateTime":"26/04/2024 02:15:16","warnBy":"100012140762912"}]},{"uid":"100071097702148","list":[{"reason":"for cringy name","dateTime":"30/04/2024 11:36:30","warnBy":"100012140762912"},{"reason":"mentioning everyone","dateTime":"30/04/2024 03:18:31","warnBy":"100048505268635"}]},{"uid":"100081072227053","list":[{"reason":"for mentioning everyone","dateTime":"30/04/2024 08:58:00","warnBy":"100012140762912"},{"reason":"for promoting group chat","dateTime":"01/05/2024 12:23:19","warnBy":"100012140762912"},{"reason":"for abalmani again","dateTime":"01/05/2024 12:26:36","warnBy":"100012140762912"}]},{"uid":"100089109969595","list":[{"reason":"don't misuse power","dateTime":"01/05/2024 05:12:03","warnBy":"100023553541678"},{"reason":"fight in ur bed","dateTime":"09/05/2024 10:26:45","warnBy":"100023553541678"}]},{"uid":"100074942374574","list":[{"reason":"for using bad word intentionally","dateTime":"05/05/2024 11:02:03","warnBy":"100012140762912"}]},{"uid":"100074079127966","list":[{"reason":"fight in bed, not it grp","dateTime":"09/05/2024 10:27:29","warnBy":"100023553541678"}]},{"uid":"100045823417357","list":[{"reason":"@Kazi Jabid Hassan for not listening carefully admin's advice","dateTime":"12/05/2024 08:14:24","warnBy":"100012140762912"}]},{"uid":"100077189727025","list":[{"reason":"@Smd Mithun for not listening carefully admin's advice","dateTime":"12/05/2024 08:14:42","warnBy":"100012140762912"}]},{"uid":"61552149982332","list":[{"reason":"pinging everyone","dateTime":"19/05/2024 12:20:45","warnBy":"100048505268635"}]},{"uid":"100079673914424","list":[{"reason":"balone","dateTime":"12/06/2024 11:20:03","warnBy":"100023553541678"}]},{"uid":"100088210671288","list":[{"reason":"spam","dateTime":"04/07/2024 06:51:54","warnBy":"100048505268635"}]},{"uid":"61554049259916","list":[{"reason":"for spamming","dateTime":"06/07/2024 12:03:24","warnBy":"100012140762912"},{"reason":"for spamming too much","dateTime":"06/07/2024 12:04:58","warnBy":"100012140762912"},{"reason":"stop begging and start donating","dateTime":"14/07/2024 09:14:26","warnBy":"100023553541678"}]},{"uid":"100094259190784","list":[{"reason":"admin goat","dateTime":"08/07/2024 09:06:38","warnBy":"100023553541678"}]},{"uid":"100044990840296","list":[{"reason":"no hamsters","dateTime":"14/07/2024 07:42:03","warnBy":"100023553541678"}]},{"uid":"61556199298310","list":[{"reason":"stop begging and start donating","dateTime":"14/07/2024 09:14:20","warnBy":"100023553541678"}]},{"uid":"100093149274584","list":[{"reason":"dont beg","dateTime":"14/07/2024 10:26:24","warnBy":"100023553541678"}]},{"uid":"100093293210691","list":[{"reason":"don't spam","dateTime":"16/08/2024 09:28:55","warnBy":"100092293096810"}]},{"uid":"100086397470354","list":[{"reason":"for spamming","dateTime":"20/08/2024 06:18:13","warnBy":"100012140762912"}]},{"uid":"100083291928486","list":[{"reason":"for spamming","dateTime":"30/08/2024 10:58:57","warnBy":"100012140762912"}]},{"uid":"100085258066034","list":[{"reason":"for spamming","dateTime":"08/09/2024 08:34:50","warnBy":"100012140762912"}]},{"uid":"100070928597686","list":[{"reason":"for spamming","dateTime":"26/09/2024 12:06:27","warnBy":"100012140762912"}]}],"customRankCard":{"main_color":"https://i.ibb.co/3BgfFGh/379316397-971872667237382-9178391612662885206-n-png-nc-cat-101-ccb-1-7-nc-sid-ae9488-nc-eui2-Ae-Hgj.png","exp_color":"#e8051f","sub_color":"rgba(29, 0, 69,0.5)","name_color":"#ffffff","alpha_subcard":0.9,"exp_text_color":"#ffffff","level_color":"#ffffff","rank_color":"#ffffff","expNextLevel_color":"rgba(222, 0, 70, 0.2)"},"banned_ban":[{"id":"100089637589741","time":"01:45:27 01/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100081562158766","time":"23:07:45 02/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61552500085101","time":"19:35:24 03/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100093346925617","time":"21:49:34 03/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100088804913932","time":"19:39:21 04/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100040142143839","time":"19:09:19 05/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100062963606643","time":"11:40:20 06/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100053880016960","time":"16:26:21 06/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100023553541678","time":"10:14:07 07/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100047876195993","time":"20:54:19 07/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61561353835631","time":"02:28:26 08/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100086462920374","time":"16:21:41 08/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100087273445333","time":"23:12:30 08/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100072783161006","time":"01:04:58 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61551690584864","time":"10:16:40 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61555808586309","time":"10:16:42 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61561215287308","time":"10:16:43 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100000666529568","time":"10:16:44 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100018023650543","time":"10:16:47 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100034864426296","time":"10:16:48 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100079272680301","time":"10:16:49 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100081177656948","time":"10:16:50 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100081257367644","time":"10:16:52 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100091514508507","time":"10:16:53 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100092354355693","time":"10:16:54 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100093534706660","time":"10:16:55 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100086462920374","time":"10:17:17 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61558971307861","time":"10:22:32 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100074722578899","time":"20:05:27 09/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100068388249426","time":"19:29:39 10/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100075454605535","time":"10:09:40 11/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61561486235902","time":"10:32:02 11/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100055816793879","time":"13:55:27 11/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100089602921052","time":"07:20:37 12/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61555750499847","time":"07:49:05 12/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61555274690073","time":"23:38:41 13/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100074313172868","time":"09:23:41 14/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61553609046516","time":"13:24:57 14/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61553831554503","time":"16:52:24 14/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100068019815064","time":"06:14:50 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61556188882979","time":"09:57:08 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61556761073957","time":"09:57:09 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61564911925708","time":"09:57:10 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100001847451158","time":"09:57:12 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100034545096744","time":"09:57:14 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"100029261872618","time":"20:00:25 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"},{"id":"61553609046516","time":"20:00:40 16/09/2024","reason":"unauthorized leave of absence ft. CHIKA ZONE"}],"badWords":{"words":["everyone"],"violationUsers":{"100023553541678":1,"100002488001085":1}},"prefix":".","aliases":{"unsend":["u","."],"removebg":["rma"],"profile":["pfp"]},"onlyAdminBox":false,"rules":["no everyone mentioning","No married human allowed in this group."]},"isGroup":true,"createdAt":"2024-08-07T04:40:50.940Z","updatedAt":"2024-09-27T17:05:24.140Z"},"isSubscribed":true,"totalmembers":244,"inviteLink":{"enable":true,"link":"https://m.me/j/Aba_5WMlqKhB9UHB/"}}

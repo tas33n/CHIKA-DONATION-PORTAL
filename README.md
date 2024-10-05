@@ -8,67 +8,88 @@
   <img src="./assets/previews/preview-3.png" alt="CHIKA DONATION PORTAL Preview" width="200"/>
 </p>
 
+### Description:
+
 CHIKA DONATION PORTAL is a single-page web application designed to facilitate donations for the CHIKA messenger bot project. This portal provides an easy-to-use interface for supporters to contribute to the bot's development and maintenance.
 
-## Features
+Author: [tas33n](https://github.com/tas33n)
+
+Modified by: [Mero](https://github.com/meroitachi)
+
+## Key changes and features
 
 - 🌟 Single-page application built with HTML, CSS, and JavaScript
-- 💼 Cloudflare Workers integration for serverless deployment
-- 💰 bKash payment gateway integration for secure transactions
+- 🕹️ Converted from Cloudflare Workers to Express.js for better flexibility
+- ~💼 Cloudflare Workers integration for serverless deployment~ **(coming soon)**
+- 📧 Replaced bKash payment gateway with email confirmation-based donation process
+- ✔️ Admin can verify or cancel the payment from the panel, and users will receive a confirmation email based on the action (verified or canceled)
 - 📊 Dynamic package selection and user information display
 - 👥 Admin and supporter showcase sections
 - 🌙 Dark mode toggle for user preference
 - 📱 Responsive design for various device sizes
+- 🐛 Many loading and other bugs fixed in the Express version
 
 ## Technologies Used
 
 - HTML5
 - CSS3 (with Bootstrap for styling)
-- JavaScript (ES6+)
+- JavaScript
 - jQuery for DOM manipulation
-- Cloudflare Workers for serverless functions
-- bKash Payment Gateway API
+- Express.js for server-side logic
+- Nodemailer and [Brevo](https://brevo.com/) SMTP for email-based confirmation
 
 ## Setup and Installation
 
-1. Clone the repository: 
+1. Clone the repository:
+
+```bash
+git clone https://github.com/meroitachi/chika-donation-alt/
 ```
-git clone https://github.com/tas33n/chika-donation-portal.git
-```
+
 2. Navigate to the project directory:
+
+```bash
+cd /chika-donation-alt
 ```
-cd chika-donation-portal
-```
-3. Install dependencies (if any):
-```
+
+3. Install dependencies:
+
+```bash
 npm install
 ```
 
+4. Configure the Express.js app:
 
-4. Configure your Cloudflare Worker:
-- Copy the contents of `worker.js` to your Cloudflare Worker
-- Set up the necessary environment variables in your Cloudflare Worker settings
+- Update your configurations (e.g., APP_URL, CDN src, Bot API) in `express.js`, `app.js`, and `service-worker.js`.
 
-5. Set up bKash Payment Gateway:
-- Obtain API credentials from bKash
-- Update the bKash configuration in the worker script
+5. Brevo SMTP setup for email configuration:
 
-6. Deploy the worker to Cloudflare
+**Note:** If you want to use your bot project's email sending SMTP function to send emails through your bot API, you can change the option
 
-7. Update the `CDN_BASE` variable in `app.js` to point to your deployed assets
+- Create an account on [brevo.com](brevo.com), go to `Senders, Domains & Dedicated IPS` option and add a sender email, (such as 'your email@.gmail.com')
+- Go to the `SMTP & API` option, create a new SMTP key, and copy the login and password (SMTP key). Then, add it to the SMTP configuration in the `sendMail()` function.
+
+6. Start the server:
+
+- You can start the server by running
+
+```bash
+node src/express.js
+```
 
 ## Usage
 
-After deployment, users can access the donation portal through the Cloudflare Worker's URL. They can:
+After deployment, users can access the donation portal through the Express server’s URL. They can:
 
 1. Browse donation packages
 2. Select a package and enter their user and thread IDs
-3. Complete the donation process using bKash
-4. View a thank you message and transaction details upon successful donation
+3. Submit their payment info, which sends an email to the admin for verification
+4. Admin can verify or cancel the request in web panel
+5. Users receive a success or cancellation email based on the admin's action
 
 ## Contributing
 
-We welcome contributions to the CHIKA DONATION PORTAL project! If you'd like to contribute, please:
+We welcome contributions to the chika donation-alt project! If you'd like to contribute, please:
 
 1. Fork the repository
 2. Create a new branch for your feature
@@ -78,22 +99,7 @@ We welcome contributions to the CHIKA DONATION PORTAL project! If you'd like to 
 
 Please ensure your code adheres to the existing style and includes appropriate comments.
 
-## License
+#### You can check the original version of this project:
 
-This project is open-source and available under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- Thanks to the bKash team for providing the payment gateway integration
-- Cloudflare for their excellent Workers platform
-- All contributors and supporters of the CHIKA bot project
-
-## Contact
-
-For any queries or support, please contact:
-- GitHub: [@tas33n](https://github.com/tas33n)
-- Email: [farhanisteak84@gmail.com](mailto:farhanisteak84@gmail.com)
-
----
-
-Made with ❤️ by [@Tas33n](https://github.com/tas33n)
+Main project: [CHIKA DONATION PORTAL](https://github.com/tas33n/CHIKA-DONATION-PORTAL/)  
+Author: [Tas33n](https://github.com/tas33n)

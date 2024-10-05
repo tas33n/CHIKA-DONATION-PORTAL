@@ -1,14 +1,21 @@
 {
-	"name": "@tas33n/CHIKA-DONATION-PORTAL",
-	"version": "2.0.0",
-	"private": false,
-	"scripts": {
-		"deploy": "wrangler publish",
-		"start": "wrangler dev"
-	},
-	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20230419.0",
-		"typescript": "^5.0.4",
-		"wrangler": "^3.4.0"
-	}
+  "dependencies": {
+    "@sendinblue/client": "^3.3.1",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "fs": "^0.0.1-security",
+    "googleapis": "^144.0.0",
+    "helmet": "^7.1.0",
+    "ipware": "^2.0.0",
+    "nodemailer": "^6.9.15",
+    "open": "^10.1.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }

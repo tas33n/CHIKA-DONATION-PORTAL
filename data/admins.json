@@ -1,58 +1,67 @@
-[
-    {
-        "name": "Tas33n",
-        "designation": "CEO & Lead Developer",
-        "image": "https://avatars.githubusercontent.com/u/55633040",
-        "socialLinks": {
-            "facebook": "https://facebook.com/tasu.legend",
-            "github": "https://github.com/tas33n",
-            "email": "farhanisteak84@gmail.com",
-            "telegram": "https://t.me/lamb3rt"
-        },
-        "bio": "Tech magician, crafting wonders with every stroke of the keyboard"
+[{
+  "name": "Tas33n",
+  "designation": "CEO & Lead Developer",
+  "image": "https://avatars.githubusercontent.com/u/55633040",
+  "socialLinks": {
+    "facebook": "https://facebook.com/tasu.legend",
+    "github": "https://github.com/tas33n",
+    "email": "farhanisteak84@gmail.com",
+    "telegram": "https://t.me/lamb3rt"
+  },
+  "bio": "Tech magician, crafting wonders with every stroke of the keyboard"
+},
+  {
+    "name": "Sadman Anik",
+    "designation": "Lead Developer",
+    "image": "https://avatars.githubusercontent.com/u/81039510?v=4",
+    "socialLinks": {
+      "facebook": "https://facebook.com/Sadman.Anik.11",
+      "github": "https://github.com/Sadman-11",
+      "email": "sadmananik8986@gmail.com"
     },
-    {
-        "name": "Sadman Anik",
-        "designation": "Lead Developer",
-        "image": "https://avatars.githubusercontent.com/u/81039510?v=4",
-        "socialLinks": {
-            "facebook": "https://facebook.com/Sadman.Anik.11",
-            "github": "https://github.com/Sadman-11",
-            "email": "sadmananik8986@gmail.com"
-        },
-        "bio": "Architect of critical APIs, driving seamless integration and efficiency through expert development"
+    "bio": "Architect of critical APIs, driving seamless integration and efficiency through expert development"
+  },
+  {
+    "name": "Mohammad Alamin",
+    "designation": "Contributor",
+    "image": "https://avatars.githubusercontent.com/u/135030867?v=4",
+    "socialLinks": {
+      "facebook": "https://facebook.com/hiroshinakamura",
+      "github": "https://github.com/anbuinfosec",
+      "email": "anbuinfosec@gmail.com"
     },
-    {
-        "name": "Mohammad Alamin",
-        "designation": "Contributor",
-        "image": "https://avatars.githubusercontent.com/u/135030867?v=4",
-        "socialLinks": {
-            "facebook": "https://facebook.com/hiroshinakamura",
-            "github": "https://github.com/anbuinfosec",
-            "email": "anbuinfosec@gmail.com"
-        },
-        "bio": "Committed to continuous improvement, contributing to bug fixes, feature enhancements, and community engagement"
+    "bio": "Committed to continuous improvement, contributing to bug fixes, feature enhancements, and community engagement"
+  },
+  {
+    "name": "Ehtasham Ahmed (Tomal)",
+    "designation": "Acting Admin of Bot Group",
+    "image": "https://i.postimg.cc/0ydDb1HM/457369033-2115706148844057-3767565533599516894-n.jpg",
+    "socialLinks": {
+      "facebook": "https://facebook.com/Ehtashamshikder.tomal",
+      "github": "https://github.com/",
+      "email": "test@gmail.com"
     },
-    {
-        "name": "Ehtasham Ahmed (Tomal)",
-        "designation": "Acting Admin of Bot Group",
-        "image": "https://i.postimg.cc/0ydDb1HM/457369033-2115706148844057-3767565533599516894-n.jpg",
-        "socialLinks": {
-            "facebook": "https://facebook.com/Ehtashamshikder.tomal",
-            "github": "https://github.com/",
-            "email": "test@gmail.com"
-        },
-        "bio": "Key figure in community management, maintaining group dynamics and providing invaluable support to users"
+    "bio": "Key figure in community management, maintaining group dynamics and providing invaluable support to users"
+  },
+  {
+    "name": "NTKhang",
+    "designation": "Lead Developer (not-a-member)",
+    "image": "https://avatars.githubusercontent.com/u/81167726?v=4",
+    "socialLinks": {
+      "facebook": "https://facebook.com/",
+      "github": "https://github.com/ntkhang03",
+      "email": "test@gmail.com"
     },
-    {
-        "name": "NTKhang",
-        "designation": "Lead Developer (not-a-member)",
-        "image": "https://avatars.githubusercontent.com/u/81167726?v=4",
-        "socialLinks": {
-            "facebook": "https://facebook.com/",
-            "github": "https://github.com/ntkhang03",
-            "email": "test@gmail.com"
-        },
-        "bio": "Visionary developer and leader, leaving a lasting impact through innovative solutions and a legacy of excellence"
-    }
-]
+    "bio": "Visionary developer and leader, leaving a lasting impact through innovative solutions and a legacy of excellence"
+  },
+  {
+    "name": "Mero Itachi",
+    "designation": "Cheap copy paster",
+    "image": "https://avatars.githubusercontent.com/u/91469640?v=4",
+    "socialLinks": {
+      "facebook": "https://facebook.com/meroitachi98",
+      "github": "https://github.com/meroitachi",
+      "email": "meherabhosain7@gmail.com"
+    },
+    "bio": "Trying to do my best"
+  }]
