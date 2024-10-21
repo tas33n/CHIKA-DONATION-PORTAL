@@ -23,7 +23,7 @@
  *****************************************************************************/
 
 // cdn src
-const CDN_BASE = 'https://cdn.sadmananik.pro'; // 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
+const CDN_BASE = 'https://cdn.misfitsdev.pro'; // 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
 const HTML_BASE = `${CDN_BASE}/pages`;
 const DATA_BASE = `${CDN_BASE}/data`;
 
@@ -48,22 +48,25 @@ const fetchJson = async (jsonName) => {
 	const cachedTimestamp = localStorage.getItem(`json_${jsonName}_timestamp`);
 	const currentTime = Date.now();
 
-	if (cachedData && cachedTimestamp) {
-		const age = currentTime - cachedTimestamp;
-		if (age < 86400000) {
-			try {
-				return JSON.parse(cachedData);
-			} catch (error) {
-				console.error('Failed to parse cached JSON:', error);
-				localStorage.removeItem(`json_${jsonName}`);
-				localStorage.removeItem(`json_${jsonName}_timestamp`);
-			}
-		} else {
-			// If the cached data is older than 24 hours, remove it
-			localStorage.removeItem(`json_${jsonName}`);
-			localStorage.removeItem(`json_${jsonName}_timestamp`);
-		}
-	}
+	// it seems to be a bad idea. 
+
+	// if (cachedData && cachedTimestamp) {
+	// 	const age = currentTime - cachedTimestamp;
+	// 	if (age < 86400000) {
+	// 		try {
+	// 			return JSON.parse(cachedData);
+	// 		} catch (error) {
+	// 			console.error('Failed to parse cached JSON:', error);
+	// 			localStorage.removeItem(`json_${jsonName}`);
+	// 			localStorage.removeItem(`json_${jsonName}_timestamp`);
+	// 		}
+	// 	} else {
+	// 		// If the cached data is older than 24 hours, remove it
+	// 		localStorage.removeItem(`json_${jsonName}`);
+	// 		localStorage.removeItem(`json_${jsonName}_timestamp`);
+	// 	}
+	// }
+	
 
 	const response = await fetch(`${DATA_BASE}/${jsonName}.json`);
 	const json = await response.json();

@@ -23,7 +23,7 @@
  *****************************************************************************/
 
 // Gist URL for configuration (replace with your actual json gist URL, use the same key value pair as DEFAULT_CONFIG object.)
-const CONFIG_GIST_URL = '';
+const CONFIG_GIST_URL = 'https://gist.githubusercontent.com/tas33n/cc64b321e1677ed6be051e75aa0242c6/raw/chika-cf-worker.json';
 
 // Default configuration
 const DEFAULT_CONFIG = {
