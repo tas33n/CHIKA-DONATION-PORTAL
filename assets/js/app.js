@@ -23,7 +23,7 @@
  *****************************************************************************/
 
 // cdn src
-const CDN_BASE = 'https://cdn.sadmananik.pro'; // 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
+const CDN_BASE = 'https://cdn.misfitsdev.pro'; // 'https://cdn.jsdelivr.net/gh/tas33n/CHIKA-DONATION-PORTAL@main';
 const HTML_BASE = `${CDN_BASE}/pages`;
 const DATA_BASE = `${CDN_BASE}/data`;
 
